@@ -67,15 +67,28 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 19. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
 20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 
+## Mandatory Front-End Interaction
+
+Before producing the 7-section output, run front-end interaction by default. This is part of the Skill experience, not an optional add-on.
+
+The default sequence is:
+
+1. Detail level check.
+2. Decision focus check.
+3. Dynamic intake loop: one question at a time, adapted to the user's previous answer.
+4. 7-section Signal-to-Action output.
+
+Produce the 7-section output directly only when the user explicitly says something like:
+
+- "direct output";
+- "no questions";
+- "skip questions";
+- "just output";
+- "continue to output".
+
+Do not treat a detailed user story as permission to skip interaction. A detailed story can still contain unclear decision focus, hidden constraints, or missing validation signals.
+
 ## Clarification Behavior
-
-Default to a short interactive clarification before producing the full output. Even when the user's input contains enough facts, ask one lightweight question if the user's desired decision, priority, or success criterion could change the action plan.
-
-Produce the default output directly only when one of these is true:
-
-- the user explicitly asks for direct output without questions;
-- the user has already stated the decision focus and enough evidence to reason from;
-- delaying for a question would not change the action plan or validation plan.
 
 If key information is missing or the decision focus is ambiguous, ask only the minimum necessary questions before producing the output. Do not use a fixed question list. Generate questions dynamically by comparing the user's input against the reasoning chain:
 
@@ -267,7 +280,7 @@ List actions that are premature, risky, or unsupported by evidence.
 
 ## 7. Action Roadmap
 
-Use a localized heading in the user's language. For Chinese output, use `## 10. 行动路线`.
+Use a localized heading in the user's language. For Chinese output, use `## 7. 行动路线`.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan. Use a simple structure such as:
 

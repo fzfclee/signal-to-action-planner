@@ -148,6 +148,8 @@ C. [Evidence / validation focus]
 D. Other / more context: ...
 ```
 
+Use this before the 7-section output unless the user explicitly asks to skip questions or continue to output.
+
 ## F. Mid-Process Checkpoint Template
 
 ```markdown

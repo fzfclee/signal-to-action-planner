@@ -16,6 +16,8 @@ Tell me the situation in your own words. It can be a story, meeting note, custom
 
 Accept incomplete, informal, or mixed input. Do not require the user to structure it first.
 
+Do not jump from messy input directly to the 7-section output unless the user explicitly asks to skip questions or continue to output. The default experience must include front-end interaction.
+
 ## Step 2 - Run A Detail Level Check
 
 Ask whether the user wants detailed reasoning shown. Default to concise output.
@@ -48,7 +50,7 @@ C. Which next action has the best risk/reward.
 D. Other / more context: ...
 ```
 
-If the user has already made the decision focus clear, skip this step and continue. If the user explicitly asks for direct output, do not force a question.
+If the user explicitly asks for direct output, do not force a question. Otherwise, ask the decision focus check even when the user's story looks detailed, because the intended optimization may still be unclear.
 
 ## Step 4 - Run A Dynamic Intake Loop
 
