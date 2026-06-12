@@ -50,6 +50,12 @@ For tools that auto-discover skills, keep the YAML frontmatter at the top of thi
 
 When a platform has its own skill mechanism, adapt only the installation location. Do not change the reasoning chain, operating rules, or output structure.
 
+## Version Freshness Rule
+
+When this Skill has been updated, treat the current `SKILL.md` as the only source of truth for execution. Discard prior memory, cached behavior, previous test traces, and old conversation habits that conflict with the current version.
+
+Before running the Skill after an update, reload the current instructions and follow them strictly. Do not infer behavior from earlier runs if the current Skill text says something different.
+
 ## Operating Rules
 
 1. Separate facts from interpretations.

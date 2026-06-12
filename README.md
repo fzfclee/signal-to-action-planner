@@ -40,10 +40,11 @@ It does not grant ownership or license rights to the full O2V methodology framew
 1. Use `SKILL.md` as the main instruction file.
 2. In tools that support skill folders, place this repository or its files in the tool's skill directory.
 3. In tools that do not support skill folders, paste the content of `SKILL.md` into the assistant's system, project, or reusable instruction area.
-4. Paste your messy situation / story / observations.
-5. Let the Skill ask a few clarification questions if needed.
-6. Receive a structured Signal-to-Action output.
-7. Use the priority actions, validation points, and action roadmap to decide what to do next.
+4. After updating the Skill, reload the latest `SKILL.md` and ignore prior cached behavior or old test memory that conflicts with the current version.
+5. Paste your messy situation / story / observations.
+6. Let the Skill ask a few clarification questions if needed.
+7. Receive a structured Signal-to-Action output.
+8. Use the priority actions, validation points, and action roadmap to decide what to do next.
 
 ## Compatibility Notes
 

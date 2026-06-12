@@ -4,6 +4,8 @@ Use this lightweight flow to guide the user from messy input to action-ready cla
 
 Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and action roadmap in that language unless quoting user-provided terms or proper nouns. In Chinese, call the roadmap `行动路线`.
 
+If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
+
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user chooses detailed reasoning or asks for it later.
 
 ## Step 1 - Receive Messy Input
