@@ -1,3 +1,8 @@
+---
+name: signal-to-action-planner
+description: Turn messy input, stories, observations, meeting notes, customer feedback, work signals, or uncertain situations into evidence-grounded facts, signals, implications, hypotheses, prioritized actions, and validation plans. Use when the user needs to clarify weak or mixed signals, decide what to test next, separate facts from interpretations, or create a small action plan with validation criteria.
+---
+
 # Signal-to-Action Planner Skill
 
 ## Role
