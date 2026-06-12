@@ -41,7 +41,7 @@ This public Skill is built for Markdown-first agent environments:
 | Claude Code | Project or personal skill instructions |
 | Cursor | Project rules or custom instructions |
 | Windsurf | Cascade custom instructions |
-| Hermes / smaller models | `minimal_SKILL.md` first |
+| Hermes / smaller models | `minimal_SKILL.md` first; use `ultra_minimal_SKILL.md` for very small models or tight context windows |
 | OpenClaw / WorkBody | Reusable Markdown instruction |
 
 ## 30-Second Quick Start
@@ -68,7 +68,7 @@ Platform copy/paste guide:
 | Windsurf | Paste `SKILL.md` into Cascade custom instructions or project rules. |
 | Hermes / smaller models | Start with `minimal_SKILL.md`, then upgrade to full `SKILL.md` if output quality is too thin. |
 
-For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md). It keeps the core chain and output template at roughly 60% of the full instruction length.
+For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md). For very small models or tight context windows, use the one-page [`ultra_minimal_SKILL.md`](ultra_minimal_SKILL.md).
 
 ## Relationship To O2V
 
@@ -127,8 +127,8 @@ This repository uses a portable Markdown-first structure:
 
 - `SKILL.md` contains YAML frontmatter with `name` and `description` for tools that auto-discover skills.
 - The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
-- Supporting files explain conversation flow, output templates, examples, and notice terms.
-- No scripts, app code, services, external dependencies, or platform-specific runtime are required.
+- Supporting files explain conversation flow, output templates, examples, benchmark cases, failure modes, and notice terms.
+- No app code, services, external dependencies, or platform-specific runtime are required. The checker in `scripts/` is optional.
 - If an agent tool caches skills or learns from old runs, refresh/reload the Skill after updating it and follow the current `SKILL.md`.
 - If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
 
@@ -136,6 +136,7 @@ This repository uses a portable Markdown-first structure:
 
 - See [`examples.md`](examples.md) for sample situations and output excerpts.
 - See [`BENCHMARK.md`](BENCHMARK.md) for public test cases and scoring dimensions.
+- Use [`scripts/check_output.py`](scripts/check_output.py) for a lightweight output length and format check.
 - See [`CONTRIBUTING.md`](CONTRIBUTING.md) if you want to contribute examples, compatibility notes, or benchmark cases.
 - See [`ROADMAP.md`](ROADMAP.md) for planned public improvements.
 
@@ -144,9 +145,9 @@ This repository uses a portable Markdown-first structure:
 Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a Signal-to-Action model quick diagnostic, then point to concrete deeper deliverables such as full hypothesis reasoning, action roadmap, communication scripts, and career/commercialization path design.
 
 - Chinese output: use WeChat contact.
-- English output: use LinkedIn contact.
+- Other languages: write the CTA naturally in the user's language and use LinkedIn contact.
 - Chinese contact: WeChat `lizhi_ch`.
-- English contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
+- Non-Chinese contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
 - Position the CTA as a quick diagnostic, not as a reduced or withheld version.
 
 Suggested usage:

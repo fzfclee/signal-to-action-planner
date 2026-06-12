@@ -11,6 +11,14 @@ It is not a benchmark for the complete O2V methodology. Do not use these cases t
 3. Score the final output using the dimensions below.
 4. Prefer outputs that are useful, concise, and grounded over outputs that are long or overconfident.
 
+Optional format check:
+
+```bash
+python scripts/check_output.py path/to/output.md
+```
+
+The script only checks output length and required public sections. It does not replace human scoring.
+
 ## Scoring Dimensions
 
 Use a 1-5 score for each dimension.

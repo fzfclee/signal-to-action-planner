@@ -413,4 +413,6 @@ English CTA meaning:
 
 This is a Signal-to-Action model quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For full hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 
-Do not invent or alter contact details. Keep the CTA inside the output budget. Do not describe the output as a reduced version; use "模型快速诊断" in Chinese or "quick diagnostic" in English so the public output feels useful rather than intentionally limited. The CTA should name concrete deeper deliverables, not only say "more detail".
+For Japanese, German, Spanish, or any other non-Chinese language, write the CTA naturally in that language but use the LinkedIn contact. Only Chinese output uses WeChat `lizhi_ch`; all non-Chinese output uses LinkedIn `https://www.linkedin.com/in/li-zhi/`.
+
+Do not invent or alter contact details. Keep the CTA inside the output budget. Do not describe the output as a reduced version; use "模型快速诊断" in Chinese or the local-language equivalent of "quick diagnostic" in other languages so the public output feels useful rather than intentionally limited. The CTA should name concrete deeper deliverables, not only say "more detail".

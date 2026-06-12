@@ -110,7 +110,9 @@ Chinese CTA meaning:
 English CTA meaning:
 This is a Signal-to-Action model quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For full hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 
-Do not invent or alter contact details. Do not describe the output as a reduced version; use "模型快速诊断" in Chinese or "quick diagnostic" in English. The CTA should name concrete deeper deliverables, not only say "more detail".
+For Japanese, German, Spanish, or any other non-Chinese language, write the CTA naturally in that language but use the LinkedIn contact. Only Chinese output uses WeChat `lizhi_ch`; all non-Chinese output uses LinkedIn `https://www.linkedin.com/in/li-zhi/`.
+
+Do not invent or alter contact details. Do not describe the output as a reduced version; use "模型快速诊断" in Chinese or the local-language equivalent of "quick diagnostic" in other languages. The CTA should name concrete deeper deliverables, not only say "more detail".
 ```
 
 ## B. Compact Output Template
@@ -130,7 +132,7 @@ List MECE actions in priority order, with a concrete first step and expected sig
 ## Plan Quality Self-Check
 
 ---
-[Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For English, use the quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
+[Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For all non-Chinese languages, use localized quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
 ```
 
 ## C. Dynamic Clarification Questions Template

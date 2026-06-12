@@ -8,6 +8,7 @@ Signal-to-Action Planner will stay a compact public Skill. The goal is to make t
 - Add more compatibility notes for Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, and WorkBody.
 - Keep reducing output bloat while preserving useful action detail.
 - Improve `minimal_SKILL.md` for smaller models and limited-context tools.
+- Explore a simple web demo or hosted playground as the main public trial surface.
 
 ## Medium Term
 
@@ -19,7 +20,6 @@ Signal-to-Action Planner will stay a compact public Skill. The goal is to make t
 ## Later
 
 - Explore optional Tool Use extensions for fact checking, calendar follow-up, or note-system integration.
-- Explore a simple web demo or hosted playground.
 - Explore versioned public releases once the workflow stabilizes.
 
 ## Non-Goals

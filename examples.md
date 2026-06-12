@@ -361,3 +361,105 @@ Follow-up result:
 ```text
 Sponsor assigned a customer owner. Usage improved in one workflow, but renewal risk stayed medium.
 ```
+
+## Common Failure Modes And Corrections
+
+Use these examples to recognize when a model is drifting away from the public Skill.
+
+### Failure 1 - Generic Advice Instead Of Evidence-Based Action
+
+Bad pattern:
+
+```text
+You should communicate more, stay positive, and keep exploring options.
+```
+
+Why it fails:
+
+- No fact/signal separation.
+- No hypothesis ranking.
+- No concrete next step or validation signal.
+
+Correction:
+
+```text
+Tie each action to one evidence point. Replace "communicate more" with a specific message, expected response, and decision gate.
+```
+
+### Failure 2 - Treating User Facts As Weak Evidence
+
+Bad pattern:
+
+```text
+Evidence: weak, because there is no external proof that the manager was laid off.
+```
+
+Why it fails:
+
+- In personal situation analysis, direct user context is strong evidence for what the user observed or was told.
+- Strategic inference can still be medium or low confidence.
+
+Correction:
+
+```text
+Mark the user-stated fact as strong. Mark the inference about renewal risk or sponsor protection separately.
+```
+
+### Failure 3 - Too Many Questions Before Any Value
+
+Bad pattern:
+
+```text
+Please answer these 9 questions before I can analyze.
+```
+
+Why it fails:
+
+- The public Skill should ask 1-2 short questions by default.
+- The user should get value quickly.
+
+Correction:
+
+```text
+Ask one decision-focus question first. Add one follow-up only if it changes the top action.
+```
+
+### Failure 4 - Roadmap Repeats The Validation Plan
+
+Bad pattern:
+
+```text
+Validation: ask users if they commit.
+Roadmap: ask users if they commit.
+```
+
+Why it fails:
+
+- Validation defines how to judge the action.
+- Roadmap defines sequence and decision gates.
+
+Correction:
+
+```text
+Validation: success = 2 concrete commitments in 1 week.
+Roadmap: first send commitment ask; next narrow use case if replies stay vague; pause if no concrete action.
+```
+
+### Failure 5 - CTA Feels Like A Withheld Version
+
+Bad pattern:
+
+```text
+This is only a simplified version. Pay for the complete version.
+```
+
+Why it fails:
+
+- It reduces trust in the public output.
+- It makes the user feel the answer was intentionally weakened.
+
+Correction:
+
+```text
+Position the output as a quick diagnostic and name useful next deliverables, such as deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design.
+```
