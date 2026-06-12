@@ -4,7 +4,7 @@ Turn messy signals into prioritized action and validation.
 
 Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
 
-The public version is intentionally compact and optimized for about 90% practical adequacy: it should help the user decide the next best action, but it does not expose the full private analysis depth or the complete O2V methodology.
+The public version is intentionally compact and optimized for about 90% practical adequacy: it should help the user decide the next best action, but it does not expose the full private analysis depth or the complete O2V methodology. It compresses intermediate reasoning while keeping the priority action plan useful enough to act on.
 
 Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
 
@@ -28,7 +28,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving concrete next steps, validation signals, and decision gates.
 
 ## What It Does Not Do
 
@@ -98,14 +98,18 @@ I had several conversations with potential users. Some said the idea is interest
 ```markdown
 ## Priority Action Plan
 1. Ask 3-5 people for one concrete next step.
+   - First step: send a short follow-up asking whether they will book a call, introduce a stakeholder, or test a narrow scenario.
+   - Expected signal: action, not praise.
 2. Test one narrower use case if commitment stays weak.
+   - First step: rewrite the offer around one painful scenario and ask for a yes/no reaction.
+   - Expected signal: a sharper objection or a concrete trial.
 
 ## Validation Plan
 - In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
 
 ## Action Roadmap
-- First: ask for concrete commitments.
-- Next: test a narrower use case if commitment is weak.
+- First 24-72 hours: ask for concrete commitments.
+- Next 1-2 weeks: test a narrower use case if commitment is weak.
 - Decision point: if praise still produces no action, reduce priority.
 
 ---

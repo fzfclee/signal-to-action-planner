@@ -15,12 +15,12 @@ Output budget:
 Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters.
 
 Depth boundary:
-This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action.
+This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan.
 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
 - Implications And Working Hypotheses = compressed middle reasoning.
-- Priority Action Plan = what to do and why.
+- Priority Action Plan = what to do, why, first concrete step, and expected signal.
 - Validation Plan = how to judge whether actions worked.
 - Action Roadmap = sequence, timing, and decision gates.
 - Keep these sections MECE and avoid repeating the same content across them.
@@ -59,17 +59,20 @@ Do not expand hypotheses by default. Only if necessary, expand the single most i
 - What would weaken confidence
 
 ## 4. Priority Action Plan
-Rank 1-2 MECE actions by priority by default. Use 3 only when necessary. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
+Rank 2 MECE actions by priority by default. Use 1 only when the case is very narrow; use 3 only when necessary. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
 
 For each action, include:
 - Action
 - Why / evidence tested
 - Expected signal
+- First concrete step
 - Risk / caution, only if important
+
+Make actions slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
 
 ## 5. Validation Plan
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
-- Observe / success signal / weak signal / time window
+- Observe / success signal / weak signal / time window / next decision
 
 ## 6. What Not To Do Yet
 List 1-3 actions that are premature, risky, or unsupported by evidence.
@@ -78,8 +81,8 @@ List 1-3 actions that are premature, risky, or unsupported by evidence.
 Localize this heading to the user's language, such as "行动路线" for Chinese output.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan:
-- First: [highest-priority action]
-- Next: [second action]
+- First 24-72 hours: [highest-priority action and first concrete step]
+- Next 1-2 weeks: [second action or follow-through]
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 
@@ -107,7 +110,7 @@ Do not invent or alter contact details. Do not describe the output as a reduced 
 ## Facts, Evidence, And Signals
 ## Implications And Hypotheses
 ## Top Actions
-List MECE actions in priority order.
+List MECE actions in priority order, with a concrete first step and expected signal for each.
 ## Validation Points
 ## Not Yet
 ## Action Roadmap
