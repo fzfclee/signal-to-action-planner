@@ -1,14 +1,48 @@
 # Signal-to-Action Planner
 
+[![License](https://img.shields.io/badge/license-Custom%20Notice-blue)](NOTICE.md)
+[![GitHub stars](https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/forks)
+[![Last commit](https://img.shields.io/github/last-commit/fzfclee/signal-to-action-planner)](https://github.com/fzfclee/signal-to-action-planner/commits/main)
+
 Turn messy signals into prioritized action and validation.
 
 Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
 
-The public version is intentionally compact and optimized for about 90% practical adequacy: it should help the user decide the next best action, but it does not expose the full private analysis depth or the complete O2V methodology. It compresses intermediate reasoning while keeping the priority action plan useful enough to act on.
+The Skill is optimized for about 90% practical adequacy in normal agent conversations: it should help the user decide the next best action, while keeping intermediate reasoning concise and preserving enough action detail to use immediately.
 
 Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
 
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
+
+If this helps, star the repo to make it easier to find later. Fork it if you want to adapt the public Skill for your own agent setup, and watch releases if you want updates to the public workflow.
+
+## How It Works
+
+```mermaid
+flowchart LR
+    A["Messy input"] --> B["Clarify focus"]
+    B --> C["Extract facts"]
+    C --> D["Read signals"]
+    D --> E["Rank hypotheses"]
+    E --> F["Prioritize actions"]
+    F --> G["Validate"]
+    G --> H["Action roadmap"]
+```
+
+## Works With
+
+This public Skill is built for Markdown-first agent environments:
+
+| Agent / Tool | Recommended setup |
+|---|---|
+| Codex | Local skill folder |
+| Claude Projects | Project Instructions |
+| Claude Code | Project or personal skill instructions |
+| Cursor | Project rules or custom instructions |
+| Windsurf | Cascade custom instructions |
+| Hermes / smaller models | `minimal_SKILL.md` first |
+| OpenClaw / WorkBody | Reusable Markdown instruction |
 
 ## 30-Second Quick Start
 
@@ -63,7 +97,7 @@ It does not provide legal, medical, financial, psychological, or safety advice.
 It does not replace professional judgment.
 It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
-It does not provide the full private Signal-to-Action / O2V analysis depth.
+It does not provide the complete O2V methodology or a full advisory engagement.
 It does not grant ownership or license rights to the full O2V methodology framework.
 
 ## License And Notice
@@ -97,6 +131,13 @@ This repository uses a portable Markdown-first structure:
 - No scripts, app code, services, external dependencies, or platform-specific runtime are required.
 - If an agent tool caches skills or learns from old runs, refresh/reload the Skill after updating it and follow the current `SKILL.md`.
 - If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
+
+## Community And Validation
+
+- See [`examples.md`](examples.md) for sample situations and output excerpts.
+- See [`BENCHMARK.md`](BENCHMARK.md) for public test cases and scoring dimensions.
+- See [`CONTRIBUTING.md`](CONTRIBUTING.md) if you want to contribute examples, compatibility notes, or benchmark cases.
+- See [`ROADMAP.md`](ROADMAP.md) for planned public improvements.
 
 ## Attribution CTA
 
