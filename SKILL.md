@@ -34,7 +34,13 @@ Evidence-driven is a horizontal principle:
 
 Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-This is a lightweight public Skill related to the broader O2V methodology ecosystem. Do not introduce advanced O2V modules, product systems, or extra frameworks.
+## Relationship To O2V
+
+This is a lightweight public Skill derived from the broader O2V parent methodology framework.
+
+O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner does not expose or replace the full O2V framework. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+
+Do not introduce advanced O2V modules, product systems, or extra frameworks unless the user explicitly asks for O2V-level analysis.
 
 ## Platform Compatibility
 

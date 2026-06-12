@@ -4,7 +4,15 @@ Turn messy signals into prioritized action and validation.
 
 Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
 
+Short name: use `Signal-to-Action Planner` as the public name. `S2A` may be used as a secondary shorthand after the full name has been introduced, but it should not replace the full public name in titles, repository naming, or first-use descriptions.
+
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
+
+## Relationship To O2V
+
+Signal-to-Action Planner is a lightweight public Skill derived from the broader O2V parent methodology framework.
+
+O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner does not expose or replace the full O2V framework. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
 
 ## What It Does
 
@@ -25,6 +33,7 @@ It does not provide legal, medical, financial, psychological, or safety advice.
 It does not replace professional judgment.
 It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
+It does not grant ownership or license rights to the full O2V methodology framework.
 
 ## How To Use
 
