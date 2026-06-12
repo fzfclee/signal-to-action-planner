@@ -37,6 +37,14 @@ It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
 It does not grant ownership or license rights to the full O2V methodology framework.
 
+## License And Notice
+
+This repository is provided as a public, copyable Markdown Skill for educational, experimental, and personal/professional productivity use.
+
+Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the full O2V methodology framework.
+
+See `NOTICE.md` for the full notice terms.
+
 ## How To Use
 
 1. Use `SKILL.md` as the main instruction file.
@@ -85,16 +93,17 @@ I had several conversations with potential users. Some said the idea is interest
 
 ```markdown
 ## Priority Action Plan
-1. Test whether interest is real by asking for one concrete next commitment.
-2. Identify whether the current message is too abstract by testing a narrower use case.
-3. Reduce ambiguity by separating polite feedback from behavioral evidence.
+1. Ask 3-5 people for one concrete next step.
+2. Test one narrower use case if commitment stays weak.
 
 ## Validation Plan
-- If at least 2 people agree to a concrete next step, the demand signal strengthens.
-- If people continue to praise but avoid action, treat the signal as weak.
+- In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
 
 ## Action Roadmap
-- First: Ask for concrete next commitments.
-- Next: Test a narrower use case if commitment remains weak.
-- Decision point: Continue only if behavior supports the interest signal.
+- First: ask for concrete commitments.
+- Next: test a narrower use case if commitment is weak.
+- Decision point: if praise still produces no action, reduce priority.
+
+---
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```
