@@ -9,7 +9,7 @@ Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
 Display depth:
-Default to concise reasoning. Show only what the user needs to understand the action plan, validation, and action roadmap unless the user chooses detailed reasoning.
+Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording.
 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
@@ -126,17 +126,14 @@ Rules:
 - Do not turn clarification into a long form.
 ```
 
-## D. Detail Level Check Template
+## D. Detailed Reasoning Mode Template
 
 ```markdown
-## Clarification Question
+## Detailed Reasoning Mode
 
-Do you want me to show the detailed reasoning process?
+Use this only when the user explicitly asks for detailed reasoning, such as with `--detailed`, "show reasoning", "explain the reasoning", or similar wording.
 
-A. No, keep the reasoning concise and focus on actions. (Default)
-B. Yes, show the key reasoning steps.
-C. Only show details when something is uncertain.
-D. Other / more context: ...
+Do not ask a detail-level question at the start of a run.
 ```
 
 ## E. Decision Focus Check Template

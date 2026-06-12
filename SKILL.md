@@ -98,8 +98,8 @@ When being conservative because of organizational politics, future risk, stakeho
 15. If the situation is high-stakes, recommend appropriate professional support.
 16. Avoid adding extra product scope such as software products, storage layers, intake tools, automation, tracking programs, or reusable knowledge systems.
 17. End with a practical action roadmap. Localize the heading to the user's language, such as "行动路线" in Chinese.
-18. Ask whether to show detailed reasoning at the start of a run. Default to not showing detailed reasoning.
-19. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
+18. Do not ask whether to show detailed reasoning at the start of a run. Use concise reasoning by default.
+19. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", "explain the reasoning", or a similar instruction.
 20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 
 ## Mandatory Front-End Interaction
@@ -108,10 +108,9 @@ Before producing the 7-section output, run front-end interaction by default. Thi
 
 The default sequence is:
 
-1. Detail level check.
-2. Decision focus check.
-3. Dynamic intake loop: one question at a time, adapted to the user's previous answer.
-4. 7-section Signal-to-Action output.
+1. Decision focus check.
+2. Dynamic intake loop: one question at a time, adapted to the user's previous answer.
+3. 7-section Signal-to-Action output.
 
 Produce the 7-section output directly only when the user explicitly says something like:
 
@@ -143,30 +142,25 @@ Use interaction throughout the reasoning process, not only at the beginning.
 
 Ask a lightweight follow-up question when an intermediate result creates a fork that would materially change the roadmap. Common checkpoints:
 
-1. Detail level checkpoint: ask whether the user wants detailed reasoning shown. Default: concise output.
-2. Decision focus checkpoint: clarify what the user wants to optimize.
-3. Evidence checkpoint: ask for missing evidence if risk ranking or hypothesis likelihood is unstable.
-4. Hypothesis checkpoint: ask the user to confirm which hypothesis feels closest to reality if two hypotheses are close.
-5. Roadmap checkpoint: ask the user to choose the preferred constraint when actions compete, such as speed, risk reduction, relationship preservation, or optionality.
+1. Decision focus checkpoint: clarify what the user wants to optimize.
+2. Evidence checkpoint: ask for missing evidence if risk ranking or hypothesis likelihood is unstable.
+3. Hypothesis checkpoint: ask the user to confirm which hypothesis feels closest to reality if two hypotheses are close.
+4. Roadmap checkpoint: ask the user to choose the preferred constraint when actions compete, such as speed, risk reduction, relationship preservation, or optionality.
 
 Keep each checkpoint short. Prefer one multiple-choice question with 2-4 options plus one free-text option. Do not ask every checkpoint mechanically; ask only when the answer changes the next action or validation method.
 
-## Detail Level Check
+## Detailed Reasoning Mode
 
-At the start of a run, ask whether the user wants detailed reasoning shown. Keep this as a lightweight choice and make the default clear.
+Do not offer a detail-level choice at the start of a run. Default to concise reasoning and proceed to the decision focus check.
 
-Example:
+Enable detailed reasoning only when the user explicitly asks for it, such as:
 
-```markdown
-Do you want me to show the detailed reasoning process?
+- `--detailed`
+- "show reasoning"
+- "explain the reasoning"
+- "show the detailed reasoning process"
 
-A. No, keep the reasoning concise and focus on actions. (Default)
-B. Yes, show the key reasoning steps.
-C. Only show details when something is uncertain.
-D. Other / more context: ...
-```
-
-If the user does not answer this question but continues with the situation, use option A by default. If the user asks for more detail later, expand the relevant section without restarting the flow.
+If detailed reasoning is enabled, show key reasoning steps without turning the output into a long report. If the user asks for more detail later, expand only the relevant section without restarting the flow.
 
 ## User-Facing Brevity
 
@@ -176,7 +170,7 @@ The reasoning chain is the internal discipline, not a requirement to show every 
 - Show only the most decision-relevant facts, signals, and uncertainties.
 - Avoid long explanatory paragraphs in intermediate sections.
 - Put more detail into Priority Action Plan, Validation Plan, and Action Roadmap, but keep their roles distinct.
-- If the user chooses detailed reasoning, show key reasoning steps but still avoid unnecessary verbosity.
+- If the user explicitly requests detailed reasoning, show key reasoning steps but still avoid unnecessary verbosity.
 - If the user asks for "detail", "reasoning", or "why", expand the relevant section.
 - If the user asks for "quick", "brief", or "just tell me what to do", use the compact output.
 
@@ -199,7 +193,7 @@ After the user answers, continue with the minimum next step: either ask one more
 
 ## Dynamic Intake Loop
 
-After the detail level and decision focus are clear, ask one relevant intake question at a time if the answer would improve the accuracy of the action plan or roadmap.
+After the decision focus is clear, ask one relevant intake question at a time if the answer would improve the accuracy of the action plan or roadmap.
 
 Rules:
 

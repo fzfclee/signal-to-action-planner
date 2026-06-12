@@ -6,7 +6,7 @@ Use one language consistently. Match the user's dominant language or the languag
 
 If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
 
-Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user chooses detailed reasoning or asks for it later.
+Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction.
 
 ## Step 1 - Receive Messy Input
 
@@ -20,24 +20,9 @@ Accept incomplete, informal, or mixed input. Do not require the user to structur
 
 Do not jump from messy input directly to the 7-section output unless the user explicitly asks to skip questions or continue to output. The default experience must include front-end interaction.
 
-## Step 2 - Run A Detail Level Check
+## Step 2 - Run A Decision Focus Check
 
-Ask whether the user wants detailed reasoning shown. Default to concise output.
-
-Use a lightweight choice question:
-
-```text
-Do you want me to show the detailed reasoning process?
-
-A. No, keep the reasoning concise and focus on actions. (Default)
-B. Yes, show the key reasoning steps.
-C. Only show details when something is uncertain.
-D. Other / more context: ...
-```
-
-If the user does not answer but continues with the situation, use option A by default.
-
-## Step 3 - Run A Decision Focus Check
+Do not ask the user to choose output detail level at the start. Use concise output by default unless the user explicitly requests detailed reasoning.
 
 Before producing the full output, check whether the user's desired decision, priority, or success criterion is clear. For messy situations with several possible directions, ask one lightweight choice question first.
 
@@ -54,9 +39,9 @@ D. Other / more context: ...
 
 If the user explicitly asks for direct output, do not force a question. Otherwise, ask the decision focus check even when the user's story looks detailed, because the intended optimization may still be unclear.
 
-## Step 4 - Run A Dynamic Intake Loop
+## Step 3 - Run A Dynamic Intake Loop
 
-After the detail level and decision focus are clear, ask one relevant intake question at a time if the answer would improve accuracy. Do not ask 3-5 questions in one message.
+After the decision focus is clear, ask one relevant intake question at a time if the answer would improve accuracy. Do not ask 3-5 questions in one message.
 
 Use this format:
 
@@ -83,7 +68,7 @@ Keep the loop short:
 - The user can say "continue" at any time.
 - Do not make the user fill a long form.
 
-## Step 5 - Clarify Minimum Evidence
+## Step 4 - Clarify Minimum Evidence
 
 Ask only if needed. Do not use a fixed list of questions. Decide what to ask by checking which part of the chain is too weak to continue:
 
@@ -113,7 +98,7 @@ Adapt these shapes to the user's wording. Do not ask the user to fill a long for
 
 After the user answers, reassess the chain. Ask another question only if it changes the action or validation plan. Otherwise continue to the output.
 
-## Step 6 - Use Mid-Process Checkpoints
+## Step 5 - Use Mid-Process Checkpoints
 
 Do not limit interaction to the first question. After identifying evidence, signals, implications, or hypotheses, ask another lightweight question if the intermediate result creates a real fork.
 
@@ -125,7 +110,7 @@ Use checkpoints such as:
 
 Keep each checkpoint as a short multiple-choice question with 2-4 options plus one free-text option.
 
-## Step 7 - Run Signal-to-Action
+## Step 6 - Run Signal-to-Action
 
 Use the compressed output structure:
 
@@ -137,9 +122,9 @@ Keep evidence visible, but merge facts, fact evidence strength, and key signals 
 
 Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
-Compress implications and hypotheses into conclusion-level output. Rank working hypotheses from most likely to least likely. Expand confidence-increasing and confidence-weakening details only for the most important or most uncertain hypothesis, or when the user chooses detailed reasoning.
+Compress implications and hypotheses into conclusion-level output. Rank working hypotheses from most likely to least likely. Expand confidence-increasing and confidence-weakening details only for the most important or most uncertain hypothesis, or when the user explicitly requests detailed reasoning.
 
-## Step 8 - Focus On Top Actions
+## Step 7 - Focus On Top Actions
 
 The Skill must not produce too many actions. Prioritize 1-3 MECE actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
@@ -149,7 +134,7 @@ The Skill must not produce too many actions. Prioritize 1-3 MECE actions that ar
 
 Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 
-## Step 9 - Define Validation
+## Step 8 - Define Validation
 
 For the top-priority actions, define how the user can tell whether the action worked:
 
@@ -158,7 +143,7 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would weaken the signal;
 - a practical time window.
 
-## Step 10 - Give An Action Roadmap
+## Step 9 - Give An Action Roadmap
 
 End with a short action roadmap. Localize the heading, for example `行动路线` in Chinese.
 
