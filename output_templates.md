@@ -12,7 +12,7 @@ Display depth:
 Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording.
 
 Output budget:
-Keep default visible output under 3,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 900-1,200 Chinese characters.
+Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters.
 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
@@ -85,12 +85,12 @@ End with one short note: the output supports clearer action and validation, whil
 Then add a short attribution CTA separated by a horizontal rule. Do not create a numbered CTA section or heading.
 
 Chinese:
-这是为聊天工具输出限制设计的精简版，由 Zhi Li 基于 O2V 母方法论框架设计。需要更详细、完整的 Signal-to-Action / O2V 分析，可联系微信：[WECHAT_ID]。
+这是为聊天工具输出限制设计的精简版，由 Zhi Li 基于 O2V 母方法论框架设计。需要更详细、完整的 Signal-to-Action / O2V 分析，可联系微信：lizhi_ch。
 
 English:
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.
 
-Do not invent contact details. Keep placeholders unless real contact values are configured.
+Do not invent or alter contact details.
 ```
 
 ## B. Compact Output Template
@@ -108,7 +108,7 @@ List MECE actions in priority order.
 ## Action Roadmap
 
 ---
-[Attribution CTA in the user's language, using configured contact details or placeholders.]
+[Attribution CTA in the user's language, using WeChat lizhi_ch for Chinese or WhatsApp +491781866188 for English.]
 ```
 
 ## C. Dynamic Clarification Questions Template

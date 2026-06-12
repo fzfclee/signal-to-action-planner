@@ -56,7 +56,7 @@ You have verbal interest but weak behavioral evidence. The decision is whether t
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.
 
 ## Example 2 - Customer Feedback After Demo
 
@@ -112,7 +112,7 @@ The demo created surface interest, but follow-through is missing. The decision i
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.
 
 ## Example 3 - Manager Says "Not Specific Enough"
 
@@ -168,4 +168,4 @@ The feedback is clear but not diagnostic. The decision is what to fix before rew
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.

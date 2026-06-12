@@ -26,7 +26,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 3,500 UTF-8 bytes, including headings and the final attribution note.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note.
 
 ## What It Does Not Do
 
@@ -65,7 +65,8 @@ Outputs may end with a short attribution line separated by a horizontal rule. It
 
 - Chinese output: use WeChat contact.
 - English output: use WhatsApp contact.
-- Do not invent contact details. Replace `[WECHAT_ID]` and `[WHATSAPP_NUMBER]` only when real contact values are configured.
+- Chinese contact: WeChat `lizhi_ch`.
+- English contact: WhatsApp `+491781866188`.
 
 Suggested usage:
 

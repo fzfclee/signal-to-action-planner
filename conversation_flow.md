@@ -10,7 +10,7 @@ On tools with memory or cached skills, apply the current `SKILL.md` at the start
 
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction.
 
-Keep default visible output under 3,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
+Keep default visible output under 4,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
 
 ## Step 1 - Receive Messy Input
 

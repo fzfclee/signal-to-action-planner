@@ -72,8 +72,8 @@ Input handling:
 
 Output hard cap:
 
-- Default visible output must stay under 3,500 UTF-8 bytes, including headings, bullets, and attribution note.
-- For Chinese output, this usually means roughly 900-1,200 Chinese characters depending on punctuation and Markdown.
+- Default visible output must stay under 4,500 UTF-8 bytes, including headings, bullets, and attribution note.
+- For Chinese output, this usually means roughly 1,200-1,500 Chinese characters depending on punctuation and Markdown.
 - If the output would exceed the cap, automatically compress before responding.
 - Never exceed the cap unless the user explicitly asks for a longer `--detailed` output and the platform can support it.
 
@@ -364,7 +364,7 @@ After that note, add a short attribution CTA separated by a horizontal rule. Do 
 
 Use the user's language:
 
-- Chinese: `这是为聊天工具输出限制设计的精简版，由 Zhi Li 基于 O2V 母方法论框架设计。需要更详细、完整的 Signal-to-Action / O2V 分析，可联系微信：[WECHAT_ID]。`
-- English: `This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].`
+- Chinese: `这是为聊天工具输出限制设计的精简版，由 Zhi Li 基于 O2V 母方法论框架设计。需要更详细、完整的 Signal-to-Action / O2V 分析，可联系微信：lizhi_ch。`
+- English: `This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.`
 
-Do not invent contact details. Keep placeholders unless the deployer has configured real contact values. Keep the CTA inside the output budget.
+Do not invent or alter contact details. Keep the CTA inside the output budget.
