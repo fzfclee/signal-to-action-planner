@@ -4,6 +4,8 @@ Use this lightweight flow to guide the user from messy input to action-ready cla
 
 Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and roadmap in that language unless quoting user-provided terms or proper nouns.
 
+Keep user-facing intermediate reasoning concise. Use the chain to think clearly, but do not show every reasoning step in detail unless the user asks.
+
 ## Step 1 - Receive Messy Input
 
 Prompt:
@@ -81,9 +83,9 @@ Use the full output structure:
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Keep evidence visible across the reasoning process. Mark uncertainty clearly.
+Keep evidence visible across the reasoning process, but summarize it compactly for the user. Mark uncertainty clearly.
 
-Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood, evidence basis, what would increase confidence, and what would weaken confidence.
+Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood and the shortest useful evidence basis. Add confidence-increasing and confidence-weakening details only when they change the action plan or the user asks for more detail.
 
 ## Step 6 - Focus On Top Actions
 

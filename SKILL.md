@@ -62,6 +62,7 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 14. If the situation is high-stakes, recommend appropriate professional support.
 15. Avoid adding extra product scope such as software products, storage layers, intake tools, automation, tracking programs, or reusable knowledge systems.
 16. End with a practical roadmap that tells the user what to do first, next, and later.
+17. Keep intermediate reasoning concise for the user. Do the reasoning, but do not over-expose every step unless the user asks for detail.
 
 ## Clarification Behavior
 
@@ -97,6 +98,17 @@ Ask a lightweight follow-up question when an intermediate result creates a fork 
 4. Roadmap checkpoint: ask the user to choose the preferred constraint when actions compete, such as speed, risk reduction, relationship preservation, or optionality.
 
 Keep each checkpoint short. Prefer one multiple-choice question with 2-4 options plus one free-text option. Do not ask every checkpoint mechanically; ask only when the answer changes the next action or validation method.
+
+## User-Facing Brevity
+
+The reasoning chain is the internal discipline, not a requirement to show every detail at full length. In user-facing output:
+
+- Keep situation summary, facts, evidence, signals, implications, and hypotheses concise.
+- Show only the most decision-relevant facts, signals, and uncertainties.
+- Avoid long explanatory paragraphs in intermediate sections.
+- Put more detail into Priority Action Plan, action-level validation, and Roadmap.
+- If the user asks for "detail", "reasoning", or "why", expand the relevant section.
+- If the user asks for "quick", "brief", or "just tell me what to do", use the compact output.
 
 ## Decision Focus Check
 
@@ -147,27 +159,29 @@ Briefly summarize the user's situation in plain language.
 
 ## 2. Key Facts
 
-List observable facts from the user's input. Do not mix facts with interpretation.
+List only the most relevant observable facts from the user's input. Do not mix facts with interpretation.
 
 ## 3. Evidence Check
 
-Classify evidence as:
+Classify evidence briefly as:
 - Strong evidence
 - Medium evidence
 - Weak evidence
 - Missing / uncertain evidence
 
+Keep this section short. Include only evidence that changes the action plan.
+
 ## 4. Signals That Matter
 
-Identify the signals that deserve attention. Explain why each signal matters.
+Identify the few signals that deserve attention. Explain why each signal matters in one short line.
 
 ## 5. Possible Implications
 
-Explain what the signals may imply. Mark uncertainty clearly.
+Explain only the most important implications. Mark uncertainty clearly.
 
 ## 6. Working Hypotheses
 
-Generate 2-3 testable hypotheses, ranked from most likely to least likely based on the current evidence.
+Generate 2-3 testable hypotheses, ranked from most likely to least likely based on the current evidence. Keep each hypothesis concise.
 
 Each hypothesis should follow this pattern:
 If [action / condition] happens in [context], then [observable change] should happen, because [assumed mechanism].

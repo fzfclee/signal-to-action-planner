@@ -8,27 +8,32 @@
 Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
+Display depth:
+Keep intermediate reasoning concise. Show only what the user needs to understand the action plan, validation, and roadmap.
+
 ## 1. Situation Summary
 Briefly summarize the user's situation in plain language.
 
 ## 2. Key Facts
-List observable facts from the user's input. Do not mix facts with interpretation.
+List only the most relevant observable facts from the user's input. Do not mix facts with interpretation.
 
 ## 3. Evidence Check
-Classify evidence as:
+Briefly classify evidence as:
 - Strong evidence
 - Medium evidence
 - Weak evidence
 - Missing / uncertain evidence
 
+Include only evidence that changes the action plan.
+
 ## 4. Signals That Matter
-Identify the signals that deserve attention. Explain why each signal matters.
+Identify the few signals that deserve attention. Explain why each signal matters in one short line.
 
 ## 5. Possible Implications
-Explain what the signals may imply. Mark uncertainty clearly.
+Explain only the most important implications. Mark uncertainty clearly.
 
 ## 6. Working Hypotheses
-Generate 2-3 testable hypotheses, ranked from most likely to least likely based on current evidence.
+Generate 2-3 concise testable hypotheses, ranked from most likely to least likely based on current evidence.
 
 Each hypothesis should follow this pattern:
 If [action / condition] happens in [context], then [observable change] should happen, because [assumed mechanism].
@@ -36,8 +41,8 @@ If [action / condition] happens in [context], then [observable change] should ha
 For each hypothesis, include:
 - Likelihood: high / medium / low / unknown
 - Evidence basis
-- What would increase confidence
-- What would weaken confidence
+- What would increase confidence, only if useful
+- What would weaken confidence, only if useful
 
 ## 7. Priority Action Plan
 Rank 1-3 actions by priority. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next, and Priority 3 is what to do after that if still needed.
@@ -81,7 +86,7 @@ Remind the user that the output supports clearer action and validation, but the 
 ## Evidence Check
 ## Signals
 ## Hypotheses
-Rank hypotheses from most likely to least likely. Include likelihood and evidence basis.
+Rank hypotheses from most likely to least likely. Keep them concise.
 ## Top 3 Actions
 List in priority order and include validation for each action.
 ## Validation Points
