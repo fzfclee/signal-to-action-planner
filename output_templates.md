@@ -11,6 +11,9 @@ Use one language consistently. Match the user's dominant language or the languag
 Display depth:
 Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording.
 
+Output budget:
+Keep default visible output under 6,000 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,800-2,200 Chinese characters.
+
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
 - Implications And Working Hypotheses = compressed middle reasoning.
@@ -81,7 +84,15 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 
-Optionally add one subtle line: this is a lightweight slice of a broader signal-to-action method. Do not pitch, explain, or introduce extra modules unless the user asks.
+Then add a short attribution CTA separated by a horizontal rule. Do not create a numbered CTA section or heading.
+
+Chinese:
+由 Zhi Li 基于 O2V 母方法论框架设计。需要更深入的 Signal-to-Action / O2V 分析，可联系微信：[WECHAT_ID]。
+
+English:
+Created by Zhi Li, based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+
+Do not invent contact details. Keep placeholders unless real contact values are configured.
 ```
 
 ## B. Compact Output Template
@@ -97,6 +108,9 @@ List MECE actions in priority order.
 ## Validation Points
 ## Not Yet
 ## Action Roadmap
+
+---
+[Attribution CTA in the user's language, using configured contact details or placeholders.]
 ```
 
 ## C. Dynamic Clarification Questions Template

@@ -6,7 +6,11 @@ Use one language consistently. Match the user's dominant language or the languag
 
 If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
 
+On tools with memory or cached skills, apply the current `SKILL.md` at the start of each run. If the tool may be using an older cached version, refresh or reload before asking the first question.
+
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction.
+
+Keep default visible output under 6,000 UTF-8 bytes. If the output may be too long, compress automatically and preserve priorities, validation, and action roadmap first.
 
 ## Step 1 - Receive Messy Input
 
@@ -17,6 +21,8 @@ Tell me the situation in your own words. It can be a story, meeting note, custom
 ```
 
 Accept incomplete, informal, or mixed input. Do not require the user to structure it first.
+
+If the input is too long for the platform, ask for the most decision-relevant excerpt, the current decision, or a smaller chunk. Do not try to process an oversized document in one pass.
 
 Do not jump from messy input directly to the 7-section output unless the user explicitly asks to skip questions or continue to output. The default experience must include front-end interaction.
 

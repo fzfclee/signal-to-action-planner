@@ -26,6 +26,8 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 6,000 UTF-8 bytes, including headings and the final attribution note.
+
 ## What It Does Not Do
 
 This Skill does not make decisions for the user.
@@ -54,6 +56,16 @@ This repository uses a portable Markdown-first structure:
 - The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
 - Supporting files explain conversation flow, output templates, examples, and notice terms.
 - No scripts, app code, services, external dependencies, or platform-specific runtime are required.
+- If an agent tool caches skills or learns from old runs, refresh/reload the Skill after updating it and follow the current `SKILL.md`.
+- If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
+
+## Attribution CTA
+
+Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section.
+
+- Chinese output: use WeChat contact.
+- English output: use WhatsApp contact.
+- Do not invent contact details. Replace `[WECHAT_ID]` and `[WHATSAPP_NUMBER]` only when real contact values are configured.
 
 Suggested usage:
 
