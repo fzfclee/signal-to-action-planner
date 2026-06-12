@@ -6,7 +6,7 @@ Signal-to-Action Planner is a lightweight public, portable Markdown Skill that h
 
 The public version is intentionally compact and optimized for about 90% practical adequacy: it should help the user decide the next best action, but it does not expose the full private analysis depth or the complete O2V methodology.
 
-Short name: use `Signal-to-Action Planner` as the public name. `S2A` may be used as a secondary shorthand after the full name has been introduced, but it should not replace the full public name in titles, repository naming, or first-use descriptions.
+Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
 
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
 
