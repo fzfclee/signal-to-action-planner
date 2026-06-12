@@ -2,7 +2,9 @@
 
 Turn messy signals into prioritized action and validation.
 
-Signal-to-Action Planner is a lightweight public Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions and validation plans.
+Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions and validation plans.
+
+It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
 
 ## What It Does
 
@@ -26,11 +28,29 @@ It does not collect feedback or build a pattern library.
 
 ## How To Use
 
-1. Copy `SKILL.md` into your AI assistant.
-2. Paste your messy situation / story / observations.
-3. Let the Skill ask a few clarification questions if needed.
-4. Receive a structured Signal-to-Action output.
-5. Use the top-priority actions and validation points to decide what to do next.
+1. Use `SKILL.md` as the main instruction file.
+2. In tools that support skill folders, place this repository or its files in the tool's skill directory.
+3. In tools that do not support skill folders, paste the content of `SKILL.md` into the assistant's system, project, or reusable instruction area.
+4. Paste your messy situation / story / observations.
+5. Let the Skill ask a few clarification questions if needed.
+6. Receive a structured Signal-to-Action output.
+7. Use the top-priority actions and validation points to decide what to do next.
+
+## Compatibility Notes
+
+This repository uses a portable Markdown-first structure:
+
+- `SKILL.md` contains YAML frontmatter with `name` and `description` for tools that auto-discover skills.
+- The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
+- Supporting files explain conversation flow, output templates, examples, and notice terms.
+- No scripts, app code, services, external dependencies, or platform-specific runtime are required.
+
+Suggested usage:
+
+- Codex: install or copy the folder into the local Codex skills directory.
+- Claude Code: place the folder under a personal, project, or organization skill location.
+- OpenClaw: use the folder as a local skill with `SKILL.md`.
+- Hermes, Tencent WorkBody, and similar tools: paste `SKILL.md` as a reusable instruction, or place the folder wherever the tool expects Markdown skills.
 
 ## Example Input
 
