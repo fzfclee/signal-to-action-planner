@@ -210,42 +210,35 @@ D. Other / more context: ...
 
 Briefly summarize the user's situation in plain language.
 
-## 2. Key Facts
+## 2. Facts, Evidence, And Signals
 
-List only the most relevant observable facts from the user's input. Do not mix facts with interpretation.
+Combine observable facts, evidence strength, and key signals in one compact section.
 
-## 3. Evidence Check
+For each item, include:
+- Fact or signal
+- Evidence strength: strong / medium / weak / missing
+- Why it matters, in one short phrase
 
-Classify evidence briefly as:
-- Strong evidence
-- Medium evidence
-- Weak evidence
-- Missing / uncertain evidence
+Do not repeat the same fact in a separate evidence section.
 
-Keep this section short. Include only evidence that changes the action plan.
+## 3. Implications And Working Hypotheses
 
-## 4. Signals That Matter
+Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
-Identify the few signals that deserve attention. Explain why each signal matters in one short line.
+Generate 2-3 testable hypotheses, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
 
-## 5. Possible Implications
-
-Explain only the most important implications. Mark uncertainty clearly.
-
-## 6. Working Hypotheses
-
-Generate 2-3 testable hypotheses, ranked from most likely to least likely based on the current evidence. Keep each hypothesis concise.
-
-Each hypothesis should follow this pattern:
-If [action / condition] happens in [context], then [observable change] should happen, because [assumed mechanism].
-
-For each hypothesis, include:
+For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
-- Evidence basis
+- Hypothesis
+- Evidence basis, in one short sentence
+
+Expand only the most important or most uncertain hypothesis with:
 - What would increase confidence
 - What would weaken confidence
 
-## 7. Priority Action Plan
+This section should show that reasoning happened without exposing the full reasoning process.
+
+## 4. Priority Action Plan
 
 Rank 1-3 actions by priority. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
@@ -260,7 +253,7 @@ For each action, include:
 - Expected signal
 - Risk / caution
 
-## 8. Validation Plan
+## 5. Validation Plan
 
 Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
 - What to observe
@@ -268,11 +261,11 @@ Define how to judge whether each prioritized action worked. Do not repeat the ac
 - Weak / negative signal
 - Suggested time window
 
-## 9. What Not To Do Yet
+## 6. What Not To Do Yet
 
 List actions that are premature, risky, or unsupported by evidence.
 
-## 10. Action Roadmap
+## 7. Action Roadmap
 
 Use a localized heading in the user's language. For Chinese output, use `## 10. 行动路线`.
 
@@ -283,6 +276,6 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 
-## 11. Final Note
+End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 
-Remind the user that the output supports clearer action and validation, but the user remains responsible for decisions.
+Optionally add one subtle line: this is a lightweight slice of a broader signal-to-action method. Do not pitch, explain, or introduce extra modules unless the user asks.

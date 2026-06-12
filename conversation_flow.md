@@ -123,15 +123,15 @@ Keep each checkpoint as a short multiple-choice question with 2-4 options plus o
 
 ## Step 7 - Run Signal-to-Action
 
-Use the full output structure:
+Use the compressed output structure:
 
 ```text
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Keep evidence visible across the reasoning process, but summarize it compactly for the user. Mark uncertainty clearly.
+Keep evidence visible, but merge facts, evidence strength, and key signals into one compact user-facing section.
 
-Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood and the shortest useful evidence basis. Add confidence-increasing and confidence-weakening details when they change the action plan, when uncertainty is high, or when the user chooses detailed reasoning.
+Compress implications and hypotheses into conclusion-level output. Rank working hypotheses from most likely to least likely. Expand confidence-increasing and confidence-weakening details only for the most important or most uncertain hypothesis, or when the user chooses detailed reasoning.
 
 ## Step 8 - Focus On Top Actions
 
@@ -160,3 +160,5 @@ End with a short action roadmap. Localize the heading, for example `行动路线
 - Next: the second action.
 - Then: the third action or contingency.
 - Decision point: what evidence should change the user's direction.
+
+Keep the action roadmap separate from validation. The roadmap is about sequence and decision gates, not a repeat of the validation plan.

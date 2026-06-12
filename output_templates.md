@@ -12,6 +12,8 @@ Display depth:
 Default to concise reasoning. Show only what the user needs to understand the action plan, validation, and action roadmap unless the user chooses detailed reasoning.
 
 Structure:
+- Facts, Evidence, And Signals = what is known and why it matters.
+- Implications And Working Hypotheses = compressed middle reasoning.
 - Priority Action Plan = what to do and why.
 - Validation Plan = how to judge whether actions worked.
 - Action Roadmap = sequence, timing, and decision gates.
@@ -20,37 +22,31 @@ Structure:
 ## 1. Situation Summary
 Briefly summarize the user's situation in plain language.
 
-## 2. Key Facts
-List only the most relevant observable facts from the user's input. Do not mix facts with interpretation.
+## 2. Facts, Evidence, And Signals
+Combine observable facts, evidence strength, and key signals in one compact section.
 
-## 3. Evidence Check
-Briefly classify evidence as:
-- Strong evidence
-- Medium evidence
-- Weak evidence
-- Missing / uncertain evidence
+For each item, include:
+- Fact or signal
+- Evidence strength: strong / medium / weak / missing
+- Why it matters, in one short phrase
 
-Include only evidence that changes the action plan.
+Do not repeat the same fact in a separate evidence section.
 
-## 4. Signals That Matter
-Identify the few signals that deserve attention. Explain why each signal matters in one short line.
+## 3. Implications And Working Hypotheses
+Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
-## 5. Possible Implications
-Explain only the most important implications. Mark uncertainty clearly.
-
-## 6. Working Hypotheses
 Generate 2-3 concise testable hypotheses, ranked from most likely to least likely based on current evidence.
 
-Each hypothesis should follow this pattern:
-If [action / condition] happens in [context], then [observable change] should happen, because [assumed mechanism].
-
-For each hypothesis, include:
+For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
-- Evidence basis
-- What would increase confidence, only if useful
-- What would weaken confidence, only if useful
+- Hypothesis
+- Evidence basis, in one short sentence
 
-## 7. Priority Action Plan
+Expand only the most important or most uncertain hypothesis with:
+- What would increase confidence
+- What would weaken confidence
+
+## 4. Priority Action Plan
 Rank 1-3 MECE actions by priority. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next, and Priority 3 is what to do after that if still needed.
 
 For each action, include:
@@ -60,17 +56,17 @@ For each action, include:
 - Expected signal
 - Risk / caution
 
-## 8. Validation Plan
+## 5. Validation Plan
 Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
 - What to observe
 - Success signal
 - Weak / negative signal
 - Suggested time window
 
-## 9. What Not To Do Yet
+## 6. What Not To Do Yet
 List actions that are premature, risky, or unsupported by evidence.
 
-## 10. Action Roadmap
+## 7. Action Roadmap
 Localize this heading to the user's language, such as "行动路线" for Chinese output.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan:
@@ -79,8 +75,9 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 
-## 11. Final Note
-Remind the user that the output supports clearer action and validation, but the user remains responsible for decisions.
+End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
+
+Optionally add one subtle line: this is a lightweight slice of a broader signal-to-action method. Do not pitch, explain, or introduce extra modules unless the user asks.
 ```
 
 ## B. Compact Output Template
@@ -89,11 +86,8 @@ Remind the user that the output supports clearer action and validation, but the 
 # Compact Signal-to-Action Output
 
 ## Situation
-## Facts
-## Evidence Check
-## Signals
-## Hypotheses
-Rank hypotheses from most likely to least likely. Keep them concise.
+## Facts, Evidence, And Signals
+## Implications And Hypotheses
 ## Top 3 Actions
 List MECE actions in priority order.
 ## Validation Points
