@@ -59,17 +59,19 @@ You received positive verbal reactions to a new idea, but no one has taken a con
 
 ## 7. Priority Action Plan
 
-1. Action: Ask 3-5 people for one concrete next commitment.
+1. Priority 1: Ask 3-5 people for one concrete next commitment.
    Why this action: It separates polite reaction from behavior.
    What evidence it tests: Willingness to take a next step.
    Expected signal: Scheduled follow-up, trial, referral, or concrete objection.
    Risk / caution: Keep the ask small so friction does not hide demand.
+   How to validate it: Track whether people accept a specific next step within 1-2 weeks.
 
-2. Action: Rewrite the idea around one specific use case.
+2. Priority 2: Rewrite the idea around one specific use case.
    Why this action: A clearer use case may make the value easier to judge.
    What evidence it tests: Whether the hook is too broad.
    Expected signal: More specific questions, stronger objections, or trial interest.
    Risk / caution: Do not keep rewriting without testing behavior.
+   How to validate it: Compare response quality before and after the narrower message.
 
 ## 8. Validation Plan
 
@@ -84,7 +86,14 @@ You received positive verbal reactions to a new idea, but no one has taken a con
 - Do not conclude the idea is bad without testing a concrete ask.
 - Do not build more before separating interest from behavior.
 
-## 10. Final Note
+## 10. Roadmap
+
+- First: Ask for concrete next commitments and validate whether interest becomes behavior.
+- Next: Test a narrower use case if commitment remains weak or ambiguous.
+- Then: Decide whether to continue, reposition, or pause based on behavioral evidence.
+- Decision point: If praise continues without commitment, treat demand as weak.
+
+## 11. Final Note
 
 This output helps clarify action and validation. You remain responsible for deciding what to do next.
 
@@ -144,17 +153,19 @@ A potential customer reacted positively during a demo but has not responded afte
 
 ## 7. Priority Action Plan
 
-1. Action: Send one concise follow-up asking for a specific next step or a direct no.
+1. Priority 1: Send one concise follow-up asking for a specific next step or a direct no.
    Why this action: It tests whether the lead has real momentum.
    What evidence it tests: Responsiveness and willingness to continue.
    Expected signal: Reply, meeting acceptance, referral, or clear objection.
    Risk / caution: Avoid repeated vague follow-ups.
+   How to validate it: Observe whether the customer responds within 5-7 business days.
 
-2. Action: Ask one problem-priority question if they reply.
+2. Priority 2: Ask one problem-priority question if they reply.
    Why this action: It tests whether the offer matches an urgent need.
    What evidence it tests: Problem fit.
    Expected signal: Specific pain point, priority ranking, or mismatch.
    Risk / caution: Do not redesign the offer from one silent lead.
+   How to validate it: Check whether the reply names a concrete pain point or priority.
 
 ## 8. Validation Plan
 
@@ -169,7 +180,14 @@ A potential customer reacted positively during a demo but has not responded afte
 - Do not assume demo praise equals buying intent.
 - Do not overhaul the offer before collecting clearer evidence.
 
-## 10. Final Note
+## 10. Roadmap
+
+- First: Send one clear next-step follow-up and wait for a concrete signal.
+- Next: If they reply, ask which problem matters most.
+- Then: Adjust the offer only if the customer gives specific problem evidence.
+- Decision point: If there is no response after one clear follow-up, reduce pursuit priority.
+
+## 11. Final Note
 
 This output supports clearer action and validation. The final decision remains yours.
 
@@ -227,17 +245,19 @@ Your manager found the proposal too vague, but the specific gap is unclear. You 
 
 ## 7. Priority Action Plan
 
-1. Action: Ask one clarification question: "Which part is least specific: data, value, recommendation, or decision options?"
+1. Priority 1: Ask one clarification question: "Which part is least specific: data, value, recommendation, or decision options?"
    Why this action: It avoids revising the wrong thing.
    What evidence it tests: The actual source of the feedback.
    Expected signal: A specific gap or example.
    Risk / caution: Keep the ask concise and solution-oriented.
+   How to validate it: Confirm whether the manager identifies a specific gap.
 
-2. Action: Create a one-page revision outline before rewriting.
+2. Priority 2: Create a one-page revision outline before rewriting.
    Why this action: It tests structure before investing in a full revision.
    What evidence it tests: Whether the proposal has a clear decision path.
    Expected signal: Easier manager alignment on the fix.
    Risk / caution: Do not add detail everywhere without prioritizing.
+   How to validate it: Check whether the manager agrees the outline addresses the specific gap.
 
 ## 8. Validation Plan
 
@@ -252,6 +272,13 @@ Your manager found the proposal too vague, but the specific gap is unclear. You 
 - Do not add more data unless data is the confirmed gap.
 - Do not treat vague feedback as proof that the recommendation is wrong.
 
-## 10. Final Note
+## 10. Roadmap
+
+- First: Ask the manager which part is least specific.
+- Next: Build a one-page revision outline around the confirmed gap.
+- Then: Rewrite the full proposal only after the outline direction is validated.
+- Decision point: If the manager names a different gap, revise the roadmap before rewriting.
+
+## 11. Final Note
 
 This output helps move from unclear feedback to a focused revision plan. You remain responsible for the final proposal decisions.

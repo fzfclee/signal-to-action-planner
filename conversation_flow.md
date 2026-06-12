@@ -2,6 +2,8 @@
 
 Use this lightweight flow to guide the user from messy input to action-ready clarity.
 
+Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and roadmap in that language unless quoting user-provided terms or proper nouns.
+
 ## Step 1 - Receive Messy Input
 
 Prompt:
@@ -59,7 +61,19 @@ Adapt these shapes to the user's wording. Do not ask the user to fill a long for
 
 After the user answers, reassess the chain. Ask another question only if it changes the action or validation plan. Otherwise continue to the output.
 
-## Step 4 - Run Signal-to-Action
+## Step 4 - Use Mid-Process Checkpoints
+
+Do not limit interaction to the first question. After identifying evidence, signals, implications, or hypotheses, ask another lightweight question if the intermediate result creates a real fork.
+
+Use checkpoints such as:
+
+- Evidence checkpoint: ask for missing evidence if the likelihood ranking is unstable.
+- Hypothesis checkpoint: ask which hypothesis best matches the user's lived reality if two are close.
+- Roadmap checkpoint: ask which constraint matters most if actions compete.
+
+Keep each checkpoint as a short multiple-choice question with 2-4 options plus one free-text option.
+
+## Step 5 - Run Signal-to-Action
 
 Use the full output structure:
 
@@ -71,11 +85,17 @@ Keep evidence visible across the reasoning process. Mark uncertainty clearly.
 
 Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood, evidence basis, what would increase confidence, and what would weaken confidence.
 
-## Step 5 - Focus On Top Actions
+## Step 6 - Focus On Top Actions
 
-The Skill must not produce too many actions. Prioritize 1-3 actions that are practical, evidence-seeking, and directly connected to the user's decision.
+The Skill must not produce too many actions. Prioritize 1-3 actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
-## Step 6 - Define Validation
+- Priority 1: do first.
+- Priority 2: do next.
+- Priority 3: do after that, if still needed.
+
+For each priority action, include its own validation method.
+
+## Step 7 - Define Validation
 
 For the top-priority actions, define how the user can tell whether the action worked:
 
@@ -83,3 +103,12 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would strengthen the signal;
 - what would weaken the signal;
 - a practical time window.
+
+## Step 8 - Give A Roadmap
+
+End with a short roadmap:
+
+- First: the highest-priority action and its validation.
+- Next: the second action and its validation.
+- Then: the third action or contingency.
+- Decision point: what evidence should change the user's direction.

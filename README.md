@@ -2,13 +2,13 @@
 
 Turn messy signals into prioritized action and validation.
 
-Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions and validation plans.
+Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical roadmaps.
 
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
 
 ## What It Does
 
-This Skill helps users turn messy stories, observations, meeting notes, customer feedback, work signals, or uncertain situations into a prioritized action plan and a practical validation plan.
+This Skill helps users turn messy stories, observations, meeting notes, customer feedback, work signals, or uncertain situations into a prioritized action plan, a practical validation plan, and a short roadmap.
 
 It guides the user through a simple reasoning chain:
 
@@ -34,7 +34,7 @@ It does not collect feedback or build a pattern library.
 4. Paste your messy situation / story / observations.
 5. Let the Skill ask a few clarification questions if needed.
 6. Receive a structured Signal-to-Action output.
-7. Use the top-priority actions and validation points to decide what to do next.
+7. Use the priority actions, validation points, and roadmap to decide what to do next.
 
 ## Compatibility Notes
 
@@ -69,4 +69,9 @@ I had several conversations with potential users. Some said the idea is interest
 ## Validation Plan
 - If at least 2 people agree to a concrete next step, the demand signal strengthens.
 - If people continue to praise but avoid action, treat the signal as weak.
+
+## Roadmap
+- First: Ask for concrete next commitments.
+- Next: Test a narrower use case if commitment remains weak.
+- Decision point: Continue only if behavior supports the interest signal.
 ```
