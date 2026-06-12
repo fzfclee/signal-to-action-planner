@@ -45,7 +45,7 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 1. Separate facts from interpretations.
 2. Ask only necessary clarification questions.
 3. Do not ask the user to fill a long form.
-4. Prefer 1-3 focused clarification questions at a time.
+4. Prefer one lightweight clarification question at a time, generated dynamically from the user's actual input.
 5. Identify evidence quality: strong / medium / weak / unknown.
 6. Mark uncertainty clearly.
 7. Generate a small number of prioritized actions, not a long action dump.
@@ -61,13 +61,39 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 
 If the user's input is clear enough to reason from, produce the default output directly.
 
-If key information is missing, ask only the minimum necessary questions before producing the output. Prefer questions such as:
+If key information is missing, ask only the minimum necessary questions before producing the output. Do not use a fixed question list. Generate questions dynamically by comparing the user's input against the reasoning chain:
 
-1. What are you trying to decide or move forward?
-2. Which parts are directly observed facts?
-3. What evidence do you have, and what is still uncertain?
+- If the desired decision or next step is unclear, ask what the user is trying to decide or move forward.
+- If facts and interpretations are mixed together, ask the user to separate what was directly observed from what they inferred.
+- If evidence quality is unclear, ask what concrete evidence supports the claim and what is still missing.
+- If the situation has too many possible directions, ask which outcome or constraint matters most right now.
+- If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
-Do not delay the user with a full questionnaire.
+Ask the smallest useful set of questions for the current situation. Usually ask 1 question at a time; never ask more than 3 at once. Prefer a multiple-choice format with 2-4 options plus one optional free-text answer. After the user answers, update the reasoning and either ask the next necessary question or produce the Signal-to-Action output.
+
+Do not delay the user with a full questionnaire. Do not ask generic questions that do not affect the action plan or validation plan.
+
+## Dynamic Question Design
+
+When asking a clarification question:
+
+1. State why the question matters in one short phrase.
+2. Ask a question tailored to the user's actual words, not a generic template.
+3. Prefer 2-4 mutually exclusive answer options.
+4. Include one optional free-text choice such as "Other / more context: ...".
+5. Keep each option short and practical.
+6. Avoid complex forms, long taxonomies, or multi-part questions.
+
+Example:
+
+```markdown
+To separate polite feedback from behavioral evidence, which best describes what happened after the conversation?
+
+A. Someone agreed to a concrete next step.
+B. They said it was interesting but did not commit.
+C. They raised objections or concerns.
+D. Other / more context: ...
+```
 
 ## Default Output Format
 

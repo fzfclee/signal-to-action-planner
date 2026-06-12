@@ -69,12 +69,28 @@ Remind the user that the output supports clearer action and validation, but the 
 ## Not Yet
 ```
 
-## C. Clarification Questions Template
+## C. Dynamic Clarification Questions Template
 
 ```markdown
 ## Clarification Questions
 
-1. What are you trying to decide or move forward?
-2. Which parts of your input are directly observed facts?
-3. What evidence do you have, and what is still uncertain?
+Use this only when the current input is not clear enough to produce a useful Signal-to-Action output.
+
+Reason for asking:
+[State the specific missing piece: decision, fact, evidence, implication, hypothesis, action, or validation.]
+
+Question:
+[Ask 1 tailored question based on the user's actual words.]
+
+Answer options:
+A. [Short option]
+B. [Short option]
+C. [Short option]
+D. Other / more context: ...
+
+Rules:
+- Prefer 2-4 options.
+- Include one optional free-text choice.
+- Keep the question easy to answer.
+- Do not turn clarification into a long form.
 ```
