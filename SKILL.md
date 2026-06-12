@@ -147,6 +147,9 @@ When being conservative because of organizational politics, future risk, stakeho
 19. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", "explain the reasoning", or a similar instruction.
 20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 21. Keep every default output under the output budget. Compress automatically before responding if needed.
+22. Include only a lightweight public Risk Register: top 1-2 risks and one mitigation each.
+23. Add simple Effort / Impact / Confidence labels to each priority action.
+24. End with a short Plan Quality Self-Check so the user can judge reliability.
 
 ## Mandatory Front-End Interaction
 
@@ -165,6 +168,15 @@ Produce the 7-section output directly only when the user explicitly says somethi
 - "skip questions";
 - "just output";
 - "continue to output".
+
+Also use zero-question direct mode when the user already provides all of these in the input:
+
+- a clear decision focus;
+- at least 2 concrete facts or examples;
+- a near-term constraint or deadline;
+- an explicit request for what to decide or do next.
+
+In zero-question direct mode, proceed directly to output and mark uncertainty instead of asking a clarification question.
 
 Do not treat a detailed user story as permission to skip interaction. A detailed story can still contain unclear decision focus, hidden constraints, or missing validation signals.
 
@@ -350,6 +362,7 @@ For each action, include:
 - Why / evidence tested
 - Expected signal
 - First concrete step
+- Effort / Impact / Confidence: low / medium / high
 - Risk / caution, only if important
 
 Make each action slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
@@ -363,9 +376,14 @@ Define how to judge whether each prioritized action worked. Do not repeat the ac
 
 List 1-3 actions that are premature, risky, or unsupported by evidence.
 
-## 7. Action Roadmap
+## 7. Risk Register
 
-Use a localized heading in the user's language. For Chinese output, use `## 7. 行动路线`.
+List the top 1-2 risks and one mitigation each. Keep this lightweight in the public version:
+- Risk: [risk] / mitigation: [mitigation]
+
+## 8. Action Roadmap
+
+Use a localized heading in the user's language. For Chinese output, use `## 8. 行动路线`.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan. Use a simple structure such as:
 
@@ -374,6 +392,13 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 - Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
+
+## Plan Quality Self-Check
+
+Keep this to 3 short lines:
+- Evidence coverage: strong / medium / weak
+- Action specificity: strong / medium / weak
+- Risk coverage: strong / medium / weak
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 

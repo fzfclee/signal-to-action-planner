@@ -10,6 +10,32 @@ Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in pu
 
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
 
+## 30-Second Quick Start
+
+Fastest path:
+
+1. Copy the full content of `SKILL.md`.
+2. Paste it into your AI tool's project instructions, custom instructions, or skill folder.
+3. Start with:
+
+```text
+Use Signal-to-Action Planner on this situation:
+[paste your messy situation, story, meeting note, customer feedback, or work signal]
+```
+
+Platform copy/paste guide:
+
+| Platform | Quick setup |
+|---|---|
+| Codex | Copy this repo folder to `%USERPROFILE%\.codex\skills\signal-to-action-planner`, then start a new run with `$signal-to-action-planner`. |
+| Claude Projects | Paste `SKILL.md` into Project Instructions. For smaller projects, paste `minimal_SKILL.md` first. |
+| Claude Code | Place the folder where your Claude Code setup loads Markdown skills, or paste `SKILL.md` into the project instruction file. |
+| Cursor | Add `SKILL.md` to project rules or paste it into the agent's custom instructions. |
+| Windsurf | Paste `SKILL.md` into Cascade custom instructions or project rules. |
+| Hermes / smaller models | Start with `minimal_SKILL.md`, then upgrade to full `SKILL.md` if output quality is too thin. |
+
+For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md). It keeps the core chain and output template at roughly 60% of the full instruction length.
+
 ## Relationship To O2V
 
 Signal-to-Action Planner is a lightweight public Skill derived from the broader O2V parent methodology framework.
@@ -28,7 +54,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving concrete next steps, validation signals, decision gates, and a small "bring back next" hook for continued use.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving concrete next steps, validation signals, light risk coverage, effort/impact/confidence labels, decision gates, and a small "bring back next" hook for continued use.
 
 ## What It Does Not Do
 
@@ -58,6 +84,8 @@ See `NOTICE.md` for the full notice terms.
 6. Let the Skill ask a few clarification questions if needed.
 7. Receive a structured Signal-to-Action output.
 8. Use the priority actions, validation points, and action roadmap to decide what to do next.
+
+If your input already has a clear decision focus, concrete facts, and a near-term constraint, the Skill can use zero-question direct mode and produce the output immediately.
 
 ## Compatibility Notes
 
@@ -100,18 +128,28 @@ I had several conversations with potential users. Some said the idea is interest
 1. Ask 3-5 people for one concrete next step.
    - First step: send a short follow-up asking whether they will book a call, introduce a stakeholder, or test a narrow scenario.
    - Expected signal: action, not praise.
+   - Effort / Impact / Confidence: low / high / medium
 2. Test one narrower use case if commitment stays weak.
    - First step: rewrite the offer around one painful scenario and ask for a yes/no reaction.
    - Expected signal: a sharper objection or a concrete trial.
+   - Effort / Impact / Confidence: medium / medium / medium
 
 ## Validation Plan
 - In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
+
+## Risk Register
+- Risk: people stay polite but non-committal / mitigation: ask for one concrete next step, not general feedback.
 
 ## Action Roadmap
 - First 24-72 hours: ask for concrete commitments.
 - Next 1-2 weeks: test a narrower use case if commitment is weak.
 - Decision point: if praise still produces no action, reduce priority.
 - Bring back next: the actual replies, objections, or silence pattern.
+
+## Plan Quality Self-Check
+- Evidence coverage: medium
+- Action specificity: strong
+- Risk coverage: medium
 
 ---
 This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.

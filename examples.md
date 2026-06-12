@@ -1,171 +1,363 @@
 # Examples
 
-These examples are public, sanitized, and intentionally compact. They show the default 7-section output, not a full report.
+These examples are shortened for readability. They show the public compact version: useful action, limited reasoning, light risk coverage, and a continuation hook.
 
-## Example 1 - Polite Interest Or Real Demand?
+## Example 1 - Product Feedback With No Commitment
 
-### Input
+Raw input:
 
 ```text
 People said my idea was interesting, but nobody asked for a follow-up or offered to try it. I need to know whether to continue.
 ```
 
-### Signal-to-Action Output
-
-## 1. Situation Summary
-
-You have verbal interest but weak behavioral evidence. The decision is whether the idea deserves more investment.
-
-## 2. Facts, Evidence, And Signals
-
-- Positive comments. Fact evidence: medium. Signal confidence: medium. Verbal interest exists.
-- No concrete next step. Fact evidence: strong. Signal confidence: high. Demand is unproven.
-- Framing may be unclear. Fact evidence: weak. Signal confidence: low. Needs testing.
-
-## 3. Implications And Working Hypotheses
-
-- High: Real demand should show up as a small commitment.
-- Medium: A narrower use case may improve response quality.
-
-## 4. Priority Action Plan
-
-1. Priority 1: Ask 3-5 people for one concrete next step.
-   Why / evidence tested: separates praise from behavior.
-   Expected signal: meeting, trial, referral, or concrete objection.
-
-2. Priority 2: Test one narrower use case if commitment stays weak.
-   Why / evidence tested: checks whether framing is too broad.
-   Expected signal: more specific questions or objections.
-
-## 5. Validation Plan
-
-- Priority 1: In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
-- Priority 2: Success = more specific questions or trial interest.
-
-## 6. What Not To Do Yet
-
-- Do not build more based only on praise.
-- Do not kill the idea before testing one concrete ask.
-
-## 7. Action Roadmap
-
-- First: ask for concrete commitments.
-- Next: test a narrower use case if commitment is weak.
-- Decision point: if praise still produces no action, reduce priority.
-
-This output supports clearer action and validation. The user remains responsible for decisions.
-
----
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
-
-## Example 2 - Customer Feedback After Demo
-
-### Input
+Interaction:
 
 ```text
-A customer liked the demo but did not reply afterward. I need to know whether to keep pursuing or adjust the offer.
+Decision focus: Is this real demand or polite feedback?
+Answer: Real demand.
+Follow-up: What behavioral evidence exists?
+Answer: No one committed to a next step.
 ```
 
-### Signal-to-Action Output
+Output excerpt:
 
-## 1. Situation Summary
+```markdown
+## Priority Action Plan
+1. Ask 3-5 people for one concrete next step.
+   - First step: ask whether they will book a call, introduce a buyer, or test one scenario.
+   - Expected signal: action, not praise.
+   - Effort / Impact / Confidence: low / high / medium
+2. Narrow the use case if commitment stays weak.
+   - First step: rewrite the pitch around one painful scenario.
+   - Expected signal: sharper objection or concrete trial.
+   - Effort / Impact / Confidence: medium / medium / medium
 
-The demo created surface interest, but follow-through is missing. The decision is whether this lead has real momentum.
+## Risk Register
+- Risk: polite interest hides weak demand / mitigation: ask for behavioral commitment.
 
-## 2. Facts, Evidence, And Signals
+## Action Roadmap
+- First 24-72 hours: ask for concrete commitments.
+- Next 1-2 weeks: test the narrower use case.
+- Bring back next: replies, objections, or silence pattern.
+```
 
-- Positive demo reaction. Fact evidence: medium. Signal confidence: medium. Interest exists.
-- No follow-up reply. Fact evidence: strong. Signal confidence: high. Momentum is weak.
-- Buying context unknown. Fact evidence: missing. Signal confidence: high. Qualification gap remains.
-
-## 3. Implications And Working Hypotheses
-
-- High: A serious lead should respond to one clear next-step ask.
-- Medium: The offer may not be tied to urgent pain.
-
-## 4. Priority Action Plan
-
-1. Priority 1: Send one concise follow-up with a specific next step or direct no.
-   Why / evidence tested: tests momentum.
-   Expected signal: reply, meeting, objection, or no response.
-
-2. Priority 2: If they reply, ask which problem matters most.
-   Why / evidence tested: tests pain urgency.
-   Expected signal: named pain, blocker, or mismatch.
-
-## 5. Validation Plan
-
-- Priority 1: In 5-7 business days, success = reply or meeting; weak signal = silence.
-- Priority 2: Success = concrete pain or priority.
-
-## 6. What Not To Do Yet
-
-- Do not chase indefinitely.
-- Do not redesign the offer from one silent lead.
-
-## 7. Action Roadmap
-
-- First: send one clear next-step follow-up.
-- Next: qualify pain only if they reply.
-- Decision point: if silence continues, reduce pursuit priority.
-
-This output supports clearer action and validation. The user remains responsible for decisions.
-
----
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
-
-## Example 3 - Manager Says "Not Specific Enough"
-
-### Input
+Follow-up result:
 
 ```text
-My manager said my proposal is not specific enough. I do not know whether the issue is data, value, recommendation, or decision options.
+Two people gave specific objections, one agreed to a test. The next run focused on the narrow test scenario.
 ```
 
-### Signal-to-Action Output
+## Example 2 - Career Path Uncertainty
 
-## 1. Situation Summary
+Raw input:
 
-The feedback is clear but not diagnostic. The decision is what to fix before rewriting.
+```text
+My contractor income is good, but renewal is uncertain. I can keep chasing contract work, move toward management, or productize consulting. I feel stuck.
+```
 
-## 2. Facts, Evidence, And Signals
+Interaction:
 
-- Manager said it is not specific enough. Fact evidence: strong. Signal confidence: high. Current draft is not decision-ready.
-- Possible gaps differ. Fact evidence: medium. Signal confidence: medium. Several fixes are plausible.
-- Exact weak section unknown. Fact evidence: missing. Signal confidence: high. Blind rewriting is risky.
+```text
+Decision focus: Which path should be validated first?
+Answer: Reduce downside while testing second-growth options.
+Follow-up: What is the near-term constraint?
+Answer: Contract renewal decision in three months.
+```
 
-## 3. Implications And Working Hypotheses
+Output excerpt:
 
-- High: One targeted clarification should reveal the main gap.
-- Medium: A one-page decision outline may solve the structure issue.
+```markdown
+## Priority Action Plan
+1. Validate renewal probability with decision makers.
+   - First step: ask the sponsor what evidence would justify extension.
+   - Expected signal: concrete criteria, budget signal, or evasive answer.
+   - Effort / Impact / Confidence: low / high / medium
+2. Run a small consulting-productization test.
+   - First step: define one paid diagnostic offer and pitch it to 3 trusted contacts.
+   - Expected signal: paid interest, referral, or clear objection.
+   - Effort / Impact / Confidence: medium / high / medium
 
-## 4. Priority Action Plan
+## Risk Register
+- Risk: waiting too long reduces optionality / mitigation: run renewal and second-path tests in parallel.
 
-1. Priority 1: Ask which section is least specific.
-   Why / evidence tested: avoids fixing the wrong thing.
-   Expected signal: named section, missing evidence, or decision gap.
+## Action Roadmap
+- First 24-72 hours: ask for renewal criteria.
+- Next 1-2 weeks: pitch one diagnostic offer.
+- Bring back next: sponsor answer and market reactions.
+```
 
-2. Priority 2: Draft a one-page outline before rewriting.
-   Why / evidence tested: tests decision structure.
-   Expected signal: manager alignment before full rewrite.
+Follow-up result:
 
-## 5. Validation Plan
+```text
+Sponsor gave vague support but no budget signal. User moved to a stronger external-option plan.
+```
 
-- Priority 1: In 1-3 business days, success = specific gap identified.
-- Priority 2: Success = outline accepted as the right direction.
+## Example 3 - Emotional Triangle And Boundary
 
-## 6. What Not To Do Yet
+Raw input:
 
-- Do not rewrite the whole proposal blindly.
-- Do not add data unless data is confirmed as the gap.
+```text
+I have a close emotional connection with someone who is already in a relationship. They seek me out, but never make anything explicit. I am losing clarity.
+```
 
-## 7. Action Roadmap
+Interaction:
 
-- First: ask which part is least specific.
-- Next: outline the fix around the confirmed gap.
-- Decision point: rewrite only after the outline is validated.
+```text
+Decision focus: Protect emotional boundary or test whether there is real commitment?
+Answer: Protect boundary while getting clarity.
+Follow-up: Is there explicit commitment?
+Answer: No.
+```
 
-This output supports clearer action and validation. The user remains responsible for decisions.
+Output excerpt:
 
----
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+```markdown
+## Priority Action Plan
+1. Stop increasing emotional investment without explicit clarity.
+   - First step: reduce private/intense conversations for one week.
+   - Expected signal: whether the connection depends on ambiguity.
+   - Effort / Impact / Confidence: medium / high / medium
+2. Ask one boundary-setting question.
+   - First step: say, "I value this connection, but I need clarity about what this is and what it is not."
+   - Expected signal: clear answer, avoidance, or pressure to keep ambiguity.
+   - Effort / Impact / Confidence: medium / high / medium
+
+## Risk Register
+- Risk: more contact increases attachment without clarity / mitigation: pause escalation before asking.
+
+## Action Roadmap
+- First 24-72 hours: reduce escalation.
+- Next 1-2 weeks: ask the boundary question.
+- Bring back next: their actual response and behavior change.
+```
+
+Follow-up result:
+
+```text
+The other person avoided clarity. User decided to keep distance and stop private escalation.
+```
+
+## Example 4 - Cofounder Equity And Control Concern
+
+Raw input:
+
+```text
+My partner keeps proposing new holding structures and limited partnership ideas. It sounds fair but may move control away from me. I also bring most revenue.
+```
+
+Interaction:
+
+```text
+Decision focus: Protect control and contribution recognition.
+Answer: Yes.
+Follow-up: Is there a written proposal?
+Answer: No, only repeated verbal ideas.
+```
+
+Output excerpt:
+
+```markdown
+## Priority Action Plan
+1. Require a written structure before debating.
+   - First step: ask for one page showing control, economics, GP/LP roles, and contribution logic.
+   - Expected signal: transparency or continued ambiguity.
+   - Effort / Impact / Confidence: low / high / high
+2. Document your contribution baseline.
+   - First step: list revenue brought, delivery ownership, IP/methodology input, and current rights.
+   - Expected signal: a defensible negotiation anchor.
+   - Effort / Impact / Confidence: medium / high / high
+
+## Risk Register
+- Risk: verbal ambiguity normalizes a control shift / mitigation: move discussion to written terms.
+
+## Action Roadmap
+- First 24-72 hours: request written structure.
+- Next 1-2 weeks: prepare contribution baseline.
+- Bring back next: the written proposal or refusal pattern.
+```
+
+Follow-up result:
+
+```text
+Partner delayed written terms. User treated ambiguity as a signal and paused further method/IP packaging.
+```
+
+## Example 5 - Team Management Crisis
+
+Raw input:
+
+```text
+Two senior team members are blaming each other after a failed delivery. The client is angry. I need to stabilize the team without making the conflict worse.
+```
+
+Interaction:
+
+```text
+Decision focus: Stabilize delivery first or resolve blame first?
+Answer: Stabilize delivery first.
+Follow-up: Is there a client deadline?
+Answer: Yes, a recovery update is due Friday.
+```
+
+Output excerpt:
+
+```markdown
+## Priority Action Plan
+1. Separate client recovery from internal blame.
+   - First step: create a Friday recovery note with owner, fix, date, and open risk.
+   - Expected signal: client sees control returning.
+   - Effort / Impact / Confidence: medium / high / high
+2. Run two separate fact interviews.
+   - First step: ask each person for timeline, decision points, and missing handoffs.
+   - Expected signal: common failure pattern, not personal attack.
+   - Effort / Impact / Confidence: medium / medium / medium
+
+## Risk Register
+- Risk: joint meeting becomes blame spiral / mitigation: gather facts separately first.
+
+## Action Roadmap
+- First 24-72 hours: draft recovery note and assign owners.
+- Next 1-2 weeks: convert facts into process fix.
+- Bring back next: client response and fact interview pattern.
+```
+
+Follow-up result:
+
+```text
+Client accepted recovery plan. Internal issue shifted from personal blame to missing handoff design.
+```
+
+## Example 6 - Startup Fundraising Signal
+
+Raw input:
+
+```text
+Several investors took meetings and said the market is interesting, but nobody committed. One asked us to come back after more traction.
+```
+
+Interaction:
+
+```text
+Decision focus: Fundraise now or validate more traction first?
+Answer: Decide whether to continue fundraising.
+Follow-up: Any hard commitment?
+Answer: No.
+```
+
+Output excerpt:
+
+```markdown
+## Priority Action Plan
+1. Ask investors for the exact traction threshold.
+   - First step: send one question: "What metric would make this investable for you?"
+   - Expected signal: specific threshold or generic deferral.
+   - Effort / Impact / Confidence: low / high / medium
+2. Convert fundraising feedback into a 30-day traction sprint.
+   - First step: pick one metric and one channel to improve.
+   - Expected signal: evidence investors can re-evaluate.
+   - Effort / Impact / Confidence: medium / high / medium
+
+## Risk Register
+- Risk: investor praise consumes founder time / mitigation: ask for threshold, then pause weak leads.
+
+## Action Roadmap
+- First 24-72 hours: ask for investability thresholds.
+- Next 1-2 weeks: start traction sprint.
+- Bring back next: investor thresholds and metric movement.
+```
+
+Follow-up result:
+
+```text
+Most investors gave vague answers; two gave specific thresholds. Team paused broad fundraising.
+```
+
+## Example 7 - Investment Signal
+
+Raw input:
+
+```text
+A stock I follow dropped after earnings. Revenue grew, but guidance was weaker. I am not sure whether this is opportunity or a warning.
+```
+
+Interaction:
+
+```text
+Decision focus: Investigate or act?
+Answer: Investigate before acting.
+Follow-up: Is there a predefined thesis?
+Answer: Only a loose thesis, not written.
+```
+
+Output excerpt:
+
+```markdown
+## Priority Action Plan
+1. Write the investment thesis before changing position.
+   - First step: define the 2-3 metrics that would make the drop temporary vs structural.
+   - Expected signal: clearer buy/hold/avoid criteria.
+   - Effort / Impact / Confidence: low / high / medium
+2. Compare guidance weakness with peer and demand signals.
+   - First step: collect peer guidance, margin trend, and customer demand comments.
+   - Expected signal: company-specific issue or sector-wide pressure.
+   - Effort / Impact / Confidence: medium / high / medium
+
+## Risk Register
+- Risk: price move drives emotion / mitigation: define evidence before acting.
+
+## Action Roadmap
+- First 24-72 hours: write thesis and evidence threshold.
+- Next 1-2 weeks: compare peer signals.
+- Bring back next: thesis, metric threshold, and peer comparison.
+```
+
+Follow-up result:
+
+```text
+User found the thesis was too vague and chose not to add until evidence improved.
+```
+
+## Example 8 - Customer Success Escalation
+
+Raw input:
+
+```text
+A key customer says they are unhappy with adoption. They still like our team, but usage is flat and renewal is six weeks away.
+```
+
+Interaction:
+
+```text
+Decision focus: Save renewal or learn whether churn is already likely?
+Answer: Save renewal while testing risk.
+Follow-up: Is there an executive sponsor?
+Answer: Yes, but not recently engaged.
+```
+
+Output excerpt:
+
+```markdown
+## Priority Action Plan
+1. Re-engage the executive sponsor with an adoption recovery plan.
+   - First step: send a 3-point plan: current usage, blocker, proposed 2-week recovery.
+   - Expected signal: sponsor agrees to review, assigns owner, or avoids commitment.
+   - Effort / Impact / Confidence: medium / high / medium
+2. Identify one usage habit that can change before renewal.
+   - First step: pick one workflow and set a weekly adoption checkpoint.
+   - Expected signal: usage lift or confirmed non-fit.
+   - Effort / Impact / Confidence: medium / high / medium
+
+## Risk Register
+- Risk: relationship warmth hides renewal risk / mitigation: force adoption evidence into the conversation.
+
+## Action Roadmap
+- First 24-72 hours: send sponsor recovery note.
+- Next 1-2 weeks: run one adoption habit test.
+- Bring back next: sponsor response and usage movement.
+```
+
+Follow-up result:
+
+```text
+Sponsor assigned a customer owner. Usage improved in one workflow, but renewal risk stayed medium.
+```

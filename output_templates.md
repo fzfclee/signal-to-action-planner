@@ -20,9 +20,10 @@ This public template aims for about 90% practical adequacy: enough to guide the 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
 - Implications And Working Hypotheses = compressed middle reasoning.
-- Priority Action Plan = what to do, why, first concrete step, and expected signal.
+- Priority Action Plan = what to do, why, first concrete step, expected signal, and Effort / Impact / Confidence.
 - Validation Plan = how to judge whether actions worked.
-- Action Roadmap = sequence, timing, and decision gates.
+- Risk Register = top 1-2 risks and mitigation.
+- Action Roadmap = sequence, timing, decision gates, and bring-back hook.
 - Keep these sections MECE and avoid repeating the same content across them.
 
 ## 1. Situation Summary
@@ -66,6 +67,7 @@ For each action, include:
 - Why / evidence tested
 - Expected signal
 - First concrete step
+- Effort / Impact / Confidence: low / medium / high
 - Risk / caution, only if important
 
 Make actions slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
@@ -77,7 +79,11 @@ Define how to judge whether each prioritized action worked. Do not repeat the ac
 ## 6. What Not To Do Yet
 List 1-3 actions that are premature, risky, or unsupported by evidence.
 
-## 7. Action Roadmap
+## 7. Risk Register
+List the top 1-2 risks and one mitigation each:
+- Risk: [risk] / mitigation: [mitigation]
+
+## 8. Action Roadmap
 Localize this heading to the user's language, such as "行动路线" for Chinese output.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan:
@@ -86,6 +92,11 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 - Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
+
+## Plan Quality Self-Check
+- Evidence coverage: strong / medium / weak
+- Action specificity: strong / medium / weak
+- Risk coverage: strong / medium / weak
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 
@@ -114,7 +125,9 @@ Do not invent or alter contact details. Do not describe the output as a reduced 
 List MECE actions in priority order, with a concrete first step and expected signal for each.
 ## Validation Points
 ## Not Yet
+## Risk Register
 ## Action Roadmap
+## Plan Quality Self-Check
 
 ---
 [Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For English, use the quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]

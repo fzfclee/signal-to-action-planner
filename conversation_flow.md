@@ -2,8 +2,29 @@
 
 Use this lightweight flow to guide the user from messy input to action-ready clarity.
 
-Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and action roadmap in that language unless quoting user-provided terms or proper nouns. In Chinese, call the roadmap `行动路线`.
+Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and action roadmap in that language unless quoting user-provided terms or proper nouns.
 
+
+## Visual Flow
+
+```mermaid
+flowchart TD
+    A["Messy input: story, signal, note, feedback"] --> B{"Direct output requested or clear decision focus?"}
+    B -->|Yes| E["Compact reasoning pass"]
+    B -->|No| C["Decision focus check"]
+    C --> D["1-2 dynamic intake questions"]
+    D --> E
+    E --> F["Facts + evidence strength"]
+    F --> G["Signals + implications"]
+    G --> H["Ranked hypotheses"]
+    H --> I["Priority action plan"]
+    I --> J["Validation plan"]
+    J --> K["Light risk register"]
+    K --> L["Action roadmap"]
+    L --> M["Plan quality self-check"]
+    M --> N["Bring back next hook"]
+    N --> O["Optional CTA to deeper full analysis"]
+```
 If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
 
 On tools with memory or cached skills, apply the current `SKILL.md` at the start of each run. If the tool may be using an older cached version, refresh or reload before asking the first question.
@@ -24,7 +45,7 @@ Accept incomplete, informal, or mixed input. Do not require the user to structur
 
 If the input is too long for the platform, ask for the most decision-relevant excerpt, the current decision, or a smaller chunk. Do not try to process an oversized document in one pass.
 
-Do not jump from messy input directly to the 7-section output unless the user explicitly asks to skip questions or continue to output. The default experience must include front-end interaction.
+Do not jump from messy input directly to the default compact output unless the user explicitly asks to skip questions, says `direct output`, or the input already satisfies zero-question direct mode. The default experience must include front-end interaction.
 
 ## Step 2 - Run A Decision Focus Check
 
@@ -149,8 +170,7 @@ For the top-priority actions, define how the user can tell whether the action wo
 - a practical time window.
 
 ## Step 9 - Give An Action Roadmap
-
-End with a short action roadmap. Localize the heading, for example `行动路线` in Chinese.
+End with a short localized action roadmap heading in the same language as the user.
 
 - First: the highest-priority action.
 - Next: the second action.
