@@ -72,13 +72,13 @@ This repository uses a portable Markdown-first structure:
 
 ## Attribution CTA
 
-Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should say the default output is a compact version designed for chat-tool output limits, then point to deeper Signal-to-Action / O2V analysis.
+Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a Signal-to-Action quick diagnostic, then point to deeper Signal-to-Action / O2V analysis.
 
 - Chinese output: use WeChat contact.
 - English output: use LinkedIn contact.
 - Chinese contact: WeChat `lizhi_ch`.
 - English contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
-- To avoid garbled text in agent tools that mishandle UTF-8, the Chinese-output CTA is intentionally ASCII-safe.
+- Position the CTA as a quick diagnostic, not as a reduced or withheld version.
 
 Suggested usage:
 
@@ -109,5 +109,5 @@ I had several conversations with potential users. Some said the idea is interest
 - Decision point: if praise still produces no action, reduce priority.
 
 ---
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```
