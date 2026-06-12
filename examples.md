@@ -64,7 +64,7 @@ Most uncertain point: whether the issue is weak demand or weak framing.
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-Created by Zhi Li, based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
 
 ## Example 2 - Customer Feedback After Demo
 
@@ -128,7 +128,7 @@ Most uncertain point: whether silence reflects low priority, weak offer fit, or 
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-Created by Zhi Li, based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
 
 ## Example 3 - Manager Says "Not Specific Enough"
 
@@ -192,4 +192,4 @@ Most uncertain point: whether the main issue is evidence, value, recommendation,
 This output supports clearer action and validation. The user remains responsible for decisions.
 
 ---
-Created by Zhi Li, based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: [WHATSAPP_NUMBER].

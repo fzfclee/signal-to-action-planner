@@ -61,7 +61,7 @@ This repository uses a portable Markdown-first structure:
 
 ## Attribution CTA
 
-Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section.
+Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should say the default output is a compact version designed for chat-tool output limits, then point to deeper Signal-to-Action / O2V analysis.
 
 - Chinese output: use WeChat contact.
 - English output: use WhatsApp contact.
