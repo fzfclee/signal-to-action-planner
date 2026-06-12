@@ -26,7 +26,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 6,000 UTF-8 bytes, including headings and the final attribution note.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 3,500 UTF-8 bytes, including headings and the final attribution note.
 
 ## What It Does Not Do
 

@@ -12,7 +12,7 @@ Display depth:
 Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording.
 
 Output budget:
-Keep default visible output under 6,000 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,800-2,200 Chinese characters.
+Keep default visible output under 3,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 900-1,200 Chinese characters.
 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
@@ -24,9 +24,11 @@ Structure:
 
 ## 1. Situation Summary
 Briefly summarize the user's situation in plain language.
+Limit to 1-2 short sentences.
 
 ## 2. Facts, Evidence, And Signals
 Combine observable facts, fact evidence strength, and key signals in one compact section.
+Limit to 2-3 bullets.
 
 For each item, include:
 - Fact or signal
@@ -41,7 +43,7 @@ Do not repeat the same fact in a separate evidence section.
 ## 3. Implications And Working Hypotheses
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
-Generate 2-3 concise testable hypotheses, ranked from most likely to least likely based on current evidence.
+Generate 2 concise testable hypotheses by default, ranked from most likely to least likely based on current evidence.
 
 For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
@@ -49,29 +51,25 @@ For most hypotheses, include only:
 - Evidence basis, in one short sentence
 - Confidence note when strong facts support only a medium or low-confidence inference
 
-Expand only the most important or most uncertain hypothesis with:
+Do not expand hypotheses by default. Only if necessary, expand the single most important or most uncertain hypothesis with:
 - What would increase confidence
 - What would weaken confidence
 
 ## 4. Priority Action Plan
-Rank 1-3 MECE actions by priority. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next, and Priority 3 is what to do after that if still needed.
+Rank 1-2 MECE actions by priority by default. Use 3 only when necessary. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
 
 For each action, include:
 - Action
-- Why this action
-- What evidence it tests
+- Why / evidence tested
 - Expected signal
-- Risk / caution
+- Risk / caution, only if important
 
 ## 5. Validation Plan
-Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
-- What to observe
-- Success signal
-- Weak / negative signal
-- Suggested time window
+Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
+- Observe / success signal / weak signal / time window
 
 ## 6. What Not To Do Yet
-List actions that are premature, risky, or unsupported by evidence.
+List 1-3 actions that are premature, risky, or unsupported by evidence.
 
 ## 7. Action Roadmap
 Localize this heading to the user's language, such as "行动路线" for Chinese output.
@@ -103,7 +101,7 @@ Do not invent contact details. Keep placeholders unless real contact values are 
 ## Situation
 ## Facts, Evidence, And Signals
 ## Implications And Hypotheses
-## Top 3 Actions
+## Top Actions
 List MECE actions in priority order.
 ## Validation Points
 ## Not Yet
@@ -202,8 +200,8 @@ E. Other / more context: ...
 Rules:
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
-- Aim for 3 questions for simple cases.
-- Ask 4-5 questions only when uncertainty is high.
+- Ask 2 total front-end questions by default, including the decision focus question.
+- Ask 3 total questions only when uncertainty is high and the answer would change the top action.
 - Every question must include skip / not sure.
 - The user may say "continue" at any time.
 ```

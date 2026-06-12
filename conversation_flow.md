@@ -10,7 +10,7 @@ On tools with memory or cached skills, apply the current `SKILL.md` at the start
 
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction.
 
-Keep default visible output under 6,000 UTF-8 bytes. If the output may be too long, compress automatically and preserve priorities, validation, and action roadmap first.
+Keep default visible output under 3,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
 
 ## Step 1 - Receive Messy Input
 
@@ -47,7 +47,7 @@ If the user explicitly asks for direct output, do not force a question. Otherwis
 
 ## Step 3 - Run A Dynamic Intake Loop
 
-After the decision focus is clear, ask one relevant intake question at a time if the answer would improve accuracy. Do not ask 3-5 questions in one message.
+After the decision focus is clear, ask one relevant intake question at a time if the answer would improve accuracy. Count the decision focus question in the total. Ask 2 total front-end questions by default and 3 total questions at most. Do not ask multiple questions in one message.
 
 Use this format:
 
@@ -68,8 +68,8 @@ Keep the loop short:
 
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
-- Aim for 3 questions for simple cases.
-- 4-5 questions only when uncertainty is high.
+- Ask 2 total questions by default, including the decision focus question.
+- Ask 3 total questions only when uncertainty is high and the answer would change the top action.
 - Every question must include a skip / not sure option.
 - The user can say "continue" at any time.
 - Do not make the user fill a long form.
@@ -124,11 +124,11 @@ Use the compressed output structure:
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Keep evidence visible, but merge facts, fact evidence strength, and key signals into one compact user-facing section.
+Keep evidence visible, but merge facts, fact evidence strength, and key signals into one compact user-facing section. Limit this to 2-3 bullets.
 
 Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
-Compress implications and hypotheses into conclusion-level output. Rank working hypotheses from most likely to least likely. Expand confidence-increasing and confidence-weakening details only for the most important or most uncertain hypothesis, or when the user explicitly requests detailed reasoning.
+Compress implications and hypotheses into conclusion-level output. Rank 2 working hypotheses from most likely to least likely. Do not expand confidence-increasing and confidence-weakening details unless the user explicitly requests detailed reasoning.
 
 ## Step 7 - Focus On Top Actions
 
@@ -136,7 +136,6 @@ The Skill must not produce too many actions. Prioritize 1-3 MECE actions that ar
 
 - Priority 1: do first.
 - Priority 2: do next.
-- Priority 3: do after that, if still needed.
 
 Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 

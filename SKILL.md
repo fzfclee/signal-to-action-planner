@@ -72,19 +72,20 @@ Input handling:
 
 Output hard cap:
 
-- Default visible output must stay under 6,000 UTF-8 bytes, including headings, bullets, and attribution note.
-- For Chinese output, this usually means roughly 1,800-2,200 Chinese characters depending on punctuation and Markdown.
+- Default visible output must stay under 3,500 UTF-8 bytes, including headings, bullets, and attribution note.
+- For Chinese output, this usually means roughly 900-1,200 Chinese characters depending on punctuation and Markdown.
 - If the output would exceed the cap, automatically compress before responding.
 - Never exceed the cap unless the user explicitly asks for a longer `--detailed` output and the platform can support it.
 
 Compression priority:
 
-1. Keep the final action roadmap, validation logic, and top priorities.
-2. Shorten situation summary, facts, and hypotheses.
-3. Limit facts/signals to 3-5 items.
-4. Limit hypotheses to 2-3 items.
-5. Limit actions to 1-3 items.
-6. Remove optional explanation before removing validation or roadmap.
+1. Keep the top action, validation logic, and action roadmap.
+2. Shorten situation summary and final CTA by about one third.
+3. Shorten facts, signals, implications, and hypotheses by at least two thirds.
+4. Limit facts/signals to 2-3 items.
+5. Limit hypotheses to 2 items by default.
+6. Limit actions to 1-2 items by default; use 3 only when clearly necessary.
+7. Remove optional explanation before removing validation or roadmap.
 
 If the model suspects the platform may truncate output, use the compact output template automatically.
 
@@ -165,7 +166,7 @@ If key information is missing or the decision focus is ambiguous, ask only the m
 - If the situation has too many possible directions, ask which outcome or constraint matters most right now.
 - If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
-After the decision focus is known, prefer a dynamic intake loop before the full output. Use it to improve accuracy on facts, evidence, constraints, stakeholders, and validation. Ask one question at a time. After each answer, decide the next best question from the user's answer and the remaining uncertainty. Aim for 3-5 total intake questions when useful, but stop earlier if the next answer is unlikely to change the action plan or roadmap.
+After the decision focus is known, ask at most 1-2 additional intake questions before the full output. Count the decision focus question as part of the total front-end interaction. The classic default should ask 2 total questions; ask 3 total questions only when the missing input would materially change the top action or roadmap.
 
 Each question should be multiple choice with 2-4 substantive options, plus one skip / not sure option and one optional free-text option when useful. The user may choose skip / not sure, answer in free text, or say "continue" to move to the output. Do not ask a multi-question questionnaire in one message. Do not ask generic questions that do not affect the action plan or validation plan.
 
@@ -233,7 +234,8 @@ Rules:
 - Tailor questions to the user's actual situation.
 - Ask one question per message.
 - Use the user's latest answer to choose the next question.
-- Aim for 3 questions for simple cases and 4-5 questions for higher-uncertainty cases, but stop when enough evidence exists.
+- Ask 2 total front-end questions by default, including the decision focus question.
+- Ask 3 total front-end questions at most for higher-uncertainty cases.
 - Make each question easy to answer with short options.
 - Include a skip / not sure option for every question.
 - Do not ask for private or sensitive details unless they are necessary and the user volunteers them.
@@ -281,13 +283,19 @@ D. Other / more context: ...
 
 # Signal-to-Action Output
 
+Default output is the classic compact version, not a full report. Keep all 7 sections, but make each section short enough to fit the output budget.
+
 ## 1. Situation Summary
 
 Briefly summarize the user's situation in plain language.
 
+Limit to 1-2 short sentences.
+
 ## 2. Facts, Evidence, And Signals
 
 Combine observable facts, fact evidence strength, and key signals in one compact section.
+
+Limit to 2-3 bullets.
 
 For each item, include:
 - Fact or signal
@@ -303,7 +311,7 @@ Do not repeat the same fact in a separate evidence section.
 
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
-Generate 2-3 testable hypotheses, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
+Generate 2 testable hypotheses by default, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
 
 For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
@@ -311,7 +319,7 @@ For most hypotheses, include only:
 - Evidence basis, in one short sentence
 - Confidence note when strong facts support only a medium or low-confidence inference
 
-Expand only the most important or most uncertain hypothesis with:
+Do not expand hypotheses by default. Only when needed, expand the single most important or most uncertain hypothesis with:
 - What would increase confidence
 - What would weaken confidence
 
@@ -319,30 +327,25 @@ This section should show that reasoning happened without exposing the full reaso
 
 ## 4. Priority Action Plan
 
-Rank 1-3 actions by priority. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
+Rank 1-2 actions by priority by default. Use 3 only when necessary. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
 - Priority 1: do first
 - Priority 2: do next
-- Priority 3: do after that, if still needed
 
 For each action, include:
 - Action
-- Why this action
-- What evidence it tests
+- Why / evidence tested
 - Expected signal
-- Risk / caution
+- Risk / caution, only if important
 
 ## 5. Validation Plan
 
-Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
-- What to observe
-- Success signal
-- Weak / negative signal
-- Suggested time window
+Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
+- Observe / success signal / weak signal / time window
 
 ## 6. What Not To Do Yet
 
-List actions that are premature, risky, or unsupported by evidence.
+List 1-3 actions that are premature, risky, or unsupported by evidence.
 
 ## 7. Action Roadmap
 

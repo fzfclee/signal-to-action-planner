@@ -1,65 +1,57 @@
 # Examples
 
-These examples are public, sanitized, and intentionally concise. They use the compressed 7-section output format.
+These examples are public, sanitized, and intentionally compact. They show the default 7-section output, not a full report.
 
 ## Example 1 - Polite Interest Or Real Demand?
 
 ### Input
 
 ```text
-I shared a new idea with several people. They said it was interesting, but nobody asked for a follow-up or offered to try it. I feel disappointed and unsure whether the idea is too narrow or whether I just used the wrong hook.
+People said my idea was interesting, but nobody asked for a follow-up or offered to try it. I need to know whether to continue.
 ```
 
 ### Signal-to-Action Output
 
 ## 1. Situation Summary
 
-You received positive verbal reactions, but no one has taken a concrete next step. The decision is whether the interest is real enough to keep investing.
+You have verbal interest but weak behavioral evidence. The decision is whether the idea deserves more investment.
 
 ## 2. Facts, Evidence, And Signals
 
-- Several people said the idea was interesting. Fact evidence: medium. Signal confidence: medium. Why it matters: verbal interest exists.
-- No one asked for a follow-up or offered to try it. Fact evidence: strong. Signal confidence: high. Why it matters: behavioral demand is weak.
-- The hook may be too broad or unclear. Fact evidence: weak. Signal confidence: low. Why it matters: positioning may need testing.
+- Positive comments. Fact evidence: medium. Signal confidence: medium. Verbal interest exists.
+- No concrete next step. Fact evidence: strong. Signal confidence: high. Demand is unproven.
+- Framing may be unclear. Fact evidence: weak. Signal confidence: low. Needs testing.
 
 ## 3. Implications And Working Hypotheses
 
-- Likelihood: high. Hypothesis: If you ask for one concrete next commitment, real demand should show up as a scheduled follow-up, trial, referral, or specific objection. Evidence basis: verbal praise has not become behavior.
-- Likelihood: medium. Hypothesis: If you narrow the use case, response quality may improve. Evidence basis: the current hook may be too abstract.
-
-Most uncertain point: whether the issue is weak demand or weak framing.
+- High: Real demand should show up as a small commitment.
+- Medium: A narrower use case may improve response quality.
 
 ## 4. Priority Action Plan
 
-1. Priority 1: Ask 3-5 people for one concrete next commitment.
-   Why this action: It separates polite reaction from behavior.
-   What evidence it tests: Willingness to take a next step.
-   Expected signal: Scheduled follow-up, trial, referral, or concrete objection.
-   Risk / caution: Keep the ask small so friction does not hide demand.
+1. Priority 1: Ask 3-5 people for one concrete next step.
+   Why / evidence tested: separates praise from behavior.
+   Expected signal: meeting, trial, referral, or concrete objection.
 
-2. Priority 2: Test one narrower use case.
-   Why this action: It checks whether the current message is too broad.
-   What evidence it tests: Use-case clarity.
-   Expected signal: More specific questions or stronger objections.
-   Risk / caution: Do not keep rewriting without behavioral testing.
+2. Priority 2: Test one narrower use case if commitment stays weak.
+   Why / evidence tested: checks whether framing is too broad.
+   Expected signal: more specific questions or objections.
 
 ## 5. Validation Plan
 
-- Priority 1: Observe whether at least 2 people accept a concrete next step within 1-2 weeks.
-- Priority 2: Compare whether the narrower use case produces more specific questions, objections, or trial interest.
+- Priority 1: In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
+- Priority 2: Success = more specific questions or trial interest.
 
 ## 6. What Not To Do Yet
 
-- Do not scale the idea based only on verbal praise.
-- Do not conclude the idea is bad without testing a concrete ask.
-- Do not build more before separating interest from behavior.
+- Do not build more based only on praise.
+- Do not kill the idea before testing one concrete ask.
 
 ## 7. Action Roadmap
 
-- First: Ask for concrete next commitments.
-- Next: Test a narrower use case if commitment remains weak or ambiguous.
-- Then: Decide whether to continue, reposition, or pause.
-- Decision point: If praise continues without commitment, treat demand as weak.
+- First: ask for concrete commitments.
+- Next: test a narrower use case if commitment is weak.
+- Decision point: if praise still produces no action, reduce priority.
 
 This output supports clearer action and validation. The user remains responsible for decisions.
 
@@ -71,59 +63,51 @@ This is a compact version designed for chat-tool output limits, created by Zhi L
 ### Input
 
 ```text
-A potential customer watched a demo and said the solution looks useful. But after the meeting, they did not reply to my follow-up message. I need to know whether to keep pursuing this lead or adjust the offer.
+A customer liked the demo but did not reply afterward. I need to know whether to keep pursuing or adjust the offer.
 ```
 
 ### Signal-to-Action Output
 
 ## 1. Situation Summary
 
-A customer reacted positively during a demo but has not responded afterward. The decision is whether to keep pursuing the lead or adjust the offer.
+The demo created surface interest, but follow-through is missing. The decision is whether this lead has real momentum.
 
 ## 2. Facts, Evidence, And Signals
 
-- The customer watched the demo and gave positive feedback. Fact evidence: medium. Signal confidence: medium. Why it matters: surface interest exists.
-- They did not reply to the follow-up. Fact evidence: strong. Signal confidence: high. Why it matters: momentum is weak.
-- Their urgency, budget, authority, and internal owner are unknown. Fact evidence: missing. Signal confidence: high. Why it matters: the buying context is unclear.
+- Positive demo reaction. Fact evidence: medium. Signal confidence: medium. Interest exists.
+- No follow-up reply. Fact evidence: strong. Signal confidence: high. Momentum is weak.
+- Buying context unknown. Fact evidence: missing. Signal confidence: high. Qualification gap remains.
 
 ## 3. Implications And Working Hypotheses
 
-- Likelihood: high. Hypothesis: If you send one concise follow-up with a specific next-step option, a serious lead should respond, counteroffer, or give an objection. Evidence basis: the current gap is behavioral follow-through.
-- Likelihood: medium. Hypothesis: If you ask which problem matters most, feedback may become more specific. Evidence basis: the demo reaction was positive but not tied to urgency.
-
-Most uncertain point: whether silence reflects low priority, weak offer fit, or timing.
+- High: A serious lead should respond to one clear next-step ask.
+- Medium: The offer may not be tied to urgent pain.
 
 ## 4. Priority Action Plan
 
-1. Priority 1: Send one concise follow-up asking for a specific next step or a direct no.
-   Why this action: It tests whether the lead has real momentum.
-   What evidence it tests: Responsiveness and willingness to continue.
-   Expected signal: Reply, meeting acceptance, referral, or clear objection.
-   Risk / caution: Avoid repeated vague follow-ups.
+1. Priority 1: Send one concise follow-up with a specific next step or direct no.
+   Why / evidence tested: tests momentum.
+   Expected signal: reply, meeting, objection, or no response.
 
-2. Priority 2: If they reply, ask one problem-priority question.
-   Why this action: It tests whether the offer matches an urgent need.
-   What evidence it tests: Problem fit.
-   Expected signal: Specific pain point, priority ranking, or mismatch.
-   Risk / caution: Do not redesign the offer from one silent lead.
+2. Priority 2: If they reply, ask which problem matters most.
+   Why / evidence tested: tests pain urgency.
+   Expected signal: named pain, blocker, or mismatch.
 
 ## 5. Validation Plan
 
-- Priority 1: Observe whether the customer responds within 5-7 business days.
-- Priority 2: Check whether the reply names a concrete pain point, priority, blocker, or next step.
+- Priority 1: In 5-7 business days, success = reply or meeting; weak signal = silence.
+- Priority 2: Success = concrete pain or priority.
 
 ## 6. What Not To Do Yet
 
 - Do not chase indefinitely.
-- Do not assume demo praise equals buying intent.
-- Do not overhaul the offer before collecting clearer evidence.
+- Do not redesign the offer from one silent lead.
 
 ## 7. Action Roadmap
 
-- First: Send one clear next-step follow-up.
-- Next: If they reply, ask which problem matters most.
-- Then: Adjust the offer only if the customer gives specific problem evidence.
-- Decision point: If there is no response after one clear follow-up, reduce pursuit priority.
+- First: send one clear next-step follow-up.
+- Next: qualify pain only if they reply.
+- Decision point: if silence continues, reduce pursuit priority.
 
 This output supports clearer action and validation. The user remains responsible for decisions.
 
@@ -135,59 +119,51 @@ This is a compact version designed for chat-tool output limits, created by Zhi L
 ### Input
 
 ```text
-My manager reviewed my proposal and said it is not specific enough. I am not sure whether the problem is lack of data, unclear business value, weak recommendation, or missing decision options.
+My manager said my proposal is not specific enough. I do not know whether the issue is data, value, recommendation, or decision options.
 ```
 
 ### Signal-to-Action Output
 
 ## 1. Situation Summary
 
-Your manager found the proposal too vague, but the exact gap is unclear. The decision is what to fix before rewriting.
+The feedback is clear but not diagnostic. The decision is what to fix before rewriting.
 
 ## 2. Facts, Evidence, And Signals
 
-- The manager said the proposal is not specific enough. Fact evidence: strong. Signal confidence: high. Why it matters: the current version is not decision-ready.
-- Possible gaps include data, business value, recommendation strength, or decision options. Fact evidence: medium. Signal confidence: medium. Why it matters: several fixes are plausible.
-- The exact weak section is unknown. Fact evidence: missing. Signal confidence: high. Why it matters: guessing could waste revision effort.
+- Manager said it is not specific enough. Fact evidence: strong. Signal confidence: high. Current draft is not decision-ready.
+- Possible gaps differ. Fact evidence: medium. Signal confidence: medium. Several fixes are plausible.
+- Exact weak section unknown. Fact evidence: missing. Signal confidence: high. Blind rewriting is risky.
 
 ## 3. Implications And Working Hypotheses
 
-- Likelihood: high. Hypothesis: If you ask the manager to identify the weakest section, the revision target should become clearer. Evidence basis: the feedback names a problem but not the source.
-- Likelihood: medium. Hypothesis: If you rewrite around one decision and 2-3 options, specificity should improve. Evidence basis: missing decision structure is plausible but unconfirmed.
-
-Most uncertain point: whether the main issue is evidence, value, recommendation, or decision structure.
+- High: One targeted clarification should reveal the main gap.
+- Medium: A one-page decision outline may solve the structure issue.
 
 ## 4. Priority Action Plan
 
-1. Priority 1: Ask one targeted clarification question.
-   Why this action: It avoids revising the wrong thing.
-   What evidence it tests: The actual source of the feedback.
-   Expected signal: A specific section, missing evidence point, or decision gap.
-   Risk / caution: Keep the ask concise and solution-oriented.
+1. Priority 1: Ask which section is least specific.
+   Why / evidence tested: avoids fixing the wrong thing.
+   Expected signal: named section, missing evidence, or decision gap.
 
-2. Priority 2: Create a one-page revision outline before rewriting.
-   Why this action: It tests structure before investing in a full revision.
-   What evidence it tests: Whether the proposal has a clear decision path.
-   Expected signal: Easier manager alignment on the fix.
-   Risk / caution: Do not add detail everywhere without prioritizing.
+2. Priority 2: Draft a one-page outline before rewriting.
+   Why / evidence tested: tests decision structure.
+   Expected signal: manager alignment before full rewrite.
 
 ## 5. Validation Plan
 
-- Priority 1: Confirm whether the manager identifies a specific gap within 1-3 business days.
-- Priority 2: Check whether the manager agrees the outline addresses the gap before rewriting.
+- Priority 1: In 1-3 business days, success = specific gap identified.
+- Priority 2: Success = outline accepted as the right direction.
 
 ## 6. What Not To Do Yet
 
 - Do not rewrite the whole proposal blindly.
-- Do not add more data unless data is the confirmed gap.
-- Do not treat vague feedback as proof that the recommendation is wrong.
+- Do not add data unless data is confirmed as the gap.
 
 ## 7. Action Roadmap
 
-- First: Ask which part is least specific.
-- Next: Build a one-page revision outline around the confirmed gap.
-- Then: Rewrite the full proposal only after the outline direction is validated.
-- Decision point: If the manager names a different gap, revise the action roadmap before rewriting.
+- First: ask which part is least specific.
+- Next: outline the fix around the confirmed gap.
+- Decision point: rewrite only after the outline is validated.
 
 This output supports clearer action and validation. The user remains responsible for decisions.
 
