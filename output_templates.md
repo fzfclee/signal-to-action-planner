@@ -115,6 +115,7 @@ D. Other / more context: ...
 
 Rules:
 - Prefer 2-4 options.
+- Include a skip / not sure option when asking an intake question.
 - Include one optional free-text choice.
 - Keep the question easy to answer.
 - Do not turn clarification into a long form.
@@ -162,4 +163,39 @@ A. [Short option]
 B. [Short option]
 C. [Short option]
 D. Other / more context: ...
+```
+
+## G. Optional Intake Question Set Template
+
+```markdown
+## Clarification Questions
+
+To make the roadmap more accurate, please answer any of these. You can skip any question or say "continue".
+
+1. [Question tailored to the user's situation]
+   A. [Short option]
+   B. [Short option]
+   C. [Short option]
+   D. Skip / not sure.
+   E. Other / more context: ...
+
+2. [Question tailored to the user's situation]
+   A. [Short option]
+   B. [Short option]
+   C. [Short option]
+   D. Skip / not sure.
+   E. Other / more context: ...
+
+3. [Question tailored to the user's situation]
+   A. [Short option]
+   B. [Short option]
+   C. [Short option]
+   D. Skip / not sure.
+   E. Other / more context: ...
+
+Rules:
+- Ask 3 questions for simple cases.
+- Ask 4-5 questions only when uncertainty is high.
+- Every question must include skip / not sure.
+- The user may answer partially.
 ```

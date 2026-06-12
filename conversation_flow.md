@@ -50,7 +50,32 @@ D. Other / more context: ...
 
 If the user has already made the decision focus clear, skip this step and continue. If the user explicitly asks for direct output, do not force a question.
 
-## Step 4 - Clarify Minimum Evidence
+## Step 4 - Ask An Optional Intake Question Set
+
+After the detail level and decision focus are clear, ask 3-5 relevant questions if the answers would improve accuracy.
+
+Use this format:
+
+```text
+To make the roadmap more accurate, please answer any of these. You can skip any question.
+
+1. [Question tailored to the user's situation]
+   A. [Short option]
+   B. [Short option]
+   C. [Short option]
+   D. Skip / not sure.
+   E. Other / more context: ...
+```
+
+Keep the set short:
+
+- 3 questions for simple cases.
+- 4-5 questions only when uncertainty is high.
+- Every question must include a skip / not sure option.
+- The user can answer partially or say "continue".
+- Do not make the user fill a long form.
+
+## Step 5 - Clarify Minimum Evidence
 
 Ask only if needed. Do not use a fixed list of questions. Decide what to ask by checking which part of the chain is too weak to continue:
 
@@ -61,7 +86,7 @@ Ask only if needed. Do not use a fixed list of questions. Decide what to ask by 
 - Action gap: the user has too many possible actions.
 - Validation gap: there is no way to tell whether the action worked.
 
-Generate 1 focused question from the actual situation when possible. If more context is truly required, ask no more than 3 questions at once.
+Generate 1 focused question from the actual situation when possible. If more context is truly required, add it to the optional intake set rather than asking many separate turns.
 
 Prefer a multiple-choice style with 2-4 short options plus one optional free-text answer. This keeps the interaction easy while still allowing the user to add nuance.
 
@@ -80,7 +105,7 @@ Adapt these shapes to the user's wording. Do not ask the user to fill a long for
 
 After the user answers, reassess the chain. Ask another question only if it changes the action or validation plan. Otherwise continue to the output.
 
-## Step 5 - Use Mid-Process Checkpoints
+## Step 6 - Use Mid-Process Checkpoints
 
 Do not limit interaction to the first question. After identifying evidence, signals, implications, or hypotheses, ask another lightweight question if the intermediate result creates a real fork.
 
@@ -92,7 +117,7 @@ Use checkpoints such as:
 
 Keep each checkpoint as a short multiple-choice question with 2-4 options plus one free-text option.
 
-## Step 6 - Run Signal-to-Action
+## Step 7 - Run Signal-to-Action
 
 Use the full output structure:
 
@@ -104,7 +129,7 @@ Keep evidence visible across the reasoning process, but summarize it compactly f
 
 Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood and the shortest useful evidence basis. Add confidence-increasing and confidence-weakening details when they change the action plan, when uncertainty is high, or when the user chooses detailed reasoning.
 
-## Step 7 - Focus On Top Actions
+## Step 8 - Focus On Top Actions
 
 The Skill must not produce too many actions. Prioritize 1-3 actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
@@ -114,7 +139,7 @@ The Skill must not produce too many actions. Prioritize 1-3 actions that are pra
 
 For each priority action, include its own validation method.
 
-## Step 8 - Define Validation
+## Step 9 - Define Validation
 
 For the top-priority actions, define how the user can tell whether the action worked:
 
@@ -123,7 +148,7 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would weaken the signal;
 - a practical time window.
 
-## Step 9 - Give A Roadmap
+## Step 10 - Give A Roadmap
 
 End with a short roadmap:
 

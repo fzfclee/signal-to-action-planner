@@ -64,6 +64,7 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 16. End with a practical roadmap that tells the user what to do first, next, and later.
 17. Ask whether to show detailed reasoning at the start of a run. Default to not showing detailed reasoning.
 18. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
+19. Before the full output, ask 3-5 relevant intake questions when additional input would improve accuracy. Each question must include a skip / not sure option.
 
 ## Clarification Behavior
 
@@ -83,9 +84,9 @@ If key information is missing or the decision focus is ambiguous, ask only the m
 - If the situation has too many possible directions, ask which outcome or constraint matters most right now.
 - If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
-Ask the smallest useful set of questions for the current situation. Usually ask 1 question at a time; never ask more than 3 at once. Prefer a multiple-choice format with 2-4 options plus one optional free-text answer. After the user answers, update the reasoning and either ask the next necessary question or produce the Signal-to-Action output.
+After the decision focus is known, prefer asking a short optional intake set of 3-5 relevant questions before the full output. Use this set to improve accuracy on facts, evidence, constraints, stakeholders, and validation. Each question should be multiple choice with 2-4 substantive options, plus one skip / not sure option and one optional free-text option when useful.
 
-Do not delay the user with a full questionnaire. Do not ask generic questions that do not affect the action plan or validation plan.
+The user may answer all questions, answer only some, choose skip / not sure, or say "continue" to move to the output. Do not delay the user with a long questionnaire. Do not ask generic questions that do not affect the action plan or validation plan.
 
 ## Interaction Checkpoints
 
@@ -147,6 +148,40 @@ D. Other / more context: ...
 
 After the user answers, continue with the minimum next step: either ask one more targeted clarification question or produce the full Signal-to-Action output.
 
+## Optional Intake Question Set
+
+After the detail level and decision focus are clear, ask 3-5 relevant questions if the answers would improve the accuracy of the action plan or roadmap.
+
+Rules:
+
+- Tailor questions to the user's actual situation.
+- Prefer 3 questions for simple cases and 4-5 questions for higher-uncertainty cases.
+- Make each question easy to answer with short options.
+- Include a skip / not sure option for every question.
+- Allow the user to answer partially.
+- Do not ask for private or sensitive details unless they are necessary and the user volunteers them.
+- Stop early if the user says "continue", "skip", or "just output".
+
+Example:
+
+```markdown
+To make the roadmap more accurate, please answer any of these. You can skip any question.
+
+1. Who has the strongest influence over the next decision?
+   A. My direct local manager.
+   B. A senior sponsor outside my local team.
+   C. HR / procurement / finance.
+   D. Skip / not sure.
+   E. Other / more context: ...
+
+2. What constraint matters most right now?
+   A. Move quickly.
+   B. Protect relationships.
+   C. Build negotiation leverage.
+   D. Skip / not sure.
+   E. Other / more context: ...
+```
+
 ## Dynamic Question Design
 
 When asking a clarification question:
@@ -154,9 +189,10 @@ When asking a clarification question:
 1. State why the question matters in one short phrase.
 2. Ask a question tailored to the user's actual words, not a generic template.
 3. Prefer 2-4 mutually exclusive answer options.
-4. Include one optional free-text choice such as "Other / more context: ...".
-5. Keep each option short and practical.
-6. Avoid complex forms, long taxonomies, or multi-part questions.
+4. Include one skip / not sure option when the question is part of an intake set.
+5. Include one optional free-text choice such as "Other / more context: ...".
+6. Keep each option short and practical.
+7. Avoid complex forms, long taxonomies, or multi-part questions.
 
 Example:
 
