@@ -9,7 +9,7 @@ Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
 Display depth:
-Keep intermediate reasoning concise. Show only what the user needs to understand the action plan, validation, and roadmap.
+Default to concise reasoning. Show only what the user needs to understand the action plan, validation, and roadmap unless the user chooses detailed reasoning.
 
 ## 1. Situation Summary
 Briefly summarize the user's situation in plain language.
@@ -120,7 +120,20 @@ Rules:
 - Do not turn clarification into a long form.
 ```
 
-## D. Decision Focus Check Template
+## D. Detail Level Check Template
+
+```markdown
+## Clarification Question
+
+Do you want me to show the detailed reasoning process?
+
+A. No, keep the reasoning concise and focus on actions. (Default)
+B. Yes, show the key reasoning steps.
+C. Only show details when something is uncertain.
+D. Other / more context: ...
+```
+
+## E. Decision Focus Check Template
 
 ```markdown
 ## Clarification Question
@@ -133,7 +146,7 @@ C. [Evidence / validation focus]
 D. Other / more context: ...
 ```
 
-## E. Mid-Process Checkpoint Template
+## F. Mid-Process Checkpoint Template
 
 ```markdown
 ## Clarification Question
