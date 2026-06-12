@@ -78,6 +78,7 @@ Outputs may end with a short attribution line separated by a horizontal rule. It
 - English output: use LinkedIn contact.
 - Chinese contact: WeChat `lizhi_ch`.
 - English contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
+- To avoid garbled text in agent tools that mishandle UTF-8, the Chinese-output CTA is intentionally ASCII-safe.
 
 Suggested usage:
 
