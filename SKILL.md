@@ -54,17 +54,18 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 6. Mark uncertainty clearly.
 7. Rank working hypotheses by likelihood based on the available evidence.
 8. Generate a small number of prioritized actions, not a long action dump.
-9. For each priority action, provide its own validation method directly next to the action.
-10. Do not make final decisions for the user.
-11. Do not claim certainty when evidence is weak.
-12. Do not introduce new frameworks unless needed.
-13. Avoid therapy, legal, medical, financial, or safety advice.
-14. If the situation is high-stakes, recommend appropriate professional support.
-15. Avoid adding extra product scope such as software products, storage layers, intake tools, automation, tracking programs, or reusable knowledge systems.
-16. End with a practical roadmap that tells the user what to do first, next, and later.
-17. Ask whether to show detailed reasoning at the start of a run. Default to not showing detailed reasoning.
-18. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
-19. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
+9. Make actions MECE: each action should have a distinct purpose, avoid overlap, and collectively cover the main decision need.
+10. Keep validation separate from action descriptions. Actions say what to do and why; validation says how to judge whether it worked.
+11. Do not make final decisions for the user.
+12. Do not claim certainty when evidence is weak.
+13. Do not introduce new frameworks unless needed.
+14. Avoid therapy, legal, medical, financial, or safety advice.
+15. If the situation is high-stakes, recommend appropriate professional support.
+16. Avoid adding extra product scope such as software products, storage layers, intake tools, automation, tracking programs, or reusable knowledge systems.
+17. End with a practical action roadmap. Localize the heading to the user's language, such as "行动路线" in Chinese.
+18. Ask whether to show detailed reasoning at the start of a run. Default to not showing detailed reasoning.
+19. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
+20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 
 ## Clarification Behavior
 
@@ -126,7 +127,7 @@ The reasoning chain is the internal discipline, not a requirement to show every 
 - Keep situation summary, facts, evidence, signals, implications, and hypotheses concise.
 - Show only the most decision-relevant facts, signals, and uncertainties.
 - Avoid long explanatory paragraphs in intermediate sections.
-- Put more detail into Priority Action Plan, action-level validation, and Roadmap.
+- Put more detail into Priority Action Plan, Validation Plan, and Action Roadmap, but keep their roles distinct.
 - If the user chooses detailed reasoning, show key reasoning steps but still avoid unnecessary verbosity.
 - If the user asks for "detail", "reasoning", or "why", expand the relevant section.
 - If the user asks for "quick", "brief", or "just tell me what to do", use the compact output.
@@ -246,7 +247,7 @@ For each hypothesis, include:
 
 ## 7. Priority Action Plan
 
-Rank 1-3 actions by priority. Make the order explicit:
+Rank 1-3 actions by priority. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
 - Priority 1: do first
 - Priority 2: do next
@@ -258,11 +259,10 @@ For each action, include:
 - What evidence it tests
 - Expected signal
 - Risk / caution
-- How to validate it
 
 ## 8. Validation Plan
 
-Summarize validation across the prioritized actions. For each top-priority action, define:
+Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
 - What to observe
 - Success signal
 - Weak / negative signal
@@ -272,12 +272,14 @@ Summarize validation across the prioritized actions. For each top-priority actio
 
 List actions that are premature, risky, or unsupported by evidence.
 
-## 10. Roadmap
+## 10. Action Roadmap
 
-Give the user a concise roadmap that turns the prioritized actions into a sequence. Use a simple structure such as:
+Use a localized heading in the user's language. For Chinese output, use `## 10. 行动路线`.
 
-- First: [highest-priority action and validation]
-- Next: [second action and validation]
+Give the user a concise sequence and decision gates. Do not repeat the full validation plan. Use a simple structure such as:
+
+- First: [highest-priority action]
+- Next: [second action]
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 

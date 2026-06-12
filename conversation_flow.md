@@ -2,7 +2,7 @@
 
 Use this lightweight flow to guide the user from messy input to action-ready clarity.
 
-Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and roadmap in that language unless quoting user-provided terms or proper nouns.
+Use one language consistently. Match the user's dominant language or the language required by the user's system / project instructions. Keep headings, option labels, explanations, actions, validation, and action roadmap in that language unless quoting user-provided terms or proper nouns. In Chinese, call the roadmap `行动路线`.
 
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user chooses detailed reasoning or asks for it later.
 
@@ -117,7 +117,7 @@ Use checkpoints such as:
 
 - Evidence checkpoint: ask for missing evidence if the likelihood ranking is unstable.
 - Hypothesis checkpoint: ask which hypothesis best matches the user's lived reality if two are close.
-- Roadmap checkpoint: ask which constraint matters most if actions compete.
+- Action roadmap checkpoint: ask which constraint matters most if actions compete.
 
 Keep each checkpoint as a short multiple-choice question with 2-4 options plus one free-text option.
 
@@ -135,13 +135,13 @@ Rank working hypotheses from most likely to least likely. For each hypothesis, i
 
 ## Step 8 - Focus On Top Actions
 
-The Skill must not produce too many actions. Prioritize 1-3 actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
+The Skill must not produce too many actions. Prioritize 1-3 MECE actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
 - Priority 1: do first.
 - Priority 2: do next.
 - Priority 3: do after that, if still needed.
 
-For each priority action, include its own validation method.
+Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 
 ## Step 9 - Define Validation
 
@@ -152,11 +152,11 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would weaken the signal;
 - a practical time window.
 
-## Step 10 - Give A Roadmap
+## Step 10 - Give An Action Roadmap
 
-End with a short roadmap:
+End with a short action roadmap. Localize the heading, for example `行动路线` in Chinese.
 
-- First: the highest-priority action and its validation.
-- Next: the second action and its validation.
+- First: the highest-priority action.
+- Next: the second action.
 - Then: the third action or contingency.
 - Decision point: what evidence should change the user's direction.

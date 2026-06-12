@@ -9,7 +9,13 @@ Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
 Display depth:
-Default to concise reasoning. Show only what the user needs to understand the action plan, validation, and roadmap unless the user chooses detailed reasoning.
+Default to concise reasoning. Show only what the user needs to understand the action plan, validation, and action roadmap unless the user chooses detailed reasoning.
+
+Structure:
+- Priority Action Plan = what to do and why.
+- Validation Plan = how to judge whether actions worked.
+- Action Roadmap = sequence, timing, and decision gates.
+- Keep these sections MECE and avoid repeating the same content across them.
 
 ## 1. Situation Summary
 Briefly summarize the user's situation in plain language.
@@ -45,7 +51,7 @@ For each hypothesis, include:
 - What would weaken confidence, only if useful
 
 ## 7. Priority Action Plan
-Rank 1-3 actions by priority. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next, and Priority 3 is what to do after that if still needed.
+Rank 1-3 MECE actions by priority. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next, and Priority 3 is what to do after that if still needed.
 
 For each action, include:
 - Action
@@ -53,10 +59,9 @@ For each action, include:
 - What evidence it tests
 - Expected signal
 - Risk / caution
-- How to validate it
 
 ## 8. Validation Plan
-Summarize validation across the prioritized actions. For each top-priority action, define:
+Define how to judge whether each prioritized action worked. Do not repeat the action description. For each top-priority action, define:
 - What to observe
 - Success signal
 - Weak / negative signal
@@ -65,10 +70,12 @@ Summarize validation across the prioritized actions. For each top-priority actio
 ## 9. What Not To Do Yet
 List actions that are premature, risky, or unsupported by evidence.
 
-## 10. Roadmap
-Give the user a concise sequence:
-- First: [highest-priority action and validation]
-- Next: [second action and validation]
+## 10. Action Roadmap
+Localize this heading to the user's language, such as "行动路线" for Chinese output.
+
+Give the user a concise sequence and decision gates. Do not repeat the full validation plan:
+- First: [highest-priority action]
+- Next: [second action]
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 
@@ -88,10 +95,10 @@ Remind the user that the output supports clearer action and validation, but the 
 ## Hypotheses
 Rank hypotheses from most likely to least likely. Keep them concise.
 ## Top 3 Actions
-List in priority order and include validation for each action.
+List MECE actions in priority order.
 ## Validation Points
 ## Not Yet
-## Roadmap
+## Action Roadmap
 ```
 
 ## C. Dynamic Clarification Questions Template
