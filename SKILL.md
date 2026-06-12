@@ -64,7 +64,7 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 16. End with a practical roadmap that tells the user what to do first, next, and later.
 17. Ask whether to show detailed reasoning at the start of a run. Default to not showing detailed reasoning.
 18. Keep intermediate reasoning concise for the user unless the user chooses detailed reasoning or asks for detail later.
-19. Before the full output, ask 3-5 relevant intake questions when additional input would improve accuracy. Each question must include a skip / not sure option.
+19. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 
 ## Clarification Behavior
 
@@ -84,9 +84,9 @@ If key information is missing or the decision focus is ambiguous, ask only the m
 - If the situation has too many possible directions, ask which outcome or constraint matters most right now.
 - If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
-After the decision focus is known, prefer asking a short optional intake set of 3-5 relevant questions before the full output. Use this set to improve accuracy on facts, evidence, constraints, stakeholders, and validation. Each question should be multiple choice with 2-4 substantive options, plus one skip / not sure option and one optional free-text option when useful.
+After the decision focus is known, prefer a dynamic intake loop before the full output. Use it to improve accuracy on facts, evidence, constraints, stakeholders, and validation. Ask one question at a time. After each answer, decide the next best question from the user's answer and the remaining uncertainty. Aim for 3-5 total intake questions when useful, but stop earlier if the next answer is unlikely to change the action plan or roadmap.
 
-The user may answer all questions, answer only some, choose skip / not sure, or say "continue" to move to the output. Do not delay the user with a long questionnaire. Do not ask generic questions that do not affect the action plan or validation plan.
+Each question should be multiple choice with 2-4 substantive options, plus one skip / not sure option and one optional free-text option when useful. The user may choose skip / not sure, answer in free text, or say "continue" to move to the output. Do not ask a multi-question questionnaire in one message. Do not ask generic questions that do not affect the action plan or validation plan.
 
 ## Interaction Checkpoints
 
@@ -148,38 +148,34 @@ D. Other / more context: ...
 
 After the user answers, continue with the minimum next step: either ask one more targeted clarification question or produce the full Signal-to-Action output.
 
-## Optional Intake Question Set
+## Dynamic Intake Loop
 
-After the detail level and decision focus are clear, ask 3-5 relevant questions if the answers would improve the accuracy of the action plan or roadmap.
+After the detail level and decision focus are clear, ask one relevant intake question at a time if the answer would improve the accuracy of the action plan or roadmap.
 
 Rules:
 
 - Tailor questions to the user's actual situation.
-- Prefer 3 questions for simple cases and 4-5 questions for higher-uncertainty cases.
+- Ask one question per message.
+- Use the user's latest answer to choose the next question.
+- Aim for 3 questions for simple cases and 4-5 questions for higher-uncertainty cases, but stop when enough evidence exists.
 - Make each question easy to answer with short options.
 - Include a skip / not sure option for every question.
-- Allow the user to answer partially.
 - Do not ask for private or sensitive details unless they are necessary and the user volunteers them.
 - Stop early if the user says "continue", "skip", or "just output".
 
 Example:
 
 ```markdown
-To make the roadmap more accurate, please answer any of these. You can skip any question.
+To make the roadmap more accurate, I will ask one question at a time. You can choose skip / not sure or say "continue".
 
-1. Who has the strongest influence over the next decision?
-   A. My direct local manager.
-   B. A senior sponsor outside my local team.
-   C. HR / procurement / finance.
-   D. Skip / not sure.
-   E. Other / more context: ...
+Question 1:
+Who has the strongest influence over the next decision?
 
-2. What constraint matters most right now?
-   A. Move quickly.
-   B. Protect relationships.
-   C. Build negotiation leverage.
-   D. Skip / not sure.
-   E. Other / more context: ...
+A. My direct local manager.
+B. A senior sponsor outside my local team.
+C. HR / procurement / finance.
+D. Skip / not sure.
+E. Other / more context: ...
 ```
 
 ## Dynamic Question Design
@@ -189,7 +185,7 @@ When asking a clarification question:
 1. State why the question matters in one short phrase.
 2. Ask a question tailored to the user's actual words, not a generic template.
 3. Prefer 2-4 mutually exclusive answer options.
-4. Include one skip / not sure option when the question is part of an intake set.
+4. Include one skip / not sure option when the question is part of the dynamic intake loop.
 5. Include one optional free-text choice such as "Other / more context: ...".
 6. Keep each option short and practical.
 7. Avoid complex forms, long taxonomies, or multi-part questions.

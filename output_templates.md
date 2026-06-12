@@ -115,7 +115,7 @@ D. Other / more context: ...
 
 Rules:
 - Prefer 2-4 options.
-- Include a skip / not sure option when asking an intake question.
+- Include a skip / not sure option when asking a dynamic intake question.
 - Include one optional free-text choice.
 - Keep the question easy to answer.
 - Do not turn clarification into a long form.
@@ -165,37 +165,27 @@ C. [Short option]
 D. Other / more context: ...
 ```
 
-## G. Optional Intake Question Set Template
+## G. Dynamic Intake Loop Template
 
 ```markdown
-## Clarification Questions
+## Clarification Question
 
-To make the roadmap more accurate, please answer any of these. You can skip any question or say "continue".
+To make the roadmap more accurate, I will ask one question at a time. You can choose skip / not sure or say "continue".
 
-1. [Question tailored to the user's situation]
-   A. [Short option]
-   B. [Short option]
-   C. [Short option]
-   D. Skip / not sure.
-   E. Other / more context: ...
+Question [number]:
+[Question tailored to the user's latest answer and remaining uncertainty]
 
-2. [Question tailored to the user's situation]
-   A. [Short option]
-   B. [Short option]
-   C. [Short option]
-   D. Skip / not sure.
-   E. Other / more context: ...
-
-3. [Question tailored to the user's situation]
-   A. [Short option]
-   B. [Short option]
-   C. [Short option]
-   D. Skip / not sure.
-   E. Other / more context: ...
+A. [Short option]
+B. [Short option]
+C. [Short option]
+D. Skip / not sure.
+E. Other / more context: ...
 
 Rules:
-- Ask 3 questions for simple cases.
+- Ask one question per message.
+- Choose the next question based on the user's latest answer.
+- Aim for 3 questions for simple cases.
 - Ask 4-5 questions only when uncertainty is high.
 - Every question must include skip / not sure.
-- The user may answer partially.
+- The user may say "continue" at any time.
 ```

@@ -50,29 +50,33 @@ D. Other / more context: ...
 
 If the user has already made the decision focus clear, skip this step and continue. If the user explicitly asks for direct output, do not force a question.
 
-## Step 4 - Ask An Optional Intake Question Set
+## Step 4 - Run A Dynamic Intake Loop
 
-After the detail level and decision focus are clear, ask 3-5 relevant questions if the answers would improve accuracy.
+After the detail level and decision focus are clear, ask one relevant intake question at a time if the answer would improve accuracy. Do not ask 3-5 questions in one message.
 
 Use this format:
 
 ```text
-To make the roadmap more accurate, please answer any of these. You can skip any question.
+To make the roadmap more accurate, I will ask one question at a time. You can choose skip / not sure or say "continue".
 
-1. [Question tailored to the user's situation]
-   A. [Short option]
-   B. [Short option]
-   C. [Short option]
-   D. Skip / not sure.
-   E. Other / more context: ...
+Question [number]:
+[Question tailored to the user's latest answer and remaining uncertainty]
+
+A. [Short option]
+B. [Short option]
+C. [Short option]
+D. Skip / not sure.
+E. Other / more context: ...
 ```
 
-Keep the set short:
+Keep the loop short:
 
-- 3 questions for simple cases.
+- Ask one question per message.
+- Choose the next question based on the user's latest answer.
+- Aim for 3 questions for simple cases.
 - 4-5 questions only when uncertainty is high.
 - Every question must include a skip / not sure option.
-- The user can answer partially or say "continue".
+- The user can say "continue" at any time.
 - Do not make the user fill a long form.
 
 ## Step 5 - Clarify Minimum Evidence
@@ -86,7 +90,7 @@ Ask only if needed. Do not use a fixed list of questions. Decide what to ask by 
 - Action gap: the user has too many possible actions.
 - Validation gap: there is no way to tell whether the action worked.
 
-Generate 1 focused question from the actual situation when possible. If more context is truly required, add it to the optional intake set rather than asking many separate turns.
+Generate 1 focused question from the actual situation when possible. If more context is truly required, use the dynamic intake loop rather than asking a multi-question form.
 
 Prefer a multiple-choice style with 2-4 short options plus one optional free-text answer. This keeps the interaction easy while still allowing the user to add nuance.
 
