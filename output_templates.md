@@ -25,10 +25,16 @@ Identify the signals that deserve attention. Explain why each signal matters.
 Explain what the signals may imply. Mark uncertainty clearly.
 
 ## 6. Working Hypotheses
-Generate 2-3 testable hypotheses.
+Generate 2-3 testable hypotheses, ranked from most likely to least likely based on current evidence.
 
 Each hypothesis should follow this pattern:
 If [action / condition] happens in [context], then [observable change] should happen, because [assumed mechanism].
+
+For each hypothesis, include:
+- Likelihood: high / medium / low / unknown
+- Evidence basis
+- What would increase confidence
+- What would weaken confidence
 
 ## 7. Priority Action Plan
 Rank 1-3 actions by priority.
@@ -64,6 +70,7 @@ Remind the user that the output supports clearer action and validation, but the 
 ## Evidence Check
 ## Signals
 ## Hypotheses
+Rank hypotheses from most likely to least likely. Include likelihood and evidence basis.
 ## Top 3 Actions
 ## Validation Points
 ## Not Yet
@@ -93,4 +100,17 @@ Rules:
 - Include one optional free-text choice.
 - Keep the question easy to answer.
 - Do not turn clarification into a long form.
+```
+
+## D. Decision Focus Check Template
+
+```markdown
+## Clarification Question
+
+To make the action plan useful, what decision do you most want to clarify first?
+
+A. [Likely decision focus from the user's input]
+B. [Alternative decision focus from the user's input]
+C. [Evidence / validation focus]
+D. Other / more context: ...
 ```

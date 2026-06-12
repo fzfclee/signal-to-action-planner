@@ -12,15 +12,22 @@ Tell me the situation in your own words. It can be a story, meeting note, custom
 
 Accept incomplete, informal, or mixed input. Do not require the user to structure it first.
 
-## Step 2 - Identify The Unclear Decision Or Next Step
+## Step 2 - Run A Decision Focus Check
 
-If the user's desired decision or next step is already clear, do not ask this as a separate question. If it is unclear, ask a tailored question such as:
+Before producing the full output, check whether the user's desired decision, priority, or success criterion is clear. For messy situations with several possible directions, ask one lightweight choice question first.
+
+Use a tailored multiple-choice question with 2-4 short options plus one free-text option. Example:
 
 ```text
-What are you trying to decide or move forward?
+To make the action plan useful, what decision do you most want to clarify first?
+
+A. How likely the current path is to continue.
+B. What evidence to collect before acting.
+C. Which next action has the best risk/reward.
+D. Other / more context: ...
 ```
 
-Use the answer to keep the output action-oriented.
+If the user has already made the decision focus clear, skip this step and continue. If the user explicitly asks for direct output, do not force a question.
 
 ## Step 3 - Clarify Minimum Evidence
 
@@ -61,6 +68,8 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
 Keep evidence visible across the reasoning process. Mark uncertainty clearly.
+
+Rank working hypotheses from most likely to least likely. For each hypothesis, include likelihood, evidence basis, what would increase confidence, and what would weaken confidence.
 
 ## Step 5 - Focus On Top Actions
 

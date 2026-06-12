@@ -45,8 +45,17 @@ You received positive verbal reactions to a new idea, but no one has taken a con
 
 ## 6. Working Hypotheses
 
-1. If you ask for one concrete next commitment from each person, then real demand should show up as a scheduled follow-up or trial, because interested users will accept a low-friction next step.
-2. If you present a narrower use case, then response quality should improve, because people can map the idea to a more specific problem.
+1. Likelihood: high
+   Hypothesis: If you ask for one concrete next commitment from each person, then real demand should show up as a scheduled follow-up or trial, because interested users will accept a low-friction next step.
+   Evidence basis: Positive words exist, but no behavior has appeared.
+   What would increase confidence: At least 2 people accept a concrete next step.
+   What would weaken confidence: People continue to praise the idea but avoid commitment.
+
+2. Likelihood: medium
+   Hypothesis: If you present a narrower use case, then response quality should improve, because people can map the idea to a more specific problem.
+   Evidence basis: The current hook may be too broad, but this is not yet proven.
+   What would increase confidence: Narrower messaging produces more specific questions or trial interest.
+   What would weaken confidence: The narrower use case still creates only polite reactions.
 
 ## 7. Priority Action Plan
 
@@ -121,8 +130,17 @@ A potential customer reacted positively during a demo but has not responded afte
 
 ## 6. Working Hypotheses
 
-1. If you send a shorter follow-up with one specific next-step option, then a serious lead should respond or suggest an alternative, because the path forward is easier to accept.
-2. If you ask which problem matters most, then useful feedback should become more specific, because the customer can rank the offer against current priorities.
+1. Likelihood: high
+   Hypothesis: If you send a shorter follow-up with one specific next-step option, then a serious lead should respond or suggest an alternative, because the path forward is easier to accept.
+   Evidence basis: The customer gave positive demo feedback but did not respond afterward.
+   What would increase confidence: The customer replies, accepts a next step, or gives a specific objection.
+   What would weaken confidence: No response after one clear follow-up.
+
+2. Likelihood: medium
+   Hypothesis: If you ask which problem matters most, then useful feedback should become more specific, because the customer can rank the offer against current priorities.
+   Evidence basis: The demo reaction was positive but not specific enough to show urgency.
+   What would increase confidence: The customer names a concrete pain point or priority.
+   What would weaken confidence: The customer stays generic or cannot identify a priority.
 
 ## 7. Priority Action Plan
 
@@ -195,8 +213,17 @@ Your manager found the proposal too vague, but the specific gap is unclear. You 
 
 ## 6. Working Hypotheses
 
-1. If you ask the manager to identify the weakest section, then the revision target should become clearer, because the feedback will connect to a specific gap.
-2. If you rewrite the proposal around one decision and 2-3 options, then specificity should improve, because the reader can see what choice is being requested.
+1. Likelihood: high
+   Hypothesis: If you ask the manager to identify the weakest section, then the revision target should become clearer, because the feedback will connect to a specific gap.
+   Evidence basis: The feedback names a specificity problem but does not identify the exact source.
+   What would increase confidence: The manager points to a specific section, missing data point, or decision gap.
+   What would weaken confidence: The manager cannot clarify what "not specific enough" means.
+
+2. Likelihood: medium
+   Hypothesis: If you rewrite the proposal around one decision and 2-3 options, then specificity should improve, because the reader can see what choice is being requested.
+   Evidence basis: Missing decision options are a plausible cause, but not yet confirmed.
+   What would increase confidence: The manager says the revised outline is easier to act on.
+   What would weaken confidence: The manager still asks for different evidence or business value.
 
 ## 7. Priority Action Plan
 
