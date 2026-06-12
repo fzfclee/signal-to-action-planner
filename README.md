@@ -4,6 +4,8 @@ Turn messy signals into prioritized action and validation.
 
 Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
 
+The public version is intentionally compact and optimized for about 90% practical adequacy: it should help the user decide the next best action, but it does not expose the full private analysis depth or the complete O2V methodology.
+
 Short name: use `Signal-to-Action Planner` as the public name. `S2A` may be used as a secondary shorthand after the full name has been introduced, but it should not replace the full public name in titles, repository naming, or first-use descriptions.
 
 It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
@@ -26,7 +28,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action.
 
 ## What It Does Not Do
 
@@ -35,6 +37,7 @@ It does not provide legal, medical, financial, psychological, or safety advice.
 It does not replace professional judgment.
 It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
+It does not provide the full private Signal-to-Action / O2V analysis depth.
 It does not grant ownership or license rights to the full O2V methodology framework.
 
 ## License And Notice
