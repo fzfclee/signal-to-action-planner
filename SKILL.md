@@ -56,13 +56,36 @@ When this Skill has been updated, treat the current `SKILL.md` as the only sourc
 
 Before running the Skill after an update, reload the current instructions and follow them strictly. Do not infer behavior from earlier runs if the current Skill text says something different.
 
+## Evidence And Confidence Rules
+
+Do not use one blended evidence score for a compound sentence. Separate the object being assessed:
+
+1. Fact evidence strength: how well the input supports an observed fact or directly reported context.
+2. Inference confidence: how confident the analysis is when turning facts into signals, implications, or hypotheses.
+3. Action confidence: how confident the plan is that an action is worth doing next.
+
+Use `evidence strength` only for facts, observations, direct reports, and source-backed claims. Use `confidence` or `likelihood` for signals, implications, hypotheses, and actions.
+
+In personal, organizational, customer, or work-situation analysis, the user's direct contextual statement counts as evidence for what the user observed, experienced, or was told. Do not downgrade a directly stated user context merely because there is no external document, formal decision, email trail, or official chart.
+
+Evidence levels for facts:
+
+- `strong`: directly observed or directly reported by the user, supported by concrete examples, artifacts, numbers, commitments, or repeated behavior.
+- `medium`: plausible and specific, but partly second-hand, incomplete, mixed with interpretation, or supported by only one weak example.
+- `weak`: mostly inferred from tone, pattern, impression, limited behavior, or ambiguous context.
+- `missing`: important claim with no clear supporting input.
+
+If one sentence contains both a fact and a strategic interpretation, split it. A fact can be `strong` while the implication or action confidence remains `medium` or `low`.
+
+When being conservative because of organizational politics, future risk, stakeholder intent, or hidden incentives, say so explicitly. Do not silently downgrade the underlying fact; instead write something like: `fact evidence: strong; strategic confidence: medium because stakeholder intent is unverified`.
+
 ## Operating Rules
 
 1. Separate facts from interpretations.
 2. Ask only necessary clarification questions.
 3. Do not ask the user to fill a long form.
 4. Prefer one lightweight clarification question at a time, generated dynamically from the user's actual input.
-5. Identify evidence quality: strong / medium / weak / unknown.
+5. Identify fact evidence strength: strong / medium / weak / missing. Separately identify inference confidence or action confidence when making signals, hypotheses, or recommendations.
 6. Mark uncertainty clearly.
 7. Rank working hypotheses by likelihood based on the available evidence.
 8. Generate a small number of prioritized actions, not a long action dump.
@@ -106,7 +129,7 @@ If key information is missing or the decision focus is ambiguous, ask only the m
 
 - If the desired decision or next step is unclear, ask what the user is trying to decide or move forward.
 - If facts and interpretations are mixed together, ask the user to separate what was directly observed from what they inferred.
-- If evidence quality is unclear, ask what concrete evidence supports the claim and what is still missing.
+- If fact evidence strength is unclear, ask what concrete evidence supports the reported fact and what is still missing.
 - If the situation has too many possible directions, ask which outcome or constraint matters most right now.
 - If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
@@ -237,12 +260,15 @@ Briefly summarize the user's situation in plain language.
 
 ## 2. Facts, Evidence, And Signals
 
-Combine observable facts, evidence strength, and key signals in one compact section.
+Combine observable facts, fact evidence strength, and key signals in one compact section.
 
 For each item, include:
 - Fact or signal
-- Evidence strength: strong / medium / weak / missing
+- Fact evidence strength: strong / medium / weak / missing
+- Signal or implication confidence when the item includes interpretation
 - Why it matters, in one short phrase
+
+Split compound items when a directly supported fact and a strategic inference have different certainty levels.
 
 Do not repeat the same fact in a separate evidence section.
 
@@ -256,6 +282,7 @@ For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
 - Hypothesis
 - Evidence basis, in one short sentence
+- Confidence note when strong facts support only a medium or low-confidence inference
 
 Expand only the most important or most uncertain hypothesis with:
 - What would increase confidence

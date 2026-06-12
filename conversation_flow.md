@@ -133,7 +133,9 @@ Use the compressed output structure:
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Keep evidence visible, but merge facts, evidence strength, and key signals into one compact user-facing section.
+Keep evidence visible, but merge facts, fact evidence strength, and key signals into one compact user-facing section.
+
+Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
 Compress implications and hypotheses into conclusion-level output. Rank working hypotheses from most likely to least likely. Expand confidence-increasing and confidence-weakening details only for the most important or most uncertain hypothesis, or when the user chooses detailed reasoning.
 

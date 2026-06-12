@@ -23,12 +23,15 @@ Structure:
 Briefly summarize the user's situation in plain language.
 
 ## 2. Facts, Evidence, And Signals
-Combine observable facts, evidence strength, and key signals in one compact section.
+Combine observable facts, fact evidence strength, and key signals in one compact section.
 
 For each item, include:
 - Fact or signal
-- Evidence strength: strong / medium / weak / missing
+- Fact evidence strength: strong / medium / weak / missing
+- Signal or implication confidence when the item includes interpretation
 - Why it matters, in one short phrase
+
+Split compound items when a directly supported fact and a strategic inference have different certainty levels. Do not downgrade a directly stated fact just because the implication is uncertain.
 
 Do not repeat the same fact in a separate evidence section.
 
@@ -41,6 +44,7 @@ For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
 - Hypothesis
 - Evidence basis, in one short sentence
+- Confidence note when strong facts support only a medium or low-confidence inference
 
 Expand only the most important or most uncertain hypothesis with:
 - What would increase confidence

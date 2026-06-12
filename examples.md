@@ -18,9 +18,9 @@ You received positive verbal reactions, but no one has taken a concrete next ste
 
 ## 2. Facts, Evidence, And Signals
 
-- Several people said the idea was interesting. Evidence: medium. Signal: verbal interest exists.
-- No one asked for a follow-up or offered to try it. Evidence: strong. Signal: behavioral demand is weak.
-- The hook may be too broad or unclear. Evidence: weak. Signal: positioning may need testing.
+- Several people said the idea was interesting. Fact evidence: medium. Signal confidence: medium. Why it matters: verbal interest exists.
+- No one asked for a follow-up or offered to try it. Fact evidence: strong. Signal confidence: high. Why it matters: behavioral demand is weak.
+- The hook may be too broad or unclear. Fact evidence: weak. Signal confidence: low. Why it matters: positioning may need testing.
 
 ## 3. Implications And Working Hypotheses
 
@@ -79,9 +79,9 @@ A customer reacted positively during a demo but has not responded afterward. The
 
 ## 2. Facts, Evidence, And Signals
 
-- The customer watched the demo and gave positive feedback. Evidence: medium. Signal: surface interest exists.
-- They did not reply to the follow-up. Evidence: strong. Signal: momentum is weak.
-- Their urgency, budget, authority, and internal owner are unknown. Evidence: missing. Signal: the buying context is unclear.
+- The customer watched the demo and gave positive feedback. Fact evidence: medium. Signal confidence: medium. Why it matters: surface interest exists.
+- They did not reply to the follow-up. Fact evidence: strong. Signal confidence: high. Why it matters: momentum is weak.
+- Their urgency, budget, authority, and internal owner are unknown. Fact evidence: missing. Signal confidence: high. Why it matters: the buying context is unclear.
 
 ## 3. Implications And Working Hypotheses
 
@@ -140,9 +140,9 @@ Your manager found the proposal too vague, but the exact gap is unclear. The dec
 
 ## 2. Facts, Evidence, And Signals
 
-- The manager said the proposal is not specific enough. Evidence: strong. Signal: the current version is not decision-ready.
-- Possible gaps include data, business value, recommendation strength, or decision options. Evidence: medium. Signal: several fixes are plausible.
-- The exact weak section is unknown. Evidence: missing. Signal: guessing could waste revision effort.
+- The manager said the proposal is not specific enough. Fact evidence: strong. Signal confidence: high. Why it matters: the current version is not decision-ready.
+- Possible gaps include data, business value, recommendation strength, or decision options. Fact evidence: medium. Signal confidence: medium. Why it matters: several fixes are plausible.
+- The exact weak section is unknown. Fact evidence: missing. Signal confidence: high. Why it matters: guessing could waste revision effort.
 
 ## 3. Implications And Working Hypotheses
 
