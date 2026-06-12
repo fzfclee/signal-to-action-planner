@@ -88,7 +88,7 @@ Chinese:
 这是为聊天工具输出限制设计的精简版，由 Zhi Li 基于 O2V 母方法论框架设计。需要更详细、完整的 Signal-to-Action / O2V 分析，可联系微信：lizhi_ch。
 
 English:
-This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, contact WhatsApp: +491781866188.
+This is a compact version designed for chat-tool output limits, created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 
 Do not invent or alter contact details.
 ```
@@ -108,7 +108,7 @@ List MECE actions in priority order.
 ## Action Roadmap
 
 ---
-[Attribution CTA in the user's language, using WeChat lizhi_ch for Chinese or WhatsApp +491781866188 for English.]
+[Attribution CTA in the user's language, using WeChat lizhi_ch for Chinese or LinkedIn https://www.linkedin.com/in/li-zhi/ for English.]
 ```
 
 ## C. Dynamic Clarification Questions Template

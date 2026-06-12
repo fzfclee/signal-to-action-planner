@@ -64,9 +64,9 @@ This repository uses a portable Markdown-first structure:
 Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should say the default output is a compact version designed for chat-tool output limits, then point to deeper Signal-to-Action / O2V analysis.
 
 - Chinese output: use WeChat contact.
-- English output: use WhatsApp contact.
+- English output: use LinkedIn contact.
 - Chinese contact: WeChat `lizhi_ch`.
-- English contact: WhatsApp `+491781866188`.
+- English contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
 
 Suggested usage:
 
