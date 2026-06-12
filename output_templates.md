@@ -15,7 +15,7 @@ Output budget:
 Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters.
 
 Depth boundary:
-This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan.
+This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
 - Facts, Evidence, And Signals = what is known and why it matters.
@@ -85,6 +85,7 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Next 1-2 weeks: [second action or follow-through]
 - Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
+- Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 
@@ -93,12 +94,12 @@ Then add a short attribution CTA separated by a horizontal rule. Do not create a
 Generate the CTA naturally in the user's language instead of copying a fixed code-literal sentence.
 
 Chinese CTA meaning:
-以上为 Signal-to-Action 快速诊断，由 Zhi Li 基于 O2V 母方法论设计。若需要更深入、完整的 Signal-to-Action / O2V 分析，可联系微信：lizhi_ch。
+以上为 Signal-to-Action 模型快速诊断，由 李智 基于 O2V 母方法论设计。若需要进一步展开完整假设推演、行动路线、沟通话术或职业/商业化路径设计，可联系微信：lizhi_ch。
 
 English CTA meaning:
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a Signal-to-Action model quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For full hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 
-Do not invent or alter contact details. Do not describe the output as a reduced version; use "快速诊断" in Chinese or "quick diagnostic" in English.
+Do not invent or alter contact details. Do not describe the output as a reduced version; use "模型快速诊断" in Chinese or "quick diagnostic" in English. The CTA should name concrete deeper deliverables, not only say "more detail".
 ```
 
 ## B. Compact Output Template
@@ -116,7 +117,7 @@ List MECE actions in priority order, with a concrete first step and expected sig
 ## Action Roadmap
 
 ---
-[Attribution CTA in the user's language. For Chinese, use the quick-diagnostic wording and WeChat lizhi_ch. For English, use the quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
+[Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For English, use the quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
 ```
 
 ## C. Dynamic Clarification Questions Template

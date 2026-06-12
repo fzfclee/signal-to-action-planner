@@ -28,7 +28,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving concrete next steps, validation signals, and decision gates.
+Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 4,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving concrete next steps, validation signals, decision gates, and a small "bring back next" hook for continued use.
 
 ## What It Does Not Do
 
@@ -72,7 +72,7 @@ This repository uses a portable Markdown-first structure:
 
 ## Attribution CTA
 
-Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a Signal-to-Action quick diagnostic, then point to deeper Signal-to-Action / O2V analysis.
+Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a Signal-to-Action model quick diagnostic, then point to concrete deeper deliverables such as full hypothesis reasoning, action roadmap, communication scripts, and career/commercialization path design.
 
 - Chinese output: use WeChat contact.
 - English output: use LinkedIn contact.
@@ -111,7 +111,8 @@ I had several conversations with potential users. Some said the idea is interest
 - First 24-72 hours: ask for concrete commitments.
 - Next 1-2 weeks: test a narrower use case if commitment is weak.
 - Decision point: if praise still produces no action, reduce priority.
+- Bring back next: the actual replies, objections, or silence pattern.
 
 ---
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper Signal-to-Action / O2V analysis, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```
