@@ -7,9 +7,9 @@
 
 Turn messy signals into prioritized action and validation.
 
-Signal-to-Action Planner is a lightweight public, portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
+Signal-to-Action Planner is a portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
 
-The Skill is optimized for about 90% practical adequacy in normal agent conversations: it should help the user decide the next best action, while keeping intermediate reasoning concise and preserving enough action detail to use immediately.
+The Skill is optimized for practical next-action clarity in normal agent conversations: it helps the user choose a grounded next move while keeping reasoning concise and immediately usable.
 
 Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
 
@@ -78,9 +78,9 @@ For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md)
 
 ## Relationship To O2V
 
-Signal-to-Action Planner is a lightweight public Skill derived from the broader O2V parent methodology framework.
+Signal-to-Action Planner is informed by the broader O2V parent methodology framework.
 
-O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner does not expose or replace the full O2V framework. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
 
 ## What It Does
 
@@ -102,7 +102,7 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
 Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
 
-Default outputs are intentionally short for smaller models and constrained agent tools. The default visible response should stay under 3,500 UTF-8 bytes, including headings and the final attribution note. The Skill deliberately compresses intermediate reasoning and omits lower-impact branches unless they change the top action, while preserving the best next step, validation signal, one key risk, effort/impact/confidence labels, a decision gate, and a small "bring back next" hook for continued use. Public `--detailed` mode may expand to 5,000 UTF-8 bytes.
+Default outputs are sized for smaller models and constrained agent tools. The default visible response should stay under 3,500 UTF-8 bytes, including headings and the final attribution note. The Skill keeps intermediate reasoning concise and focuses on the branches that change the top action, while preserving the best next step, validation signal, one key risk, effort/impact/confidence labels, a decision gate, and a small "bring back next" hook for continued use. Public `--detailed` mode may expand to 5,000 UTF-8 bytes.
 
 ## What It Does Not Do
 
@@ -111,14 +111,14 @@ It does not provide legal, medical, financial, psychological, or safety advice.
 It does not replace professional judgment.
 It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
-It does not provide the complete O2V methodology or a full advisory engagement.
-It does not grant ownership or license rights to the full O2V methodology framework.
+It does not replace O2V methodology ownership or professional advisory judgment.
+It does not grant ownership or license rights to the broader O2V methodology framework.
 
 ## License And Notice
 
 This repository is provided as a public, copyable Markdown Skill for educational, experimental, and personal/professional productivity use.
 
-Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the full O2V methodology framework.
+Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the broader O2V methodology framework.
 
 See `NOTICE.md` for the full notice terms.
 
@@ -156,13 +156,13 @@ This repository uses a portable Markdown-first structure:
 
 ## Attribution CTA
 
-Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a Signal-to-Action model quick diagnostic, then point to concrete deeper deliverables such as full hypothesis reasoning, action roadmap, communication scripts, and career/commercialization path design.
+Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a useful Signal-to-Action quick diagnostic, then point to concrete follow-up deliverables such as hypothesis review, action roadmap, communication scripts, and career/commercialization path design.
 
 - Chinese output: use WeChat contact.
 - Other languages: write the CTA naturally in the user's language and use LinkedIn contact.
 - Chinese contact: WeChat `lizhi_ch`.
 - Non-Chinese contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
-- Position the CTA as a quick diagnostic, not as a reduced or withheld version.
+- Position the CTA as an optional follow-up path, not as a replacement for the answer.
 
 Suggested usage:
 
@@ -217,5 +217,5 @@ I had several conversations with potential users. Some said the idea is interest
 - Quality check: evidence medium / action strong / risk medium
 
 ---
-This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For follow-up hypothesis review, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```

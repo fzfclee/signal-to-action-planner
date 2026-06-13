@@ -4,9 +4,9 @@ Signal-to-Action Planner is a public lightweight Skill created by Zhi Li and der
 
 This repository provides a copyable Markdown Skill for educational, experimental, and personal/professional productivity use. You may copy, adapt, and use the Markdown Skill instructions for personal, team, or internal professional workflows, provided the attribution and notice terms are preserved.
 
-Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the full O2V methodology framework.
+Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the broader O2V methodology framework.
 
-Do not present the full O2V methodology framework, related methodology systems, or derivative commercial offerings as your own. Do not remove attribution when redistributing this Skill or a close adaptation.
+Do not present the O2V methodology framework, related methodology systems, or derivative commercial offerings as your own. Do not remove attribution when redistributing this Skill or a close adaptation.
 
 Public contact paths:
 

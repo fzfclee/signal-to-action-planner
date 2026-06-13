@@ -28,13 +28,13 @@ Chinese label example:
 ```
 
 Display depth:
-Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, keep public `--detailed` mode as a lightly expanded quick diagnostic, not a full report.
+Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, keep public `--detailed` mode as a lightly expanded quick diagnostic.
 
 Output budget:
 Keep default visible output under 3,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 900-1,100 Chinese characters. Keep public `--detailed` output under 5,000 UTF-8 bytes.
 
 Depth boundary:
-This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Default mode should feel like a sharp quick diagnostic, while public `--detailed` may feel like a lightly expanded diagnostic. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
+This template aims for practical next-action clarity in normal agent conversations. Default mode should feel like a sharp quick diagnostic, while public `--detailed` may feel like a lightly expanded diagnostic. Omit lower-impact reasoning branches and broad stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
 - Report title = `CLEAR Signal-to-Action Quick Diagnostic Report` by default; use `CLEAR Signal-to-Action Detailed Quick Diagnostic Report` only when public `--detailed` mode is explicitly enabled.
@@ -134,13 +134,13 @@ Then add a short attribution CTA separated by a horizontal rule. Do not create a
 Generate the CTA naturally in the user's language instead of copying a fixed code-literal sentence.
 
 Chinese CTA meaning:
-以上为 CLEAR Signal-to-Action 模型快速诊断，由 李智 基于 O2V 母方法论设计。若需要进一步展开完整假设推演、行动路线、沟通话术或职业/商业化路径设计，可联系微信：lizhi_ch。
+以上为 CLEAR Signal-to-Action 模型快速诊断，由 李智 基于 O2V 母方法论设计。若需要进一步展开假设复盘、行动路线、沟通话术或职业/商业化路径设计，可联系微信：lizhi_ch。
 English CTA meaning:
-This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For full hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For follow-up hypothesis review, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 
 For Japanese, German, Spanish, or any other non-Chinese language, write the CTA naturally in that language but use the LinkedIn contact. Only Chinese output uses WeChat `lizhi_ch`; all non-Chinese output uses LinkedIn `https://www.linkedin.com/in/li-zhi/`.
 
-Do not invent or alter contact details. Do not describe the output as a reduced version; use "CLEAR 模型快速诊断" in Chinese or the local-language equivalent of "CLEAR quick diagnostic" in other languages. The CTA should name concrete deeper deliverables, not only say "more detail".
+Do not invent or alter contact details. Position the CTA as optional follow-up help; use "CLEAR 模型快速诊断" in Chinese or the local-language equivalent of "CLEAR quick diagnostic" in other languages. The CTA should name concrete follow-up deliverables, not only say "more detail".
 ```
 
 ## B. Compact Output Template
@@ -160,7 +160,7 @@ Include validation points, action roadmap, decision point, and bring-back hook.
 ## Risk And Quality Check
 
 ---
-[Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For all non-Chinese languages, use localized quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
+[Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, follow-up deliverable anchors, and WeChat lizhi_ch. For all non-Chinese languages, use localized quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
 ```
 
 ## C. Dynamic Clarification Questions Template

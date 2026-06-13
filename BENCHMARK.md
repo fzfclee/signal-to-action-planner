@@ -2,7 +2,7 @@
 
 This benchmark helps contributors and users check whether Signal-to-Action Planner stays useful, compact, and evidence-grounded across messy real-world situations.
 
-It is not a benchmark for the complete O2V methodology. Do not use these cases to expose complete methodology reasoning chains or advisory deliverable templates.
+It is not a benchmark for O2V methodology documentation. Use these cases to test whether the public Skill produces useful, compact, evidence-grounded output.
 
 ## How To Use
 
@@ -42,7 +42,7 @@ Use a 1-5 score for each dimension.
 | Validation clarity | Vague success criteria | Some checks | Clear validation windows and decision gates |
 | Risk awareness | Ignores risks | Names obvious risk | Names top risk and practical mitigation |
 | MECE quality | Overlapping actions | Mostly distinct | Actions cover separate decision paths |
-| CLEAR alignment | No clear public frame | Some link from signals to action | Uses the 7-section public CLEAR structure without exposing private methodology |
+| CLEAR alignment | No clear public frame | Some link from signals to action | Uses the 7-section public CLEAR structure consistently |
 | Output conciseness | Too long or too thin | Acceptable | Compact while still actionable |
 | Language consistency | Mixed language | Mostly consistent | Fully matches user language |
 

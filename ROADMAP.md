@@ -1,6 +1,6 @@
 # Roadmap
 
-Signal-to-Action Planner will stay a compact public Skill. The goal is to make the public version easier to adopt, easier to test, and more useful across agent tools, while keeping the complete O2V methodology separate.
+Signal-to-Action Planner will stay a focused quick-diagnostic Skill. The goal is to make it easier to adopt, easier to test, and more useful across agent tools, while keeping O2V methodology assets governed separately.
 
 ## Near Term
 
@@ -26,7 +26,7 @@ Signal-to-Action Planner will stay a compact public Skill. The goal is to make t
 
 ## Non-Goals
 
-- Do not expose the full O2V methodology.
+- Do not turn this repo into an O2V methodology reference.
 - Do not make the public default output long or exhaustive.
 - Do not add mandatory runtime dependencies.
 - Do not automate posting, messaging, or external actions from this public Skill.

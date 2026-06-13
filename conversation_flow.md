@@ -23,7 +23,7 @@ flowchart TD
     K --> L["Risk And Quality Check"]
     L --> M["Plan quality self-check"]
     M --> N["Bring back next hook"]
-    N --> O["Optional CTA to deeper full analysis"]
+    N --> O["Optional CTA to follow-up expansion"]
 ```
 If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
 

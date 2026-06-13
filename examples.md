@@ -1,6 +1,6 @@
 ﻿# Examples
 
-These examples are shortened for readability. They show the public compact version: useful action, limited reasoning, light risk coverage, and a continuation hook.
+These examples are shortened for readability. They show the quick diagnostic format: concise reasoning, useful action, light risk coverage, and a continuation hook.
 
 Public-facing examples should align with CLEAR:
 
@@ -81,8 +81,8 @@ Output excerpt:
    - Expected signal: concrete criteria, budget signal, or evasive answer.
    - Effort / Impact / Confidence: low / high / medium
 2. Run a small consulting-productization test.
-   - First step: define one paid diagnostic offer and pitch it to 3 trusted contacts.
-   - Expected signal: paid interest, referral, or clear objection.
+   - First step: define one advisory diagnostic offer and pitch it to 3 trusted contacts.
+   - Expected signal: concrete interest, referral, or clear objection.
    - Effort / Impact / Confidence: medium / high / medium
 
 ## 6. R - Review the Evidence: Action Roadmap
@@ -453,21 +453,21 @@ Validation: success = 2 concrete commitments in 1 week.
 Roadmap: first send commitment ask; next narrow use case if replies stay vague; pause if no concrete action.
 ```
 
-### Failure 5 - CTA Feels Like A Withheld Version
+### Failure 5 - CTA Undermines Trust
 
 Bad pattern:
 
 ```text
-This is only a simplified version. Pay for the complete version.
+This is just a teaser. Contact me for the real analysis.
 ```
 
 Why it fails:
 
 - It reduces trust in the public output.
-- It makes the user feel the answer was intentionally weakened.
+- It makes the user feel the useful answer is being held back.
 
 Correction:
 
 ```text
-Position the output as a quick diagnostic and name useful next deliverables, such as deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design.
+Position the output as a useful quick diagnostic and name practical follow-up deliverables, such as hypothesis review, action roadmap, communication scripts, or career/commercialization path design.
 ```

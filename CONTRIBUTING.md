@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions are welcome when they improve the public Skill without turning it into the complete methodology.
+Contributions are welcome when they improve the public Skill while keeping it focused on quick diagnostic use.
 
 ## Good Contributions
 
@@ -14,9 +14,9 @@ Contributions are welcome when they improve the public Skill without turning it 
 ## What To Avoid
 
 - Do not add private, confidential, or identifiable user situations.
-- Do not expose the full O2V methodology or deeper advisory workflow.
+- Do not turn the repo into an O2V methodology reference or advisory-workflow manual.
 - Do not make default output longer than necessary.
-- Do not replace the public CLEAR structure with a different visible framework unless the whole repo is intentionally rebranded.
+- Do not replace the public CLEAR structure with a different visible framework unless the whole repo is explicitly rebranded.
 - Do not add platform-specific dependencies unless they are optional.
 - Do not turn the public Skill into legal, medical, financial, psychological, or safety advice.
 
@@ -27,7 +27,7 @@ Use a small, focused pull request:
 1. State the problem.
 2. Explain the change.
 3. Show one before/after example or benchmark case.
-4. Confirm that the public output remains compact.
+4. Confirm that the public output remains focused and usable.
 5. Confirm that any affected surrounding files stay aligned with the CLEAR 7-section output.
 
 ## Public Benchmark Check
