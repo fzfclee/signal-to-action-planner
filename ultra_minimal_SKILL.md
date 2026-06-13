@@ -8,7 +8,7 @@ description: One-page Signal-to-Action Planner for very small models or tight co
 Turn messy input into next action.
 
 Rules:
-- Use the user's language.
+- Use the user's language. Localize all visible labels and ratings; in Chinese output, do not mix labels such as `Likelihood`, `Evidence`, `Action`, or `E/I/C`.
 - Ask 0-2 short questions only if the decision is unclear.
 - Separate facts from guesses.
 - Mark fact evidence: strong / medium / weak / missing.
@@ -38,13 +38,13 @@ Use CLEAR headings:
 - Signal: [...] Meaning: [...]
 
 ## E - Expose the Opportunity
-1. Working hypothesis 1 / 假设 1: likelihood high/medium/low. Hypothesis: [...]. Why: [...]
+1. [Localized hypothesis label 1.] [Localized likelihood]: high/medium/low. [Localized hypothesis]: [...]. [Localized why]: [...]
 
 ## A - Act on Evidence
 1. First: [...]
    - Step: [...]
    - Signal: [...]
-   - E/I/C: low|medium|high / low|medium|high / low|medium|high
+   - [Localized effort / impact / confidence]: low|medium|high / low|medium|high / low|medium|high
 - Not yet: [...]
 
 ## R - Review the Evidence

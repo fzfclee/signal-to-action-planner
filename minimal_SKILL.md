@@ -25,7 +25,7 @@ Core chain:
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Use one language consistently. Match the user's language.
+Use one language consistently. Match the user's language. Localize all visible labels, fields, option labels, and rating words. In Chinese output, do not mix labels such as `Likelihood`, `Evidence basis`, `Expected signal`, or `Effort / Impact / Confidence`; use Chinese labels instead.
 
 ## Operating Rules
 
@@ -64,20 +64,20 @@ Use 2 bullets when the decision is obvious; do not force 3.
 - [Signal.] Confidence: high/medium/low. Why it matters now: [...]
 
 ## 4. E - Expose the Opportunity: Implications And Working Hypotheses
-1. Working hypothesis 1 / 假设 1: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
-2. Optional only if needed: Working hypothesis 2 / 假设 2: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
+1. [Localized hypothesis label 1.] [Localized likelihood]: high/medium/low. [Localized hypothesis]: [...]. [Localized evidence basis]: [...]
+2. Optional only if needed: [localized hypothesis label 2.] [Localized likelihood]: high/medium/low. [Localized hypothesis]: [...]. [Localized evidence basis]: [...]
 
 ## 5. A - Act on Evidence: Priority Action Plan
 1. Priority 1: [...]
-   - Why / evidence tested: [...]
-   - Expected signal: [...]
-   - First concrete step: [...]
-   - Effort / Impact / Confidence: low|medium|high / low|medium|high / low|medium|high
+   - [Localized why / evidence tested]: [...]
+   - [Localized expected signal]: [...]
+   - [Localized first concrete step]: [...]
+   - [Localized effort / impact / confidence]: low|medium|high / low|medium|high / low|medium|high
 2. Optional only if needed: Priority 2: [...]
-   - Why / evidence tested: [...]
-   - Expected signal: [...]
-   - First concrete step: [...]
-   - Effort / Impact / Confidence: low|medium|high / low|medium|high / low|medium|high
+   - [Localized why / evidence tested]: [...]
+   - [Localized expected signal]: [...]
+   - [Localized first concrete step]: [...]
+   - [Localized effort / impact / confidence]: low|medium|high / low|medium|high / low|medium|high
 
 What not to do yet:
 - [...]
@@ -91,7 +91,7 @@ What not to do yet:
 
 ## 7. Risk And Quality Check
 - Risk: [...] / mitigation: [...]
-- Quality check: evidence strong|medium|weak / action strong|medium|weak / risk strong|medium|weak
+- [Localized quality check]: evidence strong|medium|weak / action strong|medium|weak / risk strong|medium|weak, localized in non-English output
 
 ---
 [Attribution CTA in the user's language.]

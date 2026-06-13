@@ -26,6 +26,47 @@ This public Skill is intentionally a compact, decision-grade version. Aim for ab
 
 Use one language consistently in each run. Match the user's dominant language or the language required by the user's system / project instructions. Do not mix languages inside headings, labels, and explanations unless a term is a user-provided phrase, a technical identifier, or a proper noun.
 
+Hard rule: localize user-facing field labels, rating labels, option labels, and section descriptions. Do not output mixed labels such as `假设 1` plus `Likelihood`, `Action confidence`, `Evidence basis`, or `Expected signal` in the same Chinese report.
+
+`CLEAR` and `Signal-to-Action` may remain English as framework names. Everything around them must follow the output language.
+
+For Chinese output, use these labels:
+
+- Decision Summary -> 决策摘要
+- Core judgment -> 核心判断
+- Recommended first move -> 建议的第一步
+- Main uncertainty / decision gate -> 主要不确定性 / 决策门槛
+- Watch-out -> 注意点
+- Fact evidence strength -> 事实证据强度
+- Evidence basis -> 证据依据
+- Signal confidence -> 信号置信度
+- Likelihood -> 可能性
+- Hypothesis -> 假设
+- Confidence note -> 置信度说明
+- Action -> 行动
+- Why / evidence tested -> 原因 / 要验证的证据
+- Expected signal -> 预期信号
+- First concrete step -> 第一个具体步骤
+- Effort / Impact / Confidence -> 投入 / 影响 / 信心
+- Risk / caution -> 风险 / 注意事项
+- What Not To Do Yet -> 暂时不要做
+- Validation Plan -> 验证计划
+- Action Roadmap -> 行动路线
+- Decision point -> 决策点
+- Bring back next -> 下次带回
+- Risk And Quality Check -> 风险与质量检查
+- Quality check -> 质量检查
+- strong / medium / weak / missing -> 强 / 中 / 弱 / 缺失
+- high / medium / low / unknown -> 高 / 中 / 低 / 未知
+
+Chinese label example:
+
+```markdown
+1. 假设 1（最可能）：可能性：高。假设：当前需求更像礼貌兴趣，而不是强需求。证据依据：有正面反馈，但没有具体承诺。
+- 投入 / 影响 / 信心：低 / 高 / 中
+- 质量检查：证据 中 / 行动 强 / 风险 中
+```
+
 ## Core Chain
 
 Use CLEAR as the public-facing brand frame. Keep the internal reasoning chain unchanged:
@@ -354,16 +395,16 @@ Use CLEAR as the visible organizing structure, not as a replacement for the inte
 
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
-For Chinese output, localize the section headings naturally, such as `决策摘要`, `C - Clarify the Facts：事实、假设与决策焦点`, and `R - Review the Evidence：验证计划与行动路线`.
+For Chinese output, localize section headings and field labels naturally, such as `决策摘要`, `C - 澄清事实：事实、假设与决策焦点`, and `R - 审视证据：验证计划与行动路线`.
 
 ## 1. Decision Summary
 
 Start with 2-3 short bullets so a busy reader understands the answer before reading details:
 
-- Core judgment
-- Recommended first move
-- Main uncertainty or decision gate
-- Watch-out, only if important
+- [Localized label for core judgment]
+- [Localized label for recommended first move]
+- [Localized label for main uncertainty or decision gate]
+- [Localized label for watch-out, only if important]
 
 If the situation is simple, 2 bullets may be enough. Do not force 3 bullets when the decision is obvious.
 
@@ -376,9 +417,9 @@ Briefly clarify what the user is trying to decide, what is directly supported, a
 Limit to 1-2 bullets by default.
 
 For each item, include:
-- Fact, assumption, or missing input
-- Fact evidence strength: strong / medium / weak / missing
-- Why it matters, in one short phrase
+- [Localized label for fact, assumption, or missing input]
+- [Localized label for fact evidence strength]: strong / medium / weak / missing, localized when the output language is not English
+- [Localized label for why it matters], in one short phrase
 
 Split compound items when a directly supported fact and a strategic inference have different certainty levels.
 
@@ -389,10 +430,10 @@ Do not repeat the same fact in a separate evidence section.
 Identify the 1-2 signals that matter most.
 
 For each signal, include:
-- Signal
-- Evidence strength or signal confidence
-- Why it matters now
-- Whether it is a true signal, weak signal, or possible noise when relevant
+- [Localized label for signal]
+- [Localized label for evidence strength or signal confidence]
+- [Localized label for why it matters now]
+- [Localized label for whether it is a true signal, weak signal, or possible noise when relevant]
 
 ## 4. E - Expose the Opportunity: Implications And Working Hypotheses
 
@@ -400,13 +441,13 @@ Compress the middle reasoning. Show only the implications and hypotheses that ch
 
 Generate 1-2 testable hypotheses by default, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
 
-Do not label hypotheses as `H1`, `H2`, or `H3`. Use readable labels such as `Working hypothesis 1 (most likely)` in English or `假设 1（最可能）` in Chinese.
+Do not label hypotheses as `H1`, `H2`, or `H3`. Use readable localized labels such as `Working hypothesis 1 (most likely)` in English or `假设 1（最可能）` in Chinese. Do not mix `Working hypothesis` with Chinese output.
 
 For most hypotheses, include only:
-- Likelihood: high / medium / low / unknown
-- Hypothesis
-- Evidence basis, in one short sentence
-- Confidence note when strong facts support only a medium or low-confidence inference
+- [Localized label for likelihood]: high / medium / low / unknown, localized when the output language is not English
+- [Localized label for hypothesis]
+- [Localized label for evidence basis], in one short sentence
+- [Localized label for confidence note] when strong facts support only a medium or low-confidence inference
 
 Do not expand hypotheses in default mode. Only in public `--detailed` mode may the model briefly add:
 - What would increase confidence
@@ -418,16 +459,16 @@ This section should show that reasoning happened without exposing the full reaso
 
 Rank 1-2 actions by priority by default. Use 3 only when the user explicitly asks for more options or the situation clearly has three separate action lanes. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
-- Priority 1: do first
-- Priority 2: do next
+- [Localized label for Priority 1]: do first, localized when the output language is not English
+- [Localized label for Priority 2]: do next, localized when the output language is not English
 
 For each action, include:
-- Action
-- Why / evidence tested
-- Expected signal
-- First concrete step
-- Effort / Impact / Confidence: low / medium / high
-- Risk / caution, only if important
+- [Localized label for action]
+- [Localized label for why / evidence tested]
+- [Localized label for expected signal]
+- [Localized label for first concrete step]
+- [Localized label for effort / impact / confidence]: low / medium / high, localized when the output language is not English
+- [Localized label for risk / caution], only if important
 
 Make each action concrete but short: enough that the user knows the next move, not enough to become a full playbook. Public `--detailed` mode may add 1-2 extra execution details.
 
@@ -436,24 +477,24 @@ Add a compact `What Not To Do Yet` line with 1-2 actions that are premature, ris
 ## 6. R - Review the Evidence: Validation Plan And Action Roadmap
 
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
-- Observe / success signal / weak signal / time window / next decision
+- [Localized labels for observe / success signal / weak signal / time window / next decision]
 
 Then give a concise action roadmap and decision gate. Do not repeat the full action descriptions. Use a simple structure such as:
 
-- First 24-72 hours: [highest-priority action and first concrete step]
-- Next 1-2 weeks: [second action or follow-through]
-- Decision point: [what evidence should trigger a change in direction]
-- Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
+- [Localized label for first 24-72 hours]: [highest-priority action and first concrete step]
+- [Localized label for next 1-2 weeks]: [second action or follow-through]
+- [Localized label for decision point]: [what evidence should trigger a change in direction]
+- [Localized label for bring back next]: [one concrete result, response, signal, or new fact that would make the next run sharper]
 
 ## 7. Risk And Quality Check
 
 List the top 1 risk and one mitigation. Keep this lightweight in the public default version:
-- Risk: [risk] / mitigation: [mitigation]
+- [Localized label for risk]: [risk] / [localized label for mitigation]: [mitigation]
 
 Then add a one-line Plan Quality Self-Check.
 
 Keep this to one short line:
-- Quality check: evidence [strong/medium/weak] / action [strong/medium/weak] / risk [strong/medium/weak]
+- [Localized label for quality check]: [localized labels for evidence/action/risk and ratings]
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 
