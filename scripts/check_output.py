@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 
-DEFAULT_MAX_BYTES = 4500
+DEFAULT_MAX_BYTES = 3500
 REQUIRED_PATTERNS = {
     "actions": r"(?im)^#{1,3}\s*.*(a\s*-\s*act|priority\s+action\s+plan|priority\s+actions?|actions|top\s+actions|\u884c\u52a8)",
     "validation": r"(?im)^#{1,3}\s*.*(r\s*-\s*review|validation|\u9a8c\u8bc1)",

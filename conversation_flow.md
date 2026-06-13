@@ -35,7 +35,7 @@ Related-topic continuity is allowed only after reload. Use prior conversation co
 
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a lightly expanded quick diagnostic; it must not expand hypothesis reasoning, add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
 
-Keep default visible output under 4,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
+Keep default visible output under 3,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first. Public `--detailed` mode may expand to 5,000 UTF-8 bytes.
 
 ## Step 1 - Receive Messy Input
 
@@ -163,15 +163,15 @@ Use CLEAR as the visible user-facing structure, not as a replacement for the int
 6. R - Review the Evidence: Validation Plan And Action Roadmap
 7. Risk And Quality Check
 
-Keep evidence visible, but keep the public output compact. Limit Clarify and Locate to the most decision-relevant 2-3 items each.
+Keep evidence visible, but keep the public default output compact. Limit Clarify and Locate to the most decision-relevant 1-2 items each.
 
 Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
-Compress implications and hypotheses into conclusion-level output inside `E - Expose the Opportunity`. Rank 2 working hypotheses from most likely to least likely. Do not label them as `H1`, `H2`, or `H3`; use readable labels such as `Working hypothesis 1 (most likely)` or `假设 1（最可能）`. Do not expand confidence-increasing and confidence-weakening details in the public version, even when `--detailed` is enabled.
+Compress implications and hypotheses into conclusion-level output inside `E - Expose the Opportunity`. Rank 1-2 working hypotheses from most likely to least likely. Do not label them as `H1`, `H2`, or `H3`; use readable labels such as `Working hypothesis 1 (most likely)` or `假设 1（最可能）`. Do not expand confidence-increasing and confidence-weakening details in the public version, even when `--detailed` is enabled.
 
 ## Step 7 - Focus On Top Actions Inside A - Act on Evidence
 
-The Skill must not produce too many actions. Prioritize 1-3 MECE actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
+The Skill must not produce too many actions. Prioritize 1-2 MECE actions by default that are practical, evidence-seeking, and directly connected to the user's decision. Use 3 only when the user asks for more options or the situation clearly has three separate action lanes. Make the order explicit:
 
 - Priority 1: do first.
 - Priority 2: do next.
@@ -193,7 +193,6 @@ Then give a short action roadmap inside `R - Review the Evidence`:
 
 - First: the highest-priority action.
 - Next: the second action.
-- Then: the third action or contingency.
 - Decision point: what evidence should change the user's direction.
 - Bring back next: the result, response, or new fact that would make the next run sharper.
 
@@ -203,9 +202,7 @@ Keep the roadmap connected to validation without repeating the full action descr
 
 End the numbered output with `Risk And Quality Check`:
 
-- top 1-2 risks and one mitigation each;
-- Evidence coverage: strong / medium / weak;
-- Action specificity: strong / medium / weak;
-- Risk coverage: strong / medium / weak.
+- top 1 risk and one mitigation;
+- one-line quality check: evidence / action / risk.
 
 Then add the short note, attribution CTA, and contact path required by `SKILL.md`.

@@ -92,8 +92,8 @@ Input handling:
 
 Output hard cap:
 
-- Default visible output must stay under 4,500 UTF-8 bytes, including headings, bullets, and attribution note.
-- For Chinese output, this usually means roughly 1,200-1,500 Chinese characters depending on punctuation and Markdown.
+- Default visible output must stay under 3,500 UTF-8 bytes, including headings, bullets, and attribution note.
+- For Chinese output, this usually means roughly 900-1,100 Chinese characters depending on punctuation and Markdown.
 - If the output would exceed the cap, automatically compress before responding.
 - Never exceed the cap unless the user explicitly asks for `--detailed` output and the platform can support it. Even then, keep public output under 5,000 UTF-8 bytes.
 
@@ -101,10 +101,10 @@ Compression priority:
 
 1. Keep the top action, validation logic, and action roadmap useful enough to act on.
 2. Shorten situation summary and final CTA by about one third.
-3. Shorten facts, signals, implications, and hypotheses by at least two thirds.
-4. Limit facts/signals to 2-3 items.
-5. Limit hypotheses to 2 items by default.
-6. Limit actions to 2 items by default; use 1 only for very narrow cases and 3 only when clearly necessary.
+3. Shorten facts, signals, implications, and hypotheses to the minimum needed for action.
+4. Limit facts/signals to 1-2 items by default.
+5. Limit hypotheses to 1-2 items by default.
+6. Limit actions to 1-2 items by default; use 3 only when the user explicitly asks for more options or the situation clearly has three separate action lanes.
 7. Remove optional explanation before removing validation or roadmap.
 
 If the model suspects the platform may truncate output, use the compact output template automatically.
@@ -165,7 +165,7 @@ When being conservative because of organizational politics, future risk, stakeho
 19. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", "explain the reasoning", or a similar instruction.
 20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 21. Keep every default output under the output budget. Compress automatically before responding if needed.
-22. Include only a lightweight public Risk Register: top 1-2 risks and one mitigation each.
+22. Include only a lightweight public Risk Register: top 1 risk and one mitigation in default mode.
 23. Add simple Effort / Impact / Confidence labels to each priority action.
 24. End with a short Plan Quality Self-Check inside the final section so the user can judge reliability.
 
@@ -346,7 +346,7 @@ D. Other / more context: ...
 
 # CLEAR Signal-to-Action Output
 
-Default output is a compact CLEAR quick diagnostic, not a full report. Keep exactly 7 visible sections, but make each section short enough to fit the output budget. Prioritize user-perceived value: compress sections 2-4 first, then preserve useful detail in sections 5-6.
+Default output is a concise CLEAR quick diagnostic, not a full report. Keep exactly 7 visible sections, but make the default clearly shorter than public `--detailed` mode. Prioritize user-perceived value: compress sections 2-4 aggressively, keep section 5 practical, and keep section 6 decision-ready.
 
 Use CLEAR as the visible organizing structure, not as a replacement for the internal chain:
 
@@ -356,14 +356,14 @@ For Chinese output, localize the section headings naturally, such as `决策摘�
 
 ## 1. Decision Summary
 
-Start with 3-4 short bullets so a busy reader understands the answer before reading details:
+Start with 2-3 short bullets so a busy reader understands the answer before reading details:
 
 - Core judgment
 - Recommended first move
 - Main uncertainty or decision gate
 - Watch-out, only if important
 
-If the situation is simple, 2 bullets may be enough. Do not force 4 bullets when the decision is obvious.
+If the situation is simple, 2 bullets may be enough. Do not force 3 bullets when the decision is obvious.
 
 Do not use this section as a background recap.
 
@@ -371,7 +371,7 @@ Do not use this section as a background recap.
 
 Briefly clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 
-Limit to 2-3 bullets.
+Limit to 1-2 bullets by default.
 
 For each item, include:
 - Fact, assumption, or missing input
@@ -384,7 +384,7 @@ Do not repeat the same fact in a separate evidence section.
 
 ## 3. L - Locate the Signal: Key Signals
 
-Identify the 2-3 signals that matter most.
+Identify the 1-2 signals that matter most.
 
 For each signal, include:
 - Signal
@@ -396,7 +396,7 @@ For each signal, include:
 
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
-Generate 2 testable hypotheses by default, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
+Generate 1-2 testable hypotheses by default, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
 
 Do not label hypotheses as `H1`, `H2`, or `H3`. Use readable labels such as `Working hypothesis 1 (most likely)` in English or `假设 1（最可能）` in Chinese.
 
@@ -406,7 +406,7 @@ For most hypotheses, include only:
 - Evidence basis, in one short sentence
 - Confidence note when strong facts support only a medium or low-confidence inference
 
-Do not expand hypotheses by default. Only when needed, expand the single most important or most uncertain hypothesis with:
+Do not expand hypotheses in default mode. Only in public `--detailed` mode may the model briefly add:
 - What would increase confidence
 - What would weaken confidence
 
@@ -414,7 +414,7 @@ This section should show that reasoning happened without exposing the full reaso
 
 ## 5. A - Act on Evidence: Priority Action Plan
 
-Rank 2 actions by priority by default. Use 1 only when the situation has a single obvious next move; use 3 only when necessary. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
+Rank 1-2 actions by priority by default. Use 3 only when the user explicitly asks for more options or the situation clearly has three separate action lanes. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
 - Priority 1: do first
 - Priority 2: do next
@@ -427,34 +427,31 @@ For each action, include:
 - Effort / Impact / Confidence: low / medium / high
 - Risk / caution, only if important
 
-Make each action slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
+Make each action concrete but short: enough that the user knows the next move, not enough to become a full playbook. Public `--detailed` mode may add 1-2 extra execution details.
 
-Add a compact `What Not To Do Yet` subsection with 1-3 actions that are premature, risky, or unsupported by evidence.
+Add a compact `What Not To Do Yet` line with 1-2 actions that are premature, risky, or unsupported by evidence.
 
 ## 6. R - Review the Evidence: Validation Plan And Action Roadmap
 
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
 - Observe / success signal / weak signal / time window / next decision
 
-Then give a concise action roadmap and decision gates. Do not repeat the full action descriptions. Use a simple structure such as:
+Then give a concise action roadmap and decision gate. Do not repeat the full action descriptions. Use a simple structure such as:
 
 - First 24-72 hours: [highest-priority action and first concrete step]
 - Next 1-2 weeks: [second action or follow-through]
-- Then: [third action or contingency]
 - Decision point: [what evidence should trigger a change in direction]
 - Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
 
 ## 7. Risk And Quality Check
 
-List the top 1-2 risks and one mitigation each. Keep this lightweight in the public version:
+List the top 1 risk and one mitigation. Keep this lightweight in the public default version:
 - Risk: [risk] / mitigation: [mitigation]
 
-Then add a short Plan Quality Self-Check.
+Then add a one-line Plan Quality Self-Check.
 
-Keep this to 3 short lines:
-- Evidence coverage: strong / medium / weak
-- Action specificity: strong / medium / weak
-- Risk coverage: strong / medium / weak
+Keep this to one short line:
+- Quality check: evidence [strong/medium/weak] / action [strong/medium/weak] / risk [strong/medium/weak]
 
 End with one short note: the output supports clearer action and validation, while the user remains responsible for decisions.
 

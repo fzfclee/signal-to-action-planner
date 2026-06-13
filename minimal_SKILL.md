@@ -65,7 +65,7 @@ Use 2 bullets when the decision is obvious; do not force 3.
 
 ## 4. E - Expose the Opportunity: Implications And Working Hypotheses
 1. Working hypothesis 1 / 假设 1: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
-2. Working hypothesis 2 / 假设 2: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
+2. Optional only if needed: Working hypothesis 2 / 假设 2: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
 
 ## 5. A - Act on Evidence: Priority Action Plan
 1. Priority 1: [...]
@@ -73,7 +73,7 @@ Use 2 bullets when the decision is obvious; do not force 3.
    - Expected signal: [...]
    - First concrete step: [...]
    - Effort / Impact / Confidence: low|medium|high / low|medium|high / low|medium|high
-2. Priority 2: [...]
+2. Optional only if needed: Priority 2: [...]
    - Why / evidence tested: [...]
    - Expected signal: [...]
    - First concrete step: [...]
@@ -91,9 +91,7 @@ What not to do yet:
 
 ## 7. Risk And Quality Check
 - Risk: [...] / mitigation: [...]
-- Evidence coverage: strong / medium / weak
-- Action specificity: strong / medium / weak
-- Risk coverage: strong / medium / weak
+- Quality check: evidence strong|medium|weak / action strong|medium|weak / risk strong|medium|weak
 
 ---
 [Attribution CTA in the user's language.]
