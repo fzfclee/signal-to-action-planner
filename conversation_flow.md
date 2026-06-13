@@ -31,6 +31,8 @@ On tools with memory or cached skills, apply the current `SKILL.md` at the start
 
 At the start of a normal run, briefly acknowledge that the current Skill instructions are loaded, then ask the required first question. If the user challenges compliance, stop, reload, and restart from the required flow.
 
+Related-topic continuity is allowed only after reload. Use prior conversation context for stable user facts, previous answers, constraints, and preferences when still relevant, but never let continuity override the current `SKILL.md`. If the Skill version changed, reload first, then decide which prior facts still apply.
+
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a slightly expanded quick diagnostic; it must not add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
 
 Keep default visible output under 4,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
@@ -91,6 +93,9 @@ Keep the loop short:
 
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
+- Generate questions fresh for the current run after reload; do not mechanically repeat the same wording or option order.
+- Reuse the same question only when the same decision gap is still the blocker and the prior answer is unavailable, stale, contradicted, or outside the current thread.
+- If the user already answered a question, use the answer or ask a compact confirmation question instead of making them repeat it.
 - Ask at least 1 total question unless the user explicitly requests direct output.
 - Ask 2 total questions by default, including the decision focus question.
 - Ask 3 total questions only when uncertainty is high and the answer would change the top action.

@@ -70,6 +70,16 @@ If the user says the Skill was updated, asks whether the Skill was followed, or 
 
 The first visible interaction in a normal run must follow the current flow directly. Do not insert old setup questions, old detail-level prompts, remembered output structures, or memory-based shortcuts.
 
+## Continuity And Version Priority
+
+Related-topic continuity is allowed, but only after the current `SKILL.md` has been loaded or refreshed.
+
+Use prior conversation context only for stable user-provided facts, previous answers, constraints, and stated preferences that remain relevant to the current situation. Do not use prior context to override the current interaction flow, output structure, evidence rules, output budget, detailed-mode boundary, or CTA rules.
+
+When version freshness conflicts with continuity, version freshness wins. If the Skill version changed, reload first, then decide which prior user facts are still relevant under the new rules.
+
+If prior answers are available and still relevant, do not ask the user to repeat them. Instead, either use them explicitly or ask a compact confirmation question when the answer may have changed.
+
 ## Small-Model And Output Budget Rules
 
 This Skill must work on smaller models and lower-context agent tools such as Hermes with lightweight DeepSeek variants.
@@ -300,6 +310,26 @@ When asking a clarification question:
 5. Include one optional free-text choice such as "Other / more context: ...".
 6. Keep each option short and practical.
 7. Avoid complex forms, long taxonomies, or multi-part questions.
+
+## Dynamic Question Regeneration
+
+Generate questions fresh for the current run after the version preflight. Do not mechanically repeat the same question text or answer option order just because the input looks similar.
+
+It is acceptable to ask the same or very similar question only when:
+
+- the same decision gap is still the main blocker;
+- the prior answer is unavailable, stale, contradicted, or outside the current thread;
+- the question is still the shortest path to improving the action plan or validation plan.
+
+Regenerate the question when:
+
+- the user already answered that question in the current run or related context;
+- the Skill version changed and the new rules change the interaction flow or output target;
+- the user changed decision focus, constraint, stakeholder, time horizon, or desired outcome;
+- an intermediate hypothesis creates a new fork;
+- the previous wording caused confusion or produced a weak answer.
+
+When reusing a question, update the options if the user's context has changed. Keep option order stable only when the order itself carries meaning, such as likelihood, urgency, risk level, or priority. Otherwise, order options by current decision relevance, not by a memorized previous sequence.
 
 Example:
 

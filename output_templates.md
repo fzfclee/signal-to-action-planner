@@ -169,6 +169,7 @@ Rules:
 - Include one optional free-text choice.
 - Keep the question easy to answer.
 - Do not turn clarification into a long form.
+- Generate the question fresh from the current input and latest answer. Reuse a previous question only when the same decision gap remains and the prior answer is unavailable, stale, or contradicted.
 ```
 
 ## D. Detailed Reasoning Mode Template
@@ -235,6 +236,9 @@ E. Other / more context: ...
 Rules:
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
+- Generate each question fresh for the current run after reload.
+- Reuse the same question only when the same decision gap remains and the prior answer is unavailable, stale, contradicted, or outside the current thread.
+- If the user already answered a question, use that answer or ask a compact confirmation question instead of repeating it.
 - Ask at least 1 total front-end question unless the user explicitly requests direct output.
 - Ask 2 total front-end questions by default, including the decision focus question.
 - Ask 3 total questions only when uncertainty is high and the answer would change the top action.

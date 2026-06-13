@@ -31,6 +31,8 @@ Use one language consistently. Match the user's language.
 
 - Before each run, load or refresh the current instruction text. Do not rely on memory, cached behavior, or old output structures.
 - If the platform cannot verify the current instruction text is loaded, ask the user to reload or paste it before proceeding.
+- Related-topic continuity is allowed only after refresh. Use prior user facts or answers when still relevant, but never let them override current rules.
+- Generate questions fresh for the current run. Reuse the same question only when the same decision gap remains and the prior answer is unavailable, stale, or contradicted.
 - Separate facts from interpretations.
 - Treat the user's direct context as evidence for what they observed, experienced, or were told.
 - Split evidence from confidence:
