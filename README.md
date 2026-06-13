@@ -130,7 +130,7 @@ See `NOTICE.md` for the full notice terms.
 4. After updating the Skill, reload the latest `SKILL.md` and ignore prior cached behavior or old test memory that conflicts with the current version.
 5. Paste your messy situation / story / observations.
 6. Let the Skill ask a few clarification questions if needed.
-7. Receive a structured Signal-to-Action output.
+7. Receive a compact CLEAR 7-section Signal-to-Action output.
 8. Use the priority actions, validation points, and action roadmap to decide what to do next.
 
 If your input already has a clear decision focus, concrete facts, and a near-term constraint, the Skill can use zero-question direct mode and produce the output immediately.

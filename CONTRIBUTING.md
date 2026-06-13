@@ -9,12 +9,14 @@ Contributions are welcome when they improve the public Skill without turning it 
 - Benchmark cases and scoring improvements.
 - Fixes for unclear instructions, language consistency, or output bloat.
 - Improvements that help smaller models follow the public workflow.
+- Changes that keep the public CLEAR 7-section output consistent across `SKILL.md`, templates, examples, and benchmark guidance.
 
 ## What To Avoid
 
 - Do not add private, confidential, or identifiable user situations.
 - Do not expose the full O2V methodology or deeper advisory workflow.
 - Do not make default output longer than necessary.
+- Do not replace the public CLEAR structure with a different visible framework unless the whole repo is intentionally rebranded.
 - Do not add platform-specific dependencies unless they are optional.
 - Do not turn the public Skill into legal, medical, financial, psychological, or safety advice.
 
@@ -26,6 +28,7 @@ Use a small, focused pull request:
 2. Explain the change.
 3. Show one before/after example or benchmark case.
 4. Confirm that the public output remains compact.
+5. Confirm that any affected surrounding files stay aligned with the CLEAR 7-section output.
 
 ## Public Benchmark Check
 

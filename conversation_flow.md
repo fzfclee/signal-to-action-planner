@@ -14,13 +14,13 @@ flowchart TD
     B -->|No| C["Decision focus check"]
     C --> D["1-2 dynamic intake questions"]
     D --> E
-    E --> F["Facts + evidence strength"]
-    F --> G["Signals + implications"]
-    G --> H["Ranked hypotheses"]
-    H --> I["Priority action plan"]
-    I --> J["Validation plan"]
-    J --> K["Light risk register"]
-    K --> L["Action roadmap"]
+    E --> F["Decision Summary"]
+    F --> G["C - Clarify: facts, assumptions, decision focus"]
+    G --> H["L - Locate: key signals"]
+    H --> I["E - Expose: implications + ranked hypotheses"]
+    I --> J["A - Act: priority action plan + not yet"]
+    J --> K["R - Review: validation + action roadmap"]
+    K --> L["Risk And Quality Check"]
     L --> M["Plan quality self-check"]
     M --> N["Bring back next hook"]
     N --> O["Optional CTA to deeper full analysis"]
@@ -137,7 +137,7 @@ Use checkpoints such as:
 
 Keep each checkpoint as a short multiple-choice question with 2-4 options plus one free-text option.
 
-## Step 6 - Run Signal-to-Action
+## Step 6 - Produce The CLEAR 7-Section Output
 
 Use the compressed output structure:
 
@@ -145,13 +145,23 @@ Use the compressed output structure:
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 ```
 
-Keep evidence visible, but merge facts, fact evidence strength, and key signals into one compact user-facing section. Limit this to 2-3 bullets.
+Use CLEAR as the visible user-facing structure, not as a replacement for the internal chain:
+
+1. Decision Summary
+2. C - Clarify: Facts, Assumptions, And Decision Focus
+3. L - Locate: Key Signals
+4. E - Expose: Implications And Working Hypotheses
+5. A - Act: Priority Action Plan
+6. R - Review: Validation Plan And Action Roadmap
+7. Risk And Quality Check
+
+Keep evidence visible, but keep the public output compact. Limit Clarify and Locate to the most decision-relevant 2-3 items each.
 
 Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
-Compress implications and hypotheses into conclusion-level output. Rank 2 working hypotheses from most likely to least likely. Do not expand confidence-increasing and confidence-weakening details unless the user explicitly requests detailed reasoning.
+Compress implications and hypotheses into conclusion-level output inside `E - Expose`. Rank 2 working hypotheses from most likely to least likely. Do not expand confidence-increasing and confidence-weakening details unless the user explicitly requests detailed reasoning.
 
-## Step 7 - Focus On Top Actions
+## Step 7 - Focus On Top Actions Inside A - Act
 
 The Skill must not produce too many actions. Prioritize 1-3 MECE actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
@@ -160,7 +170,9 @@ The Skill must not produce too many actions. Prioritize 1-3 MECE actions that ar
 
 Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 
-## Step 8 - Define Validation
+Add a compact `What Not To Do Yet` subsection inside `A - Act` when there are premature, risky, or unsupported moves.
+
+## Step 8 - Define Review: Validation And Roadmap
 
 For the top-priority actions, define how the user can tell whether the action worked:
 
@@ -169,12 +181,23 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would weaken the signal;
 - a practical time window.
 
-## Step 9 - Give An Action Roadmap
-End with a short localized action roadmap heading in the same language as the user.
+Then give a short action roadmap inside `R - Review`:
 
 - First: the highest-priority action.
 - Next: the second action.
 - Then: the third action or contingency.
 - Decision point: what evidence should change the user's direction.
+- Bring back next: the result, response, or new fact that would make the next run sharper.
 
-Keep the action roadmap separate from validation. The roadmap is about sequence and decision gates, not a repeat of the validation plan.
+Keep the roadmap connected to validation without repeating the full action descriptions. The roadmap is about sequence and decision gates.
+
+## Step 9 - Close With Risk And Quality
+
+End the numbered output with `Risk And Quality Check`:
+
+- top 1-2 risks and one mitigation each;
+- Evidence coverage: strong / medium / weak;
+- Action specificity: strong / medium / weak;
+- Risk coverage: strong / medium / weak.
+
+Then add the short note, attribution CTA, and contact path required by `SKILL.md`.

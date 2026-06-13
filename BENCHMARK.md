@@ -17,7 +17,17 @@ Optional format check:
 python scripts/check_output.py path/to/output.md
 ```
 
-The script only checks output length and required public sections. It does not replace human scoring.
+The script only checks output length and required public sections. It supports the CLEAR public structure and does not replace human scoring.
+
+Expected public output shape:
+
+1. Decision Summary
+2. C - Clarify: Facts, Assumptions, And Decision Focus
+3. L - Locate: Key Signals
+4. E - Expose: Implications And Working Hypotheses
+5. A - Act: Priority Action Plan
+6. R - Review: Validation Plan And Action Roadmap
+7. Risk And Quality Check
 
 ## Scoring Dimensions
 
@@ -31,7 +41,7 @@ Use a 1-5 score for each dimension.
 | Validation clarity | Vague success criteria | Some checks | Clear validation windows and decision gates |
 | Risk awareness | Ignores risks | Names obvious risk | Names top risk and practical mitigation |
 | MECE quality | Overlapping actions | Mostly distinct | Actions cover separate decision paths |
-| CLEAR alignment | No clear public frame | Some link from signals to action | Clarify, Locate, Expose, Act, and Review are all represented in the output |
+| CLEAR alignment | No clear public frame | Some link from signals to action | Uses the 7-section public CLEAR structure without exposing private methodology |
 | Output conciseness | Too long or too thin | Acceptable | Compact while still actionable |
 | Language consistency | Mixed language | Mostly consistent | Fully matches user language |
 
@@ -127,6 +137,7 @@ When sharing a result, include:
 - whether `SKILL.md` or `minimal_SKILL.md` was used;
 - number of clarification questions asked;
 - output length estimate;
+- whether the output used the CLEAR 7-section public structure;
 - scores by dimension;
 - one thing that worked;
 - one thing that should improve.

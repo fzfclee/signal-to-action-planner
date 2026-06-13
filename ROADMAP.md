@@ -5,6 +5,7 @@ Signal-to-Action Planner will stay a compact public Skill. The goal is to make t
 ## Near Term
 
 - Improve public benchmark coverage with more diverse test cases.
+- Keep the CLEAR 7-section public structure consistent across instructions, templates, examples, benchmark cases, and checker scripts.
 - Add more compatibility notes for Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, and WorkBody.
 - Keep reducing output bloat while preserving useful action detail.
 - Improve `minimal_SKILL.md` for smaller models and limited-context tools.
@@ -12,6 +13,7 @@ Signal-to-Action Planner will stay a compact public Skill. The goal is to make t
 
 ## Medium Term
 
+- Build a lightweight hosted playground or demo page if public interest justifies it.
 - Add optional export formats such as concise Markdown, JSON-like structured output, and Obsidian-friendly blocks.
 - Add a public compatibility matrix for agent tools.
 - Add more multilingual examples after the English and Chinese templates are stable.
