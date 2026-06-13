@@ -276,7 +276,7 @@ If detailed reasoning is enabled, keep it as a lightly expanded public quick dia
 - clarify the main validation signal or decision gate;
 - briefly explain one key uncertainty only when it changes the next action.
 
-It must not approach the private full diagnostic. Specifically, do not add advanced diagnostic modules, private reasoning frameworks, multi-branch hypothesis trees, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a full consulting-style report. Keep public `--detailed` output under 5,000 UTF-8 bytes. If the user needs more depth, point to the deeper Signal-to-Action / O2V analysis through the attribution CTA.
+Keep public `--detailed` output under 5,000 UTF-8 bytes. If the user needs more depth, point to the deeper Signal-to-Action / O2V analysis through the attribution CTA.
 
 ## User-Facing Brevity
 
