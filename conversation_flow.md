@@ -45,7 +45,7 @@ Accept incomplete, informal, or mixed input. Do not require the user to structur
 
 If the input is too long for the platform, ask for the most decision-relevant excerpt, the current decision, or a smaller chunk. Do not try to process an oversized document in one pass.
 
-Do not jump from messy input directly to the default compact output unless the user explicitly asks to skip questions, says `direct output`, or the input already satisfies zero-question direct mode. The default experience must include front-end interaction.
+Do not jump from messy input directly to the default compact output unless the user explicitly asks to skip questions, says `direct output`, `no questions`, `just output`, or `continue to output`. The default experience must include at least one front-end question.
 
 ## Step 2 - Run A Decision Focus Check
 
@@ -68,7 +68,7 @@ If the user explicitly asks for direct output, do not force a question. Otherwis
 
 ## Step 3 - Run A Dynamic Intake Loop
 
-After the decision focus is clear, ask one relevant intake question at a time if the answer would improve accuracy. Count the decision focus question in the total. Ask 2 total front-end questions by default and 3 total questions at most. Do not ask multiple questions in one message.
+After the decision focus is clear, ask one relevant intake question at a time if the answer would improve accuracy. Count the decision focus question in the total. Ask at least 1 and at most 3 total front-end questions unless the user explicitly asks for direct output. Ask 2 total front-end questions by default. Do not ask multiple questions in one message.
 
 Use this format:
 
@@ -89,6 +89,7 @@ Keep the loop short:
 
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
+- Ask at least 1 total question unless the user explicitly requests direct output.
 - Ask 2 total questions by default, including the decision focus question.
 - Ask 3 total questions only when uncertainty is high and the answer would change the top action.
 - Every question must include a skip / not sure option.

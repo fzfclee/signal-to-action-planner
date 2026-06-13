@@ -169,14 +169,7 @@ Produce the CLEAR 7-section output directly only when the user explicitly says s
 - "just output";
 - "continue to output".
 
-Also use zero-question direct mode when the user already provides all of these in the input:
-
-- a clear decision focus;
-- at least 2 concrete facts or examples;
-- a near-term constraint or deadline;
-- an explicit request for what to decide or do next.
-
-In zero-question direct mode, proceed directly to output and mark uncertainty instead of asking a clarification question.
+Do not use zero-question direct mode merely because the input is long, detailed, or appears complete. If the user does not explicitly request direct output, ask at least one decision-focus question before the CLEAR 7-section output.
 
 Do not treat a detailed user story as permission to skip interaction. A detailed story can still contain unclear decision focus, hidden constraints, or missing validation signals.
 
@@ -190,7 +183,7 @@ If key information is missing or the decision focus is ambiguous, ask only the m
 - If the situation has too many possible directions, ask which outcome or constraint matters most right now.
 - If there is enough evidence to proceed but some details are uncertain, continue with explicit uncertainty markers instead of asking more questions.
 
-After the decision focus is known, ask at most 1-2 additional intake questions before the full output. Count the decision focus question as part of the total front-end interaction. The classic default should ask 2 total questions; ask 3 total questions only when the missing input would materially change the top action or roadmap.
+Ask at least 1 and at most 3 front-end questions before the full output, unless the user explicitly requests direct output. Count the decision focus question as part of the total front-end interaction. The classic default should ask 2 total questions; ask 3 total questions only when the missing input would materially change the top action or roadmap.
 
 Each question should be multiple choice with 2-4 substantive options, plus one skip / not sure option and one optional free-text option when useful. The user may choose skip / not sure, answer in free text, or say "continue" to move to the output. Do not ask a multi-question questionnaire in one message. Do not ask generic questions that do not affect the action plan or validation plan.
 
@@ -259,6 +252,7 @@ Rules:
 - Tailor questions to the user's actual situation.
 - Ask one question per message.
 - Use the user's latest answer to choose the next question.
+- Ask at least 1 total front-end question unless the user explicitly requests direct output.
 - Ask 2 total front-end questions by default, including the decision focus question.
 - Ask 3 total front-end questions at most for higher-uncertainty cases.
 - Make each question easy to answer with short options.

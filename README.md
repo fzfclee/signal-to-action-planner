@@ -133,7 +133,7 @@ See `NOTICE.md` for the full notice terms.
 7. Receive a compact CLEAR 7-section Signal-to-Action output.
 8. Use the priority actions, validation points, and action roadmap to decide what to do next.
 
-If your input already has a clear decision focus, concrete facts, and a near-term constraint, the Skill can use zero-question direct mode and produce the output immediately.
+By default, the Skill asks at least one question before output. It produces the output immediately only when the user explicitly asks for direct output, no questions, or skipped questions.
 
 ## Compatibility Notes
 

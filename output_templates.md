@@ -196,7 +196,7 @@ C. [Evidence / validation focus]
 D. Other / more context: ...
 ```
 
-Use this before the CLEAR 7-section output unless the user explicitly asks to skip questions or continue to output.
+Use this before the CLEAR 7-section output unless the user explicitly asks to skip questions, use no questions, or continue directly to output.
 
 ## F. Mid-Process Checkpoint Template
 
@@ -235,6 +235,7 @@ E. Other / more context: ...
 Rules:
 - Ask one question per message.
 - Choose the next question based on the user's latest answer.
+- Ask at least 1 total front-end question unless the user explicitly requests direct output.
 - Ask 2 total front-end questions by default, including the decision focus question.
 - Ask 3 total questions only when uncertainty is high and the answer would change the top action.
 - Every question must include skip / not sure.
