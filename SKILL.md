@@ -344,9 +344,11 @@ D. Other / more context: ...
 
 ## Default Output Format
 
-# CLEAR Signal-to-Action Output
+# CLEAR Signal-to-Action Quick Diagnostic Report
 
 Default output is a concise CLEAR quick diagnostic, not a full report. Keep exactly 7 visible sections, but make the default clearly shorter than public `--detailed` mode. Prioritize user-perceived value: compress sections 2-4 aggressively, keep section 5 practical, and keep section 6 decision-ready.
+
+The first line of every public report must be the H1 title `# CLEAR Signal-to-Action Quick Diagnostic Report`. If public `--detailed` mode is explicitly enabled, use `# CLEAR Signal-to-Action Detailed Quick Diagnostic Report`. Do not use generic titles such as `Signal-to-Action Output` or `CLEAR Signal-to-Action Output`.
 
 Use CLEAR as the visible organizing structure, not as a replacement for the internal chain:
 

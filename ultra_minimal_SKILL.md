@@ -25,6 +25,8 @@ CLEAR = Clarify the Facts, Locate the Signal, Expose the Opportunity, Act on Evi
 Use CLEAR headings:
 
 ```markdown
+# CLEAR Signal-to-Action Quick Diagnostic Report
+
 ## Decision Summary
 - Judgment: [...]
 - First move: [...]

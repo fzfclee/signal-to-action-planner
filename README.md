@@ -180,6 +180,8 @@ I had several conversations with potential users. Some said the idea is interest
 ## Example Output Preview
 
 ```markdown
+# CLEAR Signal-to-Action Quick Diagnostic Report
+
 ## 1. Decision Summary
 - Core judgment: interest is not yet demand.
 - First move: ask for concrete commitment, not more opinions.

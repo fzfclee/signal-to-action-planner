@@ -49,7 +49,7 @@ Use one language consistently. Match the user's language.
 ## Output Format
 
 ```markdown
-# CLEAR Signal-to-Action Output
+# CLEAR Signal-to-Action Quick Diagnostic Report
 
 ## 1. Decision Summary
 - Core judgment: [...]

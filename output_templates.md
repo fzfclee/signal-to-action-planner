@@ -3,7 +3,7 @@
 ## A. Standard Output Template
 
 ```markdown
-# Signal-to-Action Output
+# CLEAR Signal-to-Action Quick Diagnostic Report
 
 Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
@@ -18,6 +18,7 @@ Depth boundary:
 This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Default mode should feel like a sharp quick diagnostic, while public `--detailed` may feel like a lightly expanded diagnostic. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
+- Report title = `CLEAR Signal-to-Action Quick Diagnostic Report` by default; use `CLEAR Signal-to-Action Detailed Quick Diagnostic Report` only when public `--detailed` mode is explicitly enabled.
 - Decision Summary = top-line answer for a busy reader.
 - C - Clarify the Facts = separate facts from assumptions and make the decision focus clear.
 - L - Locate the Signal = identify the key tension, behavior change, or risk.
@@ -126,7 +127,7 @@ Do not invent or alter contact details. Do not describe the output as a reduced 
 ## B. Compact Output Template
 
 ```markdown
-# Compact CLEAR Signal-to-Action Output
+# CLEAR Signal-to-Action Compact Report
 
 ## Decision Summary
 ## C - Clarify the Facts
