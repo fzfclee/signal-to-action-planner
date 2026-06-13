@@ -95,7 +95,7 @@ Output hard cap:
 - Default visible output must stay under 4,500 UTF-8 bytes, including headings, bullets, and attribution note.
 - For Chinese output, this usually means roughly 1,200-1,500 Chinese characters depending on punctuation and Markdown.
 - If the output would exceed the cap, automatically compress before responding.
-- Never exceed the cap unless the user explicitly asks for `--detailed` output and the platform can support it. Even then, keep public output under 6,000 UTF-8 bytes.
+- Never exceed the cap unless the user explicitly asks for `--detailed` output and the platform can support it. Even then, keep public output under 5,000 UTF-8 bytes.
 
 Compression priority:
 
@@ -229,13 +229,13 @@ Enable detailed reasoning only when the user explicitly asks for it, such as:
 - "explain the reasoning"
 - "show the detailed reasoning process"
 
-If detailed reasoning is enabled, keep it as a slightly expanded public quick diagnostic. It may:
+If detailed reasoning is enabled, keep it as a lightly expanded public quick diagnostic. It may:
 
-- expand the most decision-relevant reasoning;
-- add confidence-increasing and confidence-weakening evidence for the single most important hypothesis;
-- make the priority action plan more executable.
+- add 1-2 concrete execution details to the priority action plan;
+- clarify the main validation signal or decision gate;
+- briefly explain one key uncertainty only when it changes the next action.
 
-It must not approach the private full diagnostic. Do not add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a full consulting-style report. Keep public `--detailed` output under 6,000 UTF-8 bytes. If the user needs more depth, point to the deeper Signal-to-Action / O2V analysis through the attribution CTA.
+It must not approach the private full diagnostic. Do not expand hypothesis reasoning, add confidence-increasing / confidence-weakening branches, add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a full consulting-style report. Keep public `--detailed` output under 5,000 UTF-8 bytes. If the user needs more depth, point to the deeper Signal-to-Action / O2V analysis through the attribution CTA.
 
 ## User-Facing Brevity
 
@@ -246,8 +246,8 @@ The reasoning chain is the internal discipline, not a requirement to show every 
 - Omit lower-impact reasoning branches, alternate interpretations, and full hypothesis stress tests unless they change the top action.
 - Avoid long explanatory paragraphs in intermediate sections.
 - Put more detail into Priority Action Plan, Validation Plan, and Action Roadmap, but keep their roles distinct. The public output should feel immediately usable, not like a teaser with no substance.
-- If the user explicitly requests detailed reasoning, show key reasoning steps but still avoid unnecessary verbosity.
-- If the user asks for "detail", "reasoning", or "why", expand the relevant section.
+- If the user explicitly requests detailed reasoning, add only light execution detail and one key uncertainty note. Do not expose deeper hypothesis reasoning in the public version.
+- If the user asks for "detail", "reasoning", or "why", answer the specific question briefly instead of expanding the whole report.
 - If the user asks for "quick", "brief", or "just tell me what to do", use the compact output.
 
 ## Decision Focus Check
@@ -352,7 +352,7 @@ Use CLEAR as the visible organizing structure, not as a replacement for the inte
 
 Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
-For Chinese output, localize the section headings naturally, such as `决策摘要`, `C - Clarify：事实、假设与决策焦点`, and `R - Review：验证计划与行动路线`.
+For Chinese output, localize the section headings naturally, such as `决策摘要`, `C - Clarify the Facts：事实、假设与决策焦点`, and `R - Review the Evidence：验证计划与行动路线`.
 
 ## 1. Decision Summary
 
@@ -367,7 +367,7 @@ If the situation is simple, 2 bullets may be enough. Do not force 4 bullets when
 
 Do not use this section as a background recap.
 
-## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+## 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
 
 Briefly clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 
@@ -382,7 +382,7 @@ Split compound items when a directly supported fact and a strategic inference ha
 
 Do not repeat the same fact in a separate evidence section.
 
-## 3. L - Locate: Key Signals
+## 3. L - Locate the Signal: Key Signals
 
 Identify the 2-3 signals that matter most.
 
@@ -392,11 +392,13 @@ For each signal, include:
 - Why it matters now
 - Whether it is a true signal, weak signal, or possible noise when relevant
 
-## 4. E - Expose: Implications And Working Hypotheses
+## 4. E - Expose the Opportunity: Implications And Working Hypotheses
 
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
 Generate 2 testable hypotheses by default, ranked from most likely to least likely based on the current evidence. Use concise conclusion-style wording.
+
+Do not label hypotheses as `H1`, `H2`, or `H3`. Use readable labels such as `Working hypothesis 1 (most likely)` in English or `假设 1（最可能）` in Chinese.
 
 For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
@@ -410,7 +412,7 @@ Do not expand hypotheses by default. Only when needed, expand the single most im
 
 This section should show that reasoning happened without exposing the full reasoning process.
 
-## 5. A - Act: Priority Action Plan
+## 5. A - Act on Evidence: Priority Action Plan
 
 Rank 2 actions by priority by default. Use 1 only when the situation has a single obvious next move; use 3 only when necessary. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
@@ -429,7 +431,7 @@ Make each action slightly detailed: enough that the user knows what to do in the
 
 Add a compact `What Not To Do Yet` subsection with 1-3 actions that are premature, risky, or unsupported by evidence.
 
-## 6. R - Review: Validation Plan And Action Roadmap
+## 6. R - Review the Evidence: Validation Plan And Action Roadmap
 
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
 - Observe / success signal / weak signal / time window / next decision

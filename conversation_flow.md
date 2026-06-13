@@ -15,11 +15,11 @@ flowchart TD
     C --> D["1-2 dynamic intake questions"]
     D --> E
     E --> F["Decision Summary"]
-    F --> G["C - Clarify: facts, assumptions, decision focus"]
-    G --> H["L - Locate: key signals"]
-    H --> I["E - Expose: implications + ranked hypotheses"]
-    I --> J["A - Act: priority action plan + not yet"]
-    J --> K["R - Review: validation + action roadmap"]
+    F --> G["C - Clarify the Facts: facts, assumptions, decision focus"]
+    G --> H["L - Locate the Signal: key signals"]
+    H --> I["E - Expose the Opportunity: implications + ranked hypotheses"]
+    I --> J["A - Act on Evidence: priority action plan + not yet"]
+    J --> K["R - Review the Evidence: validation + action roadmap"]
     K --> L["Risk And Quality Check"]
     L --> M["Plan quality self-check"]
     M --> N["Bring back next hook"]
@@ -33,7 +33,7 @@ At the start of a normal run, briefly acknowledge that the current Skill instruc
 
 Related-topic continuity is allowed only after reload. Use prior conversation context for stable user facts, previous answers, constraints, and preferences when still relevant, but never let continuity override the current `SKILL.md`. If the Skill version changed, reload first, then decide which prior facts still apply.
 
-Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a slightly expanded quick diagnostic; it must not add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
+Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a lightly expanded quick diagnostic; it must not expand hypothesis reasoning, add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
 
 Keep default visible output under 4,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
 
@@ -156,20 +156,20 @@ Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 Use CLEAR as the visible user-facing structure, not as a replacement for the internal chain:
 
 1. Decision Summary
-2. C - Clarify: Facts, Assumptions, And Decision Focus
-3. L - Locate: Key Signals
-4. E - Expose: Implications And Working Hypotheses
-5. A - Act: Priority Action Plan
-6. R - Review: Validation Plan And Action Roadmap
+2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
+3. L - Locate the Signal: Key Signals
+4. E - Expose the Opportunity: Implications And Working Hypotheses
+5. A - Act on Evidence: Priority Action Plan
+6. R - Review the Evidence: Validation Plan And Action Roadmap
 7. Risk And Quality Check
 
 Keep evidence visible, but keep the public output compact. Limit Clarify and Locate to the most decision-relevant 2-3 items each.
 
 Separate fact evidence strength from inference confidence. If a user directly reports an observation, experience, number, or conversation, treat that as evidence for the reported fact. If the strategic meaning remains uncertain, keep the fact evidence strong and lower only the implication, hypothesis, or action confidence.
 
-Compress implications and hypotheses into conclusion-level output inside `E - Expose`. Rank 2 working hypotheses from most likely to least likely. Do not expand confidence-increasing and confidence-weakening details unless the user explicitly requests detailed reasoning.
+Compress implications and hypotheses into conclusion-level output inside `E - Expose the Opportunity`. Rank 2 working hypotheses from most likely to least likely. Do not label them as `H1`, `H2`, or `H3`; use readable labels such as `Working hypothesis 1 (most likely)` or `假设 1（最可能）`. Do not expand confidence-increasing and confidence-weakening details in the public version, even when `--detailed` is enabled.
 
-## Step 7 - Focus On Top Actions Inside A - Act
+## Step 7 - Focus On Top Actions Inside A - Act on Evidence
 
 The Skill must not produce too many actions. Prioritize 1-3 MECE actions that are practical, evidence-seeking, and directly connected to the user's decision. Make the order explicit:
 
@@ -178,7 +178,7 @@ The Skill must not produce too many actions. Prioritize 1-3 MECE actions that ar
 
 Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 
-Add a compact `What Not To Do Yet` subsection inside `A - Act` when there are premature, risky, or unsupported moves.
+Add a compact `What Not To Do Yet` subsection inside `A - Act on Evidence` when there are premature, risky, or unsupported moves.
 
 ## Step 8 - Define Review: Validation And Roadmap
 
@@ -189,7 +189,7 @@ For the top-priority actions, define how the user can tell whether the action wo
 - what would weaken the signal;
 - a practical time window.
 
-Then give a short action roadmap inside `R - Review`:
+Then give a short action roadmap inside `R - Review the Evidence`:
 
 - First: the highest-priority action.
 - Next: the second action.

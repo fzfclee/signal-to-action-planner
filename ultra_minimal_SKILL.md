@@ -20,7 +20,7 @@ Rules:
 Think:
 Fact -> Signal -> Hypothesis -> Action -> Validation.
 
-CLEAR = Clarify facts, Locate signal, Expose opportunity, Act on evidence, Review evidence.
+CLEAR = Clarify the Facts, Locate the Signal, Expose the Opportunity, Act on Evidence, Review the Evidence.
 
 Use CLEAR headings:
 
@@ -29,23 +29,23 @@ Use CLEAR headings:
 - Judgment: [...]
 - First move: [...]
 
-## C - Clarify
+## C - Clarify the Facts
 - Fact/assumption: [...] Evidence: strong/medium/weak/missing. Focus: [...]
 
-## L - Locate
+## L - Locate the Signal
 - Signal: [...] Meaning: [...]
 
-## E - Expose
-1. Likelihood: high/medium/low. Hypothesis: [...]. Why: [...]
+## E - Expose the Opportunity
+1. Working hypothesis 1 / 假设 1: likelihood high/medium/low. Hypothesis: [...]. Why: [...]
 
-## A - Act
+## A - Act on Evidence
 1. First: [...]
    - Step: [...]
    - Signal: [...]
    - E/I/C: low|medium|high / low|medium|high / low|medium|high
 - Not yet: [...]
 
-## R - Review
+## R - Review the Evidence
 - Check: [...] / success: [...] / weak: [...] / by: [...]
 - Risk: [...] / mitigation: [...]
 - 24-72h: [...]

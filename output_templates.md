@@ -9,21 +9,21 @@ Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
 Display depth:
-Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, keep public `--detailed` mode as a slightly expanded quick diagnostic, not a full report.
+Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, keep public `--detailed` mode as a lightly expanded quick diagnostic, not a full report.
 
 Output budget:
-Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters. Keep public `--detailed` output under 6,000 UTF-8 bytes.
+Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters. Keep public `--detailed` output under 5,000 UTF-8 bytes.
 
 Depth boundary:
 This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
 - Decision Summary = top-line answer for a busy reader.
-- C - Clarify = clarify the facts: separate facts from assumptions and make the decision focus clear.
-- L - Locate = locate the signal: identify the key tension, behavior change, or risk.
-- E - Expose = expose the opportunity: reveal the implication, pain, risk, or working hypothesis.
-- A - Act = act on evidence: define priority actions plus what not to do yet.
-- R - Review = review the evidence: define validation, roadmap, decision gates, and bring-back hook.
+- C - Clarify the Facts = separate facts from assumptions and make the decision focus clear.
+- L - Locate the Signal = identify the key tension, behavior change, or risk.
+- E - Expose the Opportunity = reveal the implication, pain, risk, or working hypothesis.
+- A - Act on Evidence = define priority actions plus what not to do yet.
+- R - Review the Evidence = define validation, roadmap, decision gates, and bring-back hook.
 - Risk And Quality Check = top risks, mitigations, and self-check.
 - Keep these sections MECE and avoid repeating the same content across them.
 
@@ -36,7 +36,7 @@ Start with 3-4 short bullets:
 
 If the situation is simple, 2 bullets may be enough. Do not force 4 bullets when the decision is obvious.
 
-## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+## 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
 Clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 Limit to 2-3 bullets.
 
@@ -49,7 +49,7 @@ Split compound items when a directly supported fact and a strategic inference ha
 
 Do not repeat the same fact in a separate evidence section.
 
-## 3. L - Locate: Key Signals
+## 3. L - Locate the Signal: Key Signals
 Identify the 2-3 signals that matter most.
 
 For each signal, include:
@@ -58,10 +58,12 @@ For each signal, include:
 - Why it matters now
 - Whether it is a true signal, weak signal, or possible noise when relevant
 
-## 4. E - Expose: Implications And Working Hypotheses
+## 4. E - Expose the Opportunity: Implications And Working Hypotheses
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
 Generate 2 concise testable hypotheses by default, ranked from most likely to least likely based on current evidence.
+
+Do not label hypotheses as `H1`, `H2`, or `H3`. Use readable labels such as `Working hypothesis 1 (most likely)` in English or `假设 1（最可能）` in Chinese.
 
 For most hypotheses, include only:
 - Likelihood: high / medium / low / unknown
@@ -73,7 +75,7 @@ Do not expand hypotheses by default. Only if necessary, expand the single most i
 - What would increase confidence
 - What would weaken confidence
 
-## 5. A - Act: Priority Action Plan
+## 5. A - Act on Evidence: Priority Action Plan
 Rank 2 MECE actions by priority by default. Use 1 only when the case is very narrow; use 3 only when necessary. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
 
 For each action, include:
@@ -88,7 +90,7 @@ Make actions slightly detailed: enough that the user knows what to do in the nex
 
 Add a compact `What Not To Do Yet` subsection with 1-3 actions that are premature, risky, or unsupported by evidence.
 
-## 6. R - Review: Validation Plan And Action Roadmap
+## 6. R - Review the Evidence: Validation Plan And Action Roadmap
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
 - Observe / success signal / weak signal / time window / next decision
 
@@ -130,13 +132,13 @@ Do not invent or alter contact details. Do not describe the output as a reduced 
 # Compact CLEAR Signal-to-Action Output
 
 ## Decision Summary
-## C - Clarify
-## L - Locate
-## E - Expose
-## A - Act
+## C - Clarify the Facts
+## L - Locate the Signal
+## E - Expose the Opportunity
+## A - Act on Evidence
 List MECE actions in priority order, with a concrete first step and expected signal for each.
 Include a compact Not Yet line.
-## R - Review
+## R - Review the Evidence
 Include validation points, action roadmap, decision point, and bring-back hook.
 ## Risk And Quality Check
 
@@ -181,7 +183,7 @@ Use this only when the user explicitly asks for detailed reasoning, such as with
 
 Do not ask a detail-level question at the start of a run.
 
-Show only key reasoning steps that affect the top action, validation logic, or roadmap. Public `--detailed` may expand the most important hypothesis and make actions more executable, but it must not include full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report. Keep it under 6,000 UTF-8 bytes.
+Add only light execution detail that affects the top action, validation logic, or roadmap. Public `--detailed` may make actions slightly more executable, but it must not expand hypothesis reasoning, include confidence-increasing / confidence-weakening branches, full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report. Keep it under 5,000 UTF-8 bytes.
 ```
 
 ## E. Decision Focus Check Template

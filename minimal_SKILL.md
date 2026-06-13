@@ -57,17 +57,17 @@ Use one language consistently. Match the user's language.
 - Main uncertainty / decision gate: [...]
 Use 2 bullets when the decision is obvious; do not force 3.
 
-## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+## 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
 - [Fact/assumption/missing input.] Evidence: strong/medium/weak/missing. Why it matters: [...]
 
-## 3. L - Locate: Key Signals
+## 3. L - Locate the Signal: Key Signals
 - [Signal.] Confidence: high/medium/low. Why it matters now: [...]
 
-## 4. E - Expose: Implications And Working Hypotheses
-1. Likelihood: high/medium/low. Hypothesis: [...]. Evidence basis: [...]
-2. Likelihood: high/medium/low. Hypothesis: [...]. Evidence basis: [...]
+## 4. E - Expose the Opportunity: Implications And Working Hypotheses
+1. Working hypothesis 1 / 假设 1: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
+2. Working hypothesis 2 / 假设 2: likelihood high/medium/low. Hypothesis: [...]. Evidence basis: [...]
 
-## 5. A - Act: Priority Action Plan
+## 5. A - Act on Evidence: Priority Action Plan
 1. Priority 1: [...]
    - Why / evidence tested: [...]
    - Expected signal: [...]
@@ -82,7 +82,7 @@ Use 2 bullets when the decision is obvious; do not force 3.
 What not to do yet:
 - [...]
 
-## 6. R - Review: Validation Plan And Action Roadmap
+## 6. R - Review the Evidence: Validation Plan And Action Roadmap
 - Observe: [...] / success signal: [...] / weak signal: [...] / time window: [...] / next decision: [...]
 - First 24-72 hours: [...]
 - Next 1-2 weeks: [...]

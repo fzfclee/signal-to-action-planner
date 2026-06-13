@@ -23,11 +23,11 @@ The script only checks output length and required public sections. It supports t
 Expected public output shape:
 
 1. Decision Summary
-2. C - Clarify: Facts, Assumptions, And Decision Focus
-3. L - Locate: Key Signals
-4. E - Expose: Implications And Working Hypotheses
-5. A - Act: Priority Action Plan
-6. R - Review: Validation Plan And Action Roadmap
+2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
+3. L - Locate the Signal: Key Signals
+4. E - Expose the Opportunity: Implications And Working Hypotheses
+5. A - Act on Evidence: Priority Action Plan
+6. R - Review the Evidence: Validation Plan And Action Roadmap
 7. Risk And Quality Check
 
 ## Scoring Dimensions
