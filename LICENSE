@@ -1,0 +1,38 @@
+Signal-to-Action Planner Limited Use License
+
+Copyright (c) Zhi Li.
+
+This repository contains the public Signal-to-Action Planner Skill, a
+lightweight public diagnostic workflow derived from the broader O2V parent
+methodology framework.
+
+Permission is granted to copy, use, adapt, and share the Markdown Skill
+instructions in this repository for personal, educational, experimental, team,
+or internal professional workflows, subject to the conditions below.
+
+You must:
+
+1. Preserve attribution to Zhi Li and the Signal-to-Action Planner.
+2. Preserve this license and the repository NOTICE when redistributing the
+   Skill or a close adaptation.
+3. Make it clear when you have modified the original public Skill.
+
+You may not, without prior written permission:
+
+1. Remove attribution and present this Skill, CLEAR, Signal-to-Action, O2V, or
+   a close adaptation as your own original methodology.
+2. Sell, package, sublicense, or commercialize this Skill or a close adaptation
+   as a standalone paid Skill, prompt product, consulting framework, training
+   product, or methodology product.
+3. Use this repository to reproduce, expose, package, or commercialize the full
+   O2V methodology framework or related methodology systems.
+4. Claim ownership of O2V, Signal-to-Action, CLEAR, AI ValueLoop, Valence,
+   AiNOVA, VenturePilot, or related methodology systems.
+
+This license does not grant trademark rights, brand rights, patent rights, or
+rights to the full O2V methodology framework.
+
+This Skill is provided "as is", without warranty of any kind. It does not
+provide legal, medical, financial, psychological, safety, or other regulated
+professional advice. Users remain responsible for their own decisions and
+actions.

@@ -1,6 +1,6 @@
 # Signal-to-Action Planner
 
-[![License](https://img.shields.io/badge/license-Custom%20Notice-blue)](NOTICE.md)
+[![License](https://img.shields.io/badge/license-Custom%20Limited%20Use-blue)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/forks)
 [![Last commit](https://img.shields.io/github/last-commit/fzfclee/signal-to-action-planner)](https://github.com/fzfclee/signal-to-action-planner/commits/main)
