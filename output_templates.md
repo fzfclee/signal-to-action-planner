@@ -200,7 +200,7 @@ Use this only when the user explicitly asks for detailed reasoning, such as with
 
 Do not ask a detail-level question at the start of a run.
 
-Add only light execution detail that affects the top action, validation logic, or roadmap. Public `--detailed` may make actions slightly more executable, but it must not approach the private full diagnostic. Specifically, do not add: full hypothesis trees, confidence-increasing / confidence-weakening branches, stakeholder power maps, root-cause analysis, counterfactual checks, cognitive bias audits, political signal decoding, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report. Keep it under 5,000 UTF-8 bytes.
+Add only light execution detail that affects the top action, validation logic, or roadmap. Public `--detailed` may make actions slightly more executable, but it must not approach the private full diagnostic. Specifically, do not add advanced diagnostic modules, private reasoning frameworks, multi-branch hypothesis trees, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report. Keep it under 5,000 UTF-8 bytes.
 ```
 
 ## E. Decision Focus Check Template
