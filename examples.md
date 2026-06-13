@@ -2,6 +2,14 @@
 
 These examples are shortened for readability. They show the public compact version: useful action, limited reasoning, light risk coverage, and a continuation hook.
 
+Public-facing examples should align with CLEAR:
+
+- Clarify the messy input.
+- Locate the real signal.
+- Expose the possible opportunity or pain.
+- Act with the next evidence-based move.
+- Review the evidence standard for continue / adjust / stop.
+
 ## Example 1 - Product Feedback With No Commitment
 
 Raw input:

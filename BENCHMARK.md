@@ -31,6 +31,7 @@ Use a 1-5 score for each dimension.
 | Validation clarity | Vague success criteria | Some checks | Clear validation windows and decision gates |
 | Risk awareness | Ignores risks | Names obvious risk | Names top risk and practical mitigation |
 | MECE quality | Overlapping actions | Mostly distinct | Actions cover separate decision paths |
+| CLEAR alignment | No clear public frame | Some link from signals to action | Clarify, Locate, Expose, Act, and Review are all represented in the output |
 | Output conciseness | Too long or too thin | Acceptable | Compact while still actionable |
 | Language consistency | Mixed language | Mostly consistent | Fully matches user language |
 

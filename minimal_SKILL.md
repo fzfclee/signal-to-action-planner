@@ -11,6 +11,14 @@ Use this minimal version when the model, platform, or user needs a shorter instr
 
 Turn messy input into action-ready clarity.
 
+Public frame: CLEAR
+
+- C — Clarify：区分事实与假设，把混乱输入拆清楚
+- L — Locate：定位真正的信号，识别重复出现的张力、行为变化或风险
+- E — Expose：暴露可能的机会，判断信号属于哪个场景、影响谁、痛点是什么
+- A — Act：定义下一步有依据的行动，足够小可以学习，足够准可以改变判断
+- R — Review：审视证据标准，知道什么结果说明继续、调整还是停止
+
 Core chain:
 
 ```text

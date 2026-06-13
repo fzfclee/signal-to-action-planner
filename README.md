@@ -21,14 +21,20 @@ If this helps, star the repo to make it easier to find later. Fork it if you wan
 
 ```mermaid
 flowchart LR
-    A["Messy input"] --> B["Clarify focus"]
-    B --> C["Extract facts"]
-    C --> D["Read signals"]
-    D --> E["Rank hypotheses"]
-    E --> F["Prioritize actions"]
-    F --> G["Validate"]
-    G --> H["Action roadmap"]
+    A["Messy input"] --> C["C - Clarify"]
+    C --> L["L - Locate"]
+    L --> E["E - Expose"]
+    E --> ACT["A - Act"]
+    ACT --> R["R - Review"]
 ```
+
+CLEAR is the public-facing frame:
+
+- C — Clarify：区分事实与假设，把混乱输入拆清楚
+- L — Locate：定位真正的信号，识别重复出现的张力、行为变化或风险
+- E — Expose：暴露可能的机会，判断信号属于哪个场景、影响谁、痛点是什么
+- A — Act：定义下一步有依据的行动，足够小可以学习，足够准可以改变判断
+- R — Review：审视证据标准，知道什么结果说明继续、调整还是停止
 
 ## Works With
 
@@ -79,6 +85,14 @@ O2V is the larger method for turning signals into value through scenario, person
 ## What It Does
 
 This Skill helps users turn messy stories, observations, meeting notes, customer feedback, work signals, or uncertain situations into a prioritized action plan, a practical validation plan, and a short action roadmap.
+
+Its public-facing CLEAR frame is:
+
+- Clarify the messy input by separating facts from assumptions.
+- Locate the real signal behind repeated tension, behavior change, or risk.
+- Expose the possible opportunity by identifying the scenario, affected people, and pain.
+- Act with the next evidence-based move, small enough to learn from and precise enough to change judgment.
+- Review the evidence standard so the user knows whether to continue, adjust, or stop.
 
 It guides the user through a simple reasoning chain:
 
@@ -194,5 +208,5 @@ I had several conversations with potential users. Some said the idea is interest
 - Risk coverage: medium
 
 ---
-This is a Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
+This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For deeper hypothesis reasoning, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```
