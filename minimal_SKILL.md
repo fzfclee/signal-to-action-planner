@@ -39,24 +39,30 @@ Use one language consistently. Match the user's language.
 - Use direct output when the user says "direct output", "no questions", "skip questions", "just output", or gives a clear decision focus.
 - Keep the visible output compact. Compress reasoning, not action usefulness.
 - Do not provide legal, medical, financial, therapy, or safety advice.
-- End with a practical action roadmap and a short attribution note.
+- Use CLEAR as the visible output structure.
+- End with a practical review / roadmap section and a short attribution note.
 
 ## Output Format
 
 ```markdown
-# Signal-to-Action Output
+# CLEAR Signal-to-Action Output
 
-## 1. Situation Summary
-[1-2 short sentences.]
+## 1. Decision Summary
+- Core judgment: [...]
+- First move: [...]
+- Main uncertainty / decision gate: [...]
 
-## 2. Facts, Evidence, And Signals
-- [Fact/signal.] Evidence: strong/medium/weak/missing. Confidence: high/medium/low. Why it matters: [...]
+## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+- [Fact/assumption/missing input.] Evidence: strong/medium/weak/missing. Why it matters: [...]
 
-## 3. Implications And Working Hypotheses
+## 3. L - Locate: Key Signals
+- [Signal.] Confidence: high/medium/low. Why it matters now: [...]
+
+## 4. E - Expose: Implications And Working Hypotheses
 1. Likelihood: high/medium/low. Hypothesis: [...]. Evidence basis: [...]
 2. Likelihood: high/medium/low. Hypothesis: [...]. Evidence basis: [...]
 
-## 4. Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Priority 1: [...]
    - Why / evidence tested: [...]
    - Expected signal: [...]
@@ -68,22 +74,18 @@ Use one language consistently. Match the user's language.
    - First concrete step: [...]
    - Effort / Impact / Confidence: low|medium|high / low|medium|high / low|medium|high
 
-## 5. Validation Plan
-- Observe: [...] / success signal: [...] / weak signal: [...] / time window: [...] / next decision: [...]
-
-## 6. Risk Register
-- Risk: [...] / mitigation: [...]
-
-## 7. What Not To Do Yet
+What not to do yet:
 - [...]
 
-## 8. Action Roadmap
+## 6. R - Review: Validation Plan And Action Roadmap
+- Observe: [...] / success signal: [...] / weak signal: [...] / time window: [...] / next decision: [...]
 - First 24-72 hours: [...]
 - Next 1-2 weeks: [...]
 - Decision point: [...]
 - Bring back next: [...]
 
-## Plan Quality Self-Check
+## 7. Risk And Quality Check
+- Risk: [...] / mitigation: [...]
 - Evidence coverage: strong / medium / weak
 - Action specificity: strong / medium / weak
 - Risk coverage: strong / medium / weak

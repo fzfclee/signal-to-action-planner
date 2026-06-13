@@ -30,7 +30,7 @@ Answer: No one committed to a next step.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Ask 3-5 people for one concrete next step.
    - First step: ask whether they will book a call, introduce a buyer, or test one scenario.
    - Expected signal: action, not praise.
@@ -40,13 +40,13 @@ Output excerpt:
    - Expected signal: sharper objection or concrete trial.
    - Effort / Impact / Confidence: medium / medium / medium
 
-## Risk Register
-- Risk: polite interest hides weak demand / mitigation: ask for behavioral commitment.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: ask for concrete commitments.
 - Next 1-2 weeks: test the narrower use case.
 - Bring back next: replies, objections, or silence pattern.
+
+## 7. Risk And Quality Check
+- Risk: polite interest hides weak demand / mitigation: ask for behavioral commitment.
 ```
 
 Follow-up result:
@@ -75,7 +75,7 @@ Answer: Contract renewal decision in three months.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Validate renewal probability with decision makers.
    - First step: ask the sponsor what evidence would justify extension.
    - Expected signal: concrete criteria, budget signal, or evasive answer.
@@ -85,13 +85,13 @@ Output excerpt:
    - Expected signal: paid interest, referral, or clear objection.
    - Effort / Impact / Confidence: medium / high / medium
 
-## Risk Register
-- Risk: waiting too long reduces optionality / mitigation: run renewal and second-path tests in parallel.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: ask for renewal criteria.
 - Next 1-2 weeks: pitch one diagnostic offer.
 - Bring back next: sponsor answer and market reactions.
+
+## 7. Risk And Quality Check
+- Risk: waiting too long reduces optionality / mitigation: run renewal and second-path tests in parallel.
 ```
 
 Follow-up result:
@@ -120,7 +120,7 @@ Answer: No.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Stop increasing emotional investment without explicit clarity.
    - First step: reduce private/intense conversations for one week.
    - Expected signal: whether the connection depends on ambiguity.
@@ -130,13 +130,13 @@ Output excerpt:
    - Expected signal: clear answer, avoidance, or pressure to keep ambiguity.
    - Effort / Impact / Confidence: medium / high / medium
 
-## Risk Register
-- Risk: more contact increases attachment without clarity / mitigation: pause escalation before asking.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: reduce escalation.
 - Next 1-2 weeks: ask the boundary question.
 - Bring back next: their actual response and behavior change.
+
+## 7. Risk And Quality Check
+- Risk: more contact increases attachment without clarity / mitigation: pause escalation before asking.
 ```
 
 Follow-up result:
@@ -165,7 +165,7 @@ Answer: No, only repeated verbal ideas.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Require a written structure before debating.
    - First step: ask for one page showing control, economics, GP/LP roles, and contribution logic.
    - Expected signal: transparency or continued ambiguity.
@@ -175,13 +175,13 @@ Output excerpt:
    - Expected signal: a defensible negotiation anchor.
    - Effort / Impact / Confidence: medium / high / high
 
-## Risk Register
-- Risk: verbal ambiguity normalizes a control shift / mitigation: move discussion to written terms.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: request written structure.
 - Next 1-2 weeks: prepare contribution baseline.
 - Bring back next: the written proposal or refusal pattern.
+
+## 7. Risk And Quality Check
+- Risk: verbal ambiguity normalizes a control shift / mitigation: move discussion to written terms.
 ```
 
 Follow-up result:
@@ -210,7 +210,7 @@ Answer: Yes, a recovery update is due Friday.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Separate client recovery from internal blame.
    - First step: create a Friday recovery note with owner, fix, date, and open risk.
    - Expected signal: client sees control returning.
@@ -220,13 +220,13 @@ Output excerpt:
    - Expected signal: common failure pattern, not personal attack.
    - Effort / Impact / Confidence: medium / medium / medium
 
-## Risk Register
-- Risk: joint meeting becomes blame spiral / mitigation: gather facts separately first.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: draft recovery note and assign owners.
 - Next 1-2 weeks: convert facts into process fix.
 - Bring back next: client response and fact interview pattern.
+
+## 7. Risk And Quality Check
+- Risk: joint meeting becomes blame spiral / mitigation: gather facts separately first.
 ```
 
 Follow-up result:
@@ -255,7 +255,7 @@ Answer: No.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Ask investors for the exact traction threshold.
    - First step: send one question: "What metric would make this investable for you?"
    - Expected signal: specific threshold or generic deferral.
@@ -265,13 +265,13 @@ Output excerpt:
    - Expected signal: evidence investors can re-evaluate.
    - Effort / Impact / Confidence: medium / high / medium
 
-## Risk Register
-- Risk: investor praise consumes founder time / mitigation: ask for threshold, then pause weak leads.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: ask for investability thresholds.
 - Next 1-2 weeks: start traction sprint.
 - Bring back next: investor thresholds and metric movement.
+
+## 7. Risk And Quality Check
+- Risk: investor praise consumes founder time / mitigation: ask for threshold, then pause weak leads.
 ```
 
 Follow-up result:
@@ -300,7 +300,7 @@ Answer: Only a loose thesis, not written.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Write the investment thesis before changing position.
    - First step: define the 2-3 metrics that would make the drop temporary vs structural.
    - Expected signal: clearer buy/hold/avoid criteria.
@@ -310,13 +310,13 @@ Output excerpt:
    - Expected signal: company-specific issue or sector-wide pressure.
    - Effort / Impact / Confidence: medium / high / medium
 
-## Risk Register
-- Risk: price move drives emotion / mitigation: define evidence before acting.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: write thesis and evidence threshold.
 - Next 1-2 weeks: compare peer signals.
 - Bring back next: thesis, metric threshold, and peer comparison.
+
+## 7. Risk And Quality Check
+- Risk: price move drives emotion / mitigation: define evidence before acting.
 ```
 
 Follow-up result:
@@ -345,7 +345,7 @@ Answer: Yes, but not recently engaged.
 Output excerpt:
 
 ```markdown
-## Priority Action Plan
+## 5. A - Act: Priority Action Plan
 1. Re-engage the executive sponsor with an adoption recovery plan.
    - First step: send a 3-point plan: current usage, blocker, proposed 2-week recovery.
    - Expected signal: sponsor agrees to review, assigns owner, or avoids commitment.
@@ -355,13 +355,13 @@ Output excerpt:
    - Expected signal: usage lift or confirmed non-fit.
    - Effort / Impact / Confidence: medium / high / medium
 
-## Risk Register
-- Risk: relationship warmth hides renewal risk / mitigation: force adoption evidence into the conversation.
-
-## Action Roadmap
+## 6. R - Review: Action Roadmap
 - First 24-72 hours: send sponsor recovery note.
 - Next 1-2 weeks: run one adoption habit test.
 - Bring back next: sponsor response and usage movement.
+
+## 7. Risk And Quality Check
+- Risk: relationship warmth hides renewal risk / mitigation: force adoption evidence into the conversation.
 ```
 
 Follow-up result:

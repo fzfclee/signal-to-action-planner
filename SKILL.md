@@ -142,26 +142,26 @@ When being conservative because of organizational politics, future risk, stakeho
 14. Avoid therapy, legal, medical, financial, or safety advice.
 15. If the situation is high-stakes, recommend appropriate professional support.
 16. Avoid adding extra product scope such as software products, storage layers, intake tools, automation, tracking programs, or reusable knowledge systems.
-17. End with a practical action roadmap. Localize the heading to the user's language; for Chinese, use the standard Chinese heading for action roadmap.
+17. Organize the default output with CLEAR as the visible structure while keeping the internal reasoning chain unchanged.
 18. Do not ask whether to show detailed reasoning at the start of a run. Use concise reasoning by default.
 19. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", "explain the reasoning", or a similar instruction.
 20. Before the full output, run a dynamic intake loop when additional input would improve accuracy: ask one relevant question at a time, adapt the next question to the user's answer, and include a skip / not sure option.
 21. Keep every default output under the output budget. Compress automatically before responding if needed.
 22. Include only a lightweight public Risk Register: top 1-2 risks and one mitigation each.
 23. Add simple Effort / Impact / Confidence labels to each priority action.
-24. End with a short Plan Quality Self-Check so the user can judge reliability.
+24. End with a short Plan Quality Self-Check inside the final section so the user can judge reliability.
 
 ## Mandatory Front-End Interaction
 
-Before producing the 7-section output, run front-end interaction by default. This is part of the Skill experience, not an optional add-on.
+Before producing the CLEAR 7-section output, run front-end interaction by default. This is part of the Skill experience, not an optional add-on.
 
 The default sequence is:
 
 1. Decision focus check.
 2. Dynamic intake loop: one question at a time, adapted to the user's previous answer.
-3. 7-section Signal-to-Action output.
+3. CLEAR 7-section Signal-to-Action output.
 
-Produce the 7-section output directly only when the user explicitly says something like:
+Produce the CLEAR 7-section output directly only when the user explicitly says something like:
 
 - "direct output";
 - "no questions";
@@ -306,33 +306,53 @@ D. Other / more context: ...
 
 ## Default Output Format
 
-# Signal-to-Action Output
+# CLEAR Signal-to-Action Output
 
-Default output is the classic compact version, not a full report. Keep all 7 sections, but make each section short enough to fit the output budget. Prioritize user-perceived value: compress sections 1-3 first, then preserve useful detail in sections 4-7.
+Default output is a compact CLEAR quick diagnostic, not a full report. Keep exactly 7 visible sections, but make each section short enough to fit the output budget. Prioritize user-perceived value: compress sections 2-4 first, then preserve useful detail in sections 5-6.
 
-## 1. Situation Summary
+Use CLEAR as the visible organizing structure, not as a replacement for the internal chain:
 
-Briefly summarize the user's situation in plain language.
+Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
 
-Limit to 1-2 short sentences.
+For Chinese output, localize the section headings naturally, such as `决策摘要`, `C - Clarify：事实、假设与决策焦点`, and `R - Review：验证计划与行动路线`.
 
-## 2. Facts, Evidence, And Signals
+## 1. Decision Summary
 
-Combine observable facts, fact evidence strength, and key signals in one compact section.
+Start with 3-4 short bullets so a busy reader understands the answer before reading details:
+
+- Core judgment
+- Recommended first move
+- Main uncertainty or decision gate
+- Watch-out, only if important
+
+Do not use this section as a background recap.
+
+## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+
+Briefly clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 
 Limit to 2-3 bullets.
 
 For each item, include:
-- Fact or signal
+- Fact, assumption, or missing input
 - Fact evidence strength: strong / medium / weak / missing
-- Signal or implication confidence when the item includes interpretation
 - Why it matters, in one short phrase
 
 Split compound items when a directly supported fact and a strategic inference have different certainty levels.
 
 Do not repeat the same fact in a separate evidence section.
 
-## 3. Implications And Working Hypotheses
+## 3. L - Locate: Key Signals
+
+Identify the 2-3 signals that matter most.
+
+For each signal, include:
+- Signal
+- Evidence strength or signal confidence
+- Why it matters now
+- Whether it is a true signal, weak signal, or possible noise when relevant
+
+## 4. E - Expose: Implications And Working Hypotheses
 
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
@@ -350,7 +370,7 @@ Do not expand hypotheses by default. Only when needed, expand the single most im
 
 This section should show that reasoning happened without exposing the full reasoning process.
 
-## 4. Priority Action Plan
+## 5. A - Act: Priority Action Plan
 
 Rank 2 actions by priority by default. Use 1 only when the situation has a single obvious next move; use 3 only when necessary. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 
@@ -367,25 +387,14 @@ For each action, include:
 
 Make each action slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
 
-## 5. Validation Plan
+Add a compact `What Not To Do Yet` subsection with 1-3 actions that are premature, risky, or unsupported by evidence.
+
+## 6. R - Review: Validation Plan And Action Roadmap
 
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
 - Observe / success signal / weak signal / time window / next decision
 
-## 6. What Not To Do Yet
-
-List 1-3 actions that are premature, risky, or unsupported by evidence.
-
-## 7. Risk Register
-
-List the top 1-2 risks and one mitigation each. Keep this lightweight in the public version:
-- Risk: [risk] / mitigation: [mitigation]
-
-## 8. Action Roadmap
-
-Use a localized heading in the user's language; for Chinese, use the standard Chinese heading for action roadmap.
-
-Give the user a concise sequence and decision gates. Do not repeat the full validation plan. Use a simple structure such as:
+Then give a concise action roadmap and decision gates. Do not repeat the full action descriptions. Use a simple structure such as:
 
 - First 24-72 hours: [highest-priority action and first concrete step]
 - Next 1-2 weeks: [second action or follow-through]
@@ -393,7 +402,12 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Decision point: [what evidence should trigger a change in direction]
 - Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
 
-## Plan Quality Self-Check
+## 7. Risk And Quality Check
+
+List the top 1-2 risks and one mitigation each. Keep this lightweight in the public version:
+- Risk: [risk] / mitigation: [mitigation]
+
+Then add a short Plan Quality Self-Check.
 
 Keep this to 3 short lines:
 - Evidence coverage: strong / medium / weak

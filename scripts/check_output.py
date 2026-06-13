@@ -11,9 +11,9 @@ from pathlib import Path
 
 DEFAULT_MAX_BYTES = 4500
 REQUIRED_PATTERNS = {
-    "actions": r"(?im)^#{1,3}\s*(priority\s+actions?|actions|top\s+actions|\u884c\u52a8)",
-    "validation": r"(?im)^#{1,3}\s*(validation|\u9a8c\u8bc1)",
-    "roadmap": r"(?im)^#{1,3}\s*(action\s+roadmap|roadmap|\u884c\u52a8\u8def\u7ebf)",
+    "actions": r"(?im)^#{1,3}\s*.*(a\s*-\s*act|priority\s+action\s+plan|priority\s+actions?|actions|top\s+actions|\u884c\u52a8)",
+    "validation": r"(?im)^#{1,3}\s*.*(r\s*-\s*review|validation|\u9a8c\u8bc1)",
+    "roadmap": r"(?im)^#{1,3}\s*.*(action\s+roadmap|roadmap|\u884c\u52a8\u8def\u7ebf)",
 }
 
 

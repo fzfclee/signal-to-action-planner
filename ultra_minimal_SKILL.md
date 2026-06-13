@@ -21,6 +21,7 @@ Rules:
 - Mark evidence: strong / medium / weak / missing.
 - Rank hypotheses by likelihood.
 - Give 1-2 concrete actions, not generic advice.
+- Use CLEAR headings for the visible output.
 - Add validation: success signal, weak signal, time window.
 - Add 1 risk and mitigation.
 - Avoid legal, medical, financial, therapy, or safety advice.
@@ -32,30 +33,31 @@ Fact -> Signal -> Hypothesis -> Action -> Validation.
 Output:
 
 ```markdown
-## Situation
-[1 sentence.]
+## Decision Summary
+- Judgment: [...]
+- First move: [...]
 
-## Facts And Signals
-- [fact/signal] Evidence: strong/medium/weak/missing. Meaning: [...]
+## C - Clarify
+- Fact/assumption: [...] Evidence: strong/medium/weak/missing. Decision focus: [...]
 
-## Hypotheses
+## L - Locate
+- Signal: [...] Meaning: [...]
+
+## E - Expose
 1. [most likely] Likelihood: high/medium/low. Why: [...]
 2. [optional]
 
-## Actions
+## A - Act
 1. First: [...]
    - Step: [...]
    - Expected signal: [...]
    - Effort / Impact / Confidence: low|medium|high / low|medium|high / low|medium|high
 2. Next: [...]
+- Not yet: [...]
 
-## Validation
+## R - Review
 - Check: [...] / success: [...] / weak: [...] / by: [...]
-
-## Risk
 - Risk: [...] / mitigation: [...]
-
-## Roadmap
 - 24-72h: [...]
 - Then: [...]
 - Bring back: [...]

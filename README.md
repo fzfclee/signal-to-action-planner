@@ -180,29 +180,38 @@ I had several conversations with potential users. Some said the idea is interest
 ## Example Output Preview
 
 ```markdown
-## Priority Action Plan
-1. Ask 3-5 people for one concrete next step.
-   - First step: send a short follow-up asking whether they will book a call, introduce a stakeholder, or test a narrow scenario.
-   - Expected signal: action, not praise.
+## 1. Decision Summary
+- Core judgment: interest is not yet demand.
+- First move: ask for concrete commitment, not more opinions.
+- Decision gate: whether 2+ people take a next step in 1-2 weeks.
+
+## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+- Fact: several users said the idea is interesting. Evidence: strong. Why it matters: interest exists, but commitment is unclear.
+
+## 3. L - Locate: Key Signals
+- Signal: no one committed to follow-up. Confidence: high. Why it matters now: action is a stronger demand signal than praise.
+
+## 4. E - Expose: Implications And Working Hypotheses
+1. Likelihood: high. Hypothesis: current demand is polite interest, not urgent need. Evidence basis: praise without action.
+2. Likelihood: medium. Hypothesis: the use case is too broad. Evidence basis: no one has chosen a concrete next step.
+
+## 5. A - Act: Priority Action Plan
+1. Priority 1: ask 3-5 people for one concrete next step.
+   - First step: ask whether they will book a call, introduce a stakeholder, or test one narrow scenario.
    - Effort / Impact / Confidence: low / high / medium
-2. Test one narrower use case if commitment stays weak.
+2. Priority 2: test one narrower use case if commitment stays weak.
    - First step: rewrite the offer around one painful scenario and ask for a yes/no reaction.
-   - Expected signal: a sharper objection or a concrete trial.
    - Effort / Impact / Confidence: medium / medium / medium
 
-## Validation Plan
-- In 1-2 weeks, success = at least 2 concrete commitments; weak signal = praise without action.
-
-## Risk Register
-- Risk: people stay polite but non-committal / mitigation: ask for one concrete next step, not general feedback.
-
-## Action Roadmap
+## 6. R - Review: Validation Plan And Action Roadmap
+- Validation: success = at least 2 concrete commitments; weak signal = praise without action.
 - First 24-72 hours: ask for concrete commitments.
 - Next 1-2 weeks: test a narrower use case if commitment is weak.
 - Decision point: if praise still produces no action, reduce priority.
 - Bring back next: the actual replies, objections, or silence pattern.
 
-## Plan Quality Self-Check
+## 7. Risk And Quality Check
+- Risk: people stay polite but non-committal / mitigation: ask for one concrete next step, not general feedback.
 - Evidence coverage: medium
 - Action specificity: strong
 - Risk coverage: medium

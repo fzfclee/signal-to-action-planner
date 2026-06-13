@@ -18,33 +18,45 @@ Depth boundary:
 This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
-- Facts, Evidence, And Signals = what is known and why it matters.
-- Implications And Working Hypotheses = compressed middle reasoning.
-- Priority Action Plan = what to do, why, first concrete step, expected signal, and Effort / Impact / Confidence.
-- Validation Plan = how to judge whether actions worked.
-- Risk Register = top 1-2 risks and mitigation.
-- Action Roadmap = sequence, timing, decision gates, and bring-back hook.
+- Decision Summary = top-line answer for a busy reader.
+- C - Clarify = facts, assumptions, missing input, and decision focus.
+- L - Locate = key signals and evidence strength.
+- E - Expose = implications and ranked working hypotheses.
+- A - Act = priority action plan plus what not to do yet.
+- R - Review = validation plan, action roadmap, decision gates, and bring-back hook.
+- Risk And Quality Check = top risks, mitigations, and self-check.
 - Keep these sections MECE and avoid repeating the same content across them.
 
-## 1. Situation Summary
-Briefly summarize the user's situation in plain language.
-Limit to 1-2 short sentences.
+## 1. Decision Summary
+Start with 3-4 short bullets:
+- Core judgment
+- Recommended first move
+- Main uncertainty or decision gate
+- Watch-out, only if important
 
-## 2. Facts, Evidence, And Signals
-Combine observable facts, fact evidence strength, and key signals in one compact section.
+## 2. C - Clarify: Facts, Assumptions, And Decision Focus
+Clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 Limit to 2-3 bullets.
 
 For each item, include:
-- Fact or signal
+- Fact, assumption, or missing input
 - Fact evidence strength: strong / medium / weak / missing
-- Signal or implication confidence when the item includes interpretation
 - Why it matters, in one short phrase
 
 Split compound items when a directly supported fact and a strategic inference have different certainty levels. Do not downgrade a directly stated fact just because the implication is uncertain.
 
 Do not repeat the same fact in a separate evidence section.
 
-## 3. Implications And Working Hypotheses
+## 3. L - Locate: Key Signals
+Identify the 2-3 signals that matter most.
+
+For each signal, include:
+- Signal
+- Evidence strength or signal confidence
+- Why it matters now
+- Whether it is a true signal, weak signal, or possible noise when relevant
+
+## 4. E - Expose: Implications And Working Hypotheses
 Compress the middle reasoning. Show only the implications and hypotheses that change the action plan.
 
 Generate 2 concise testable hypotheses by default, ranked from most likely to least likely based on current evidence.
@@ -59,7 +71,7 @@ Do not expand hypotheses by default. Only if necessary, expand the single most i
 - What would increase confidence
 - What would weaken confidence
 
-## 4. Priority Action Plan
+## 5. A - Act: Priority Action Plan
 Rank 2 MECE actions by priority by default. Use 1 only when the case is very narrow; use 3 only when necessary. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
 
 For each action, include:
@@ -72,19 +84,11 @@ For each action, include:
 
 Make actions slightly detailed: enough that the user knows what to do in the next 24-72 hours without asking for a rewrite. Do not expand into a full playbook.
 
-## 5. Validation Plan
+Add a compact `What Not To Do Yet` subsection with 1-3 actions that are premature, risky, or unsupported by evidence.
+
+## 6. R - Review: Validation Plan And Action Roadmap
 Define how to judge whether each prioritized action worked. Do not repeat the action description. Use one compact bullet per action:
 - Observe / success signal / weak signal / time window / next decision
-
-## 6. What Not To Do Yet
-List 1-3 actions that are premature, risky, or unsupported by evidence.
-
-## 7. Risk Register
-List the top 1-2 risks and one mitigation each:
-- Risk: [risk] / mitigation: [mitigation]
-
-## 8. Action Roadmap
-Localize this heading to the user's language, such as "行动路线" for Chinese output.
 
 Give the user a concise sequence and decision gates. Do not repeat the full validation plan:
 - First 24-72 hours: [highest-priority action and first concrete step]
@@ -93,7 +97,11 @@ Give the user a concise sequence and decision gates. Do not repeat the full vali
 - Decision point: [what evidence should trigger a change in direction]
 - Bring back next: [one concrete result, response, signal, or new fact that would make the next run sharper]
 
-## Plan Quality Self-Check
+## 7. Risk And Quality Check
+List the top 1-2 risks and one mitigation each:
+- Risk: [risk] / mitigation: [mitigation]
+
+Then add a short Plan Quality Self-Check:
 - Evidence coverage: strong / medium / weak
 - Action specificity: strong / medium / weak
 - Risk coverage: strong / medium / weak
@@ -117,18 +125,18 @@ Do not invent or alter contact details. Do not describe the output as a reduced 
 ## B. Compact Output Template
 
 ```markdown
-# Compact Signal-to-Action Output
+# Compact CLEAR Signal-to-Action Output
 
-## Situation
-## Facts, Evidence, And Signals
-## Implications And Hypotheses
-## Top Actions
+## Decision Summary
+## C - Clarify
+## L - Locate
+## E - Expose
+## A - Act
 List MECE actions in priority order, with a concrete first step and expected signal for each.
-## Validation Points
-## Not Yet
-## Risk Register
-## Action Roadmap
-## Plan Quality Self-Check
+Include a compact Not Yet line.
+## R - Review
+Include validation points, action roadmap, decision point, and bring-back hook.
+## Risk And Quality Check
 
 ---
 [Attribution CTA in the user's language. For Chinese, use the model quick-diagnostic wording, deeper-deliverable anchors, and WeChat lizhi_ch. For all non-Chinese languages, use localized quick-diagnostic wording and LinkedIn https://www.linkedin.com/in/li-zhi/.]
@@ -186,7 +194,7 @@ C. [Evidence / validation focus]
 D. Other / more context: ...
 ```
 
-Use this before the 7-section output unless the user explicitly asks to skip questions or continue to output.
+Use this before the CLEAR 7-section output unless the user explicitly asks to skip questions or continue to output.
 
 ## F. Mid-Process Checkpoint Template
 
