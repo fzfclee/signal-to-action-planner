@@ -127,7 +127,7 @@ See `NOTICE.md` for the full notice terms.
 1. Use `SKILL.md` as the main instruction file.
 2. In tools that support skill folders, place this repository or its files in the tool's skill directory.
 3. In tools that do not support skill folders, paste the content of `SKILL.md` into the assistant's system, project, or reusable instruction area.
-4. After updating the Skill, reload the latest `SKILL.md` and ignore prior cached behavior or old test memory that conflicts with the current version.
+4. Before each run, reload the latest `SKILL.md` and ignore prior cached behavior or old test memory that conflicts with the current version.
 5. Paste your messy situation / story / observations.
 6. Let the Skill ask a few clarification questions if needed.
 7. Receive a compact CLEAR 7-section Signal-to-Action output.
@@ -143,7 +143,7 @@ This repository uses a portable Markdown-first structure:
 - The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
 - Supporting files explain conversation flow, output templates, examples, benchmark cases, failure modes, and notice terms.
 - No app code, services, external dependencies, or platform-specific runtime are required. The checker in `scripts/` is optional.
-- If an agent tool caches skills or learns from old runs, refresh/reload the Skill after updating it and follow the current `SKILL.md`.
+- If an agent tool caches skills or learns from old runs, refresh/reload the Skill before each run and follow the current `SKILL.md`. If the tool cannot verify that the latest instructions are loaded, paste the current `SKILL.md` into the run.
 - If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
 
 ## Community And Validation

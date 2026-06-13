@@ -7,9 +7,10 @@ It is not a benchmark for the complete O2V methodology. Do not use these cases t
 ## How To Use
 
 1. Run the public `SKILL.md` or `minimal_SKILL.md` on one test case.
-2. Let the Skill ask 1-3 clarification questions unless the user explicitly requests direct output.
-3. Score the final output using the dimensions below.
-4. Prefer outputs that are useful, concise, and grounded over outputs that are long or overconfident.
+2. Confirm the runner loaded the current instruction text instead of relying on cached behavior.
+3. Let the Skill ask 1-3 clarification questions unless the user explicitly requests direct output.
+4. Score the final output using the dimensions below.
+5. Prefer outputs that are useful, concise, and grounded over outputs that are long or overconfident.
 
 Optional format check:
 
@@ -135,6 +136,7 @@ When sharing a result, include:
 
 - model / agent tool used;
 - whether `SKILL.md` or `minimal_SKILL.md` was used;
+- whether the current instruction text was reloaded or pasted before the run;
 - number of clarification questions asked;
 - output length estimate;
 - whether the output used the CLEAR 7-section public structure;

@@ -27,7 +27,9 @@ flowchart TD
 ```
 If this Skill has been updated, follow the current `SKILL.md` and this flow strictly. Do not rely on prior memory, old test behavior, or earlier conversation patterns when they conflict with the current version.
 
-On tools with memory or cached skills, apply the current `SKILL.md` at the start of each run. If the tool may be using an older cached version, refresh or reload before asking the first question.
+On tools with memory or cached skills, apply the current `SKILL.md` at the start of each run. If the tool may be using an older cached version, refresh or reload before asking the first question. If the tool cannot verify that the current `SKILL.md` is loaded, say so and ask the user to reload or paste the current instruction text. Do not proceed from memory.
+
+At the start of a normal run, briefly acknowledge that the current Skill instructions are loaded, then ask the required first question. If the user challenges compliance, stop, reload, and restart from the required flow.
 
 Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a slightly expanded quick diagnostic; it must not add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
 

@@ -54,13 +54,21 @@ When a platform has its own skill mechanism, adapt only the installation locatio
 
 ## Version Freshness Rule
 
-When this Skill has been updated, treat the current `SKILL.md` as the only source of truth for execution. Discard prior memory, cached behavior, previous test traces, and old conversation habits that conflict with the current version.
+Hard rule: the current `SKILL.md` is the only source of truth for execution.
 
-Before running the Skill after an update, reload the current instructions and follow them strictly. Do not infer behavior from earlier runs if the current Skill text says something different.
+Before every Signal-to-Action run, do an execution preflight:
 
-On agent tools with memory, skill caching, or self-improvement loops, apply this rule at the start of every new Signal-to-Action run. If the current run may be using an older cached version, refresh or reload the Skill before asking the first question. Do not continue with remembered behavior when it conflicts with the current `SKILL.md`.
+1. Load or refresh the current `SKILL.md`.
+2. Ignore prior memory, cached behavior, previous test traces, old conversation habits, and earlier output structures when they differ from the current `SKILL.md`.
+3. Use the current mandatory interaction flow, output structure, output budget, evidence rules, and detailed-mode boundary.
+4. If the platform may be using an older cached version, refresh or reload before asking the first question.
+5. If the platform cannot verify that the current `SKILL.md` is loaded, say so briefly and ask the user to reload the Skill or paste the current instruction text. Do not proceed from memory.
 
-The first visible interaction in a normal run should follow the current flow directly. Do not insert old setup questions, old detail-level prompts, or remembered output structures.
+At the start of a normal run, briefly state that the current Skill instructions are loaded, then ask the required first question. Keep this acknowledgement short.
+
+If the user says the Skill was updated, asks whether the Skill was followed, or challenges compliance, stop the current run, reload the current `SKILL.md`, and restart from the required flow. Do not defend or continue an output generated under old rules.
+
+The first visible interaction in a normal run must follow the current flow directly. Do not insert old setup questions, old detail-level prompts, remembered output structures, or memory-based shortcuts.
 
 ## Small-Model And Output Budget Rules
 
