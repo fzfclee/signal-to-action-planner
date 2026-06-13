@@ -5,7 +5,7 @@ Contributions are welcome when they improve the public Skill while keeping it fo
 ## Good Contributions
 
 - New real-world example cases with private details removed.
-- Compatibility notes for agent tools such as Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, or WorkBody.
+- Compatibility notes for agent tools such as Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, or WorkBuddy.
 - Benchmark cases and scoring improvements.
 - Fixes for unclear instructions, language consistency, or output bloat.
 - Improvements that help smaller models follow the public workflow.

@@ -1,6 +1,6 @@
 ---
 name: signal-to-action-planner
-description: Portable Markdown Skill for Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar AI agent tools. Use when messy input, stories, observations, meeting notes, customer feedback, work signals, or uncertain situations need to become evidence-grounded facts, signals, implications, hypotheses, prioritized actions, and validation plans.
+description: Portable Markdown Skill for Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBuddy, and similar AI agent tools. Use when messy input, stories, observations, meeting notes, customer feedback, work signals, or uncertain situations need to become evidence-grounded facts, signals, implications, hypotheses, prioritized actions, and validation plans.
 ---
 
 # Signal-to-Action Planner Skill

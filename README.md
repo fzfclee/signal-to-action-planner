@@ -13,7 +13,7 @@ The Skill is optimized for practical next-action clarity in normal agent convers
 
 Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
 
-It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBody, and similar agent environments.
+It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBuddy, and similar agent environments.
 
 If this helps, star the repo to make it easier to find later. Fork it if you want to adapt the public Skill for your own agent setup, and watch releases if you want updates to the public workflow.
 
@@ -48,7 +48,7 @@ This public Skill is built for Markdown-first agent environments:
 | Cursor | Project rules or custom instructions |
 | Windsurf | Cascade custom instructions |
 | Hermes / smaller models | `minimal_SKILL.md` first; use `ultra_minimal_SKILL.md` for very small models or tight context windows |
-| OpenClaw / WorkBody | Reusable Markdown instruction |
+| OpenClaw / WorkBuddy | Reusable Markdown instruction |
 
 ## 30-Second Quick Start
 
@@ -169,7 +169,7 @@ Suggested usage:
 - Codex: install or copy the folder into the local Codex skills directory.
 - Claude Code: place the folder under a personal, project, or organization skill location.
 - OpenClaw: use the folder as a local skill with `SKILL.md`.
-- Hermes, Tencent WorkBody, and similar tools: paste `SKILL.md` as a reusable instruction, or place the folder wherever the tool expects Markdown skills.
+- Hermes, Tencent WorkBuddy, and similar tools: paste `SKILL.md` as a reusable instruction, or place the folder wherever the tool expects Markdown skills.
 
 ## Example Input
 

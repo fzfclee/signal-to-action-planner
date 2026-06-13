@@ -6,7 +6,7 @@ Signal-to-Action Planner will stay a focused quick-diagnostic Skill. The goal is
 
 - Improve public benchmark coverage with more diverse test cases.
 - Keep the CLEAR 7-section public structure consistent across instructions, templates, examples, benchmark cases, and checker scripts.
-- Add more compatibility notes for Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, and WorkBody.
+- Add more compatibility notes for Codex, Claude Code, Cursor, Windsurf, Hermes, OpenClaw, and WorkBuddy.
 - Keep reducing output bloat while preserving useful action detail.
 - Improve `minimal_SKILL.md` for smaller models and limited-context tools.
 - Explore a simple web demo or hosted playground as the main public trial surface.
