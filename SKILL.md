@@ -325,6 +325,8 @@ Start with 3-4 short bullets so a busy reader understands the answer before read
 - Main uncertainty or decision gate
 - Watch-out, only if important
 
+If the situation is simple, 2 bullets may be enough. Do not force 4 bullets when the decision is obvious.
+
 Do not use this section as a background recap.
 
 ## 2. C - Clarify: Facts, Assumptions, And Decision Focus

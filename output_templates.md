@@ -34,6 +34,8 @@ Start with 3-4 short bullets:
 - Main uncertainty or decision gate
 - Watch-out, only if important
 
+If the situation is simple, 2 bullets may be enough. Do not force 4 bullets when the decision is obvious.
+
 ## 2. C - Clarify: Facts, Assumptions, And Decision Focus
 Clarify what the user is trying to decide, what is directly supported, and what is still assumed.
 Limit to 2-3 bullets.

@@ -51,6 +51,7 @@ Use one language consistently. Match the user's language.
 - Core judgment: [...]
 - First move: [...]
 - Main uncertainty / decision gate: [...]
+Use 2 bullets when the decision is obvious; do not force 3.
 
 ## 2. C - Clarify: Facts, Assumptions, And Decision Focus
 - [Fact/assumption/missing input.] Evidence: strong/medium/weak/missing. Why it matters: [...]
