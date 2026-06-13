@@ -29,7 +29,7 @@ If this Skill has been updated, follow the current `SKILL.md` and this flow stri
 
 On tools with memory or cached skills, apply the current `SKILL.md` at the start of each run. If the tool may be using an older cached version, refresh or reload before asking the first question.
 
-Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction.
+Keep user-facing intermediate reasoning concise by default. Use the chain to think clearly, but do not show every reasoning step in detail unless the user explicitly requests detailed reasoning, such as with `--detailed` or a similar instruction. Public `--detailed` mode is only a slightly expanded quick diagnostic; it must not add full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report.
 
 Keep default visible output under 4,500 UTF-8 bytes. If the output may be too long, compress automatically and preserve top priority, validation, and action roadmap first.
 

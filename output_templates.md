@@ -9,21 +9,21 @@ Language:
 Use one language consistently. Match the user's dominant language or the language required by system / project instructions. Do not mix languages except for user-provided terms, technical identifiers, or proper nouns.
 
 Display depth:
-Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, do not expand into the full private methodology.
+Default to concise reasoning. Do not ask the user to choose output detail level at the start. Show detailed reasoning only when the user explicitly requests it, such as with `--detailed`, "show reasoning", or similar wording. Even then, keep public `--detailed` mode as a slightly expanded quick diagnostic, not a full report.
 
 Output budget:
-Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters.
+Keep default visible output under 4,500 UTF-8 bytes, including headings, bullets, and attribution note. Compress automatically if needed. For Chinese, this usually means roughly 1,200-1,500 Chinese characters. Keep public `--detailed` output under 6,000 UTF-8 bytes.
 
 Depth boundary:
 This public template aims for about 90% practical adequacy: enough to guide the next decision, not enough to reproduce the full private Signal-to-Action / O2V analysis. Omit lower-impact reasoning branches and full stress tests unless they change the top action. Compress the process, not the usefulness of the action plan. Add one concrete "bring back next" hook when useful.
 
 Structure:
 - Decision Summary = top-line answer for a busy reader.
-- C - Clarify = facts, assumptions, missing input, and decision focus.
-- L - Locate = key signals and evidence strength.
-- E - Expose = implications and ranked working hypotheses.
-- A - Act = priority action plan plus what not to do yet.
-- R - Review = validation plan, action roadmap, decision gates, and bring-back hook.
+- C - Clarify = clarify the facts: separate facts from assumptions and make the decision focus clear.
+- L - Locate = locate the signal: identify the key tension, behavior change, or risk.
+- E - Expose = expose the opportunity: reveal the implication, pain, risk, or working hypothesis.
+- A - Act = act on evidence: define priority actions plus what not to do yet.
+- R - Review = review the evidence: define validation, roadmap, decision gates, and bring-back hook.
 - Risk And Quality Check = top risks, mitigations, and self-check.
 - Keep these sections MECE and avoid repeating the same content across them.
 
@@ -180,7 +180,7 @@ Use this only when the user explicitly asks for detailed reasoning, such as with
 
 Do not ask a detail-level question at the start of a run.
 
-Show only key reasoning steps that affect the top action, validation logic, or roadmap. Do not reveal the full private analysis depth.
+Show only key reasoning steps that affect the top action, validation logic, or roadmap. Public `--detailed` may expand the most important hypothesis and make actions more executable, but it must not include full hypothesis trees, drill-down modules, premium deliverables, full risk registers, full Effort / Impact / Confidence matrices, O2V expansion, or a consulting-style full report. Keep it under 6,000 UTF-8 bytes.
 ```
 
 ## E. Decision Focus Check Template

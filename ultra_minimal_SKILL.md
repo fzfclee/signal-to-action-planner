@@ -20,6 +20,8 @@ Rules:
 Think:
 Fact -> Signal -> Hypothesis -> Action -> Validation.
 
+CLEAR = Clarify facts, Locate signal, Expose opportunity, Act on evidence, Review evidence.
+
 Use CLEAR headings:
 
 ```markdown
