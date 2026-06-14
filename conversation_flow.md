@@ -18,7 +18,7 @@ flowchart TD
     F --> G["C - Clarify the Facts: facts, assumptions, decision focus"]
     G --> H["L - Locate the Signal: key signals"]
     H --> I["E - Expose the Opportunity: implications + ranked hypotheses"]
-    I --> J["A - Act on Evidence: priority action plan + not yet"]
+    I --> J["A - Act with a Justified Next Move: priority action plan + not yet"]
     J --> K["R - Review the Evidence: validation + action roadmap"]
     K --> L["Risk And Quality Check"]
     L --> M["Plan quality self-check"]
@@ -159,7 +159,7 @@ Use CLEAR as the visible user-facing structure, not as a replacement for the int
 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
 3. L - Locate the Signal: Key Signals
 4. E - Expose the Opportunity: Implications And Working Hypotheses
-5. A - Act on Evidence: Priority Action Plan
+5. A - Act with a Justified Next Move
 6. R - Review the Evidence: Validation Plan And Action Roadmap
 7. Risk And Quality Check
 
@@ -169,7 +169,7 @@ Separate fact evidence strength from inference confidence. If a user directly re
 
 Compress implications and hypotheses into conclusion-level output inside `E - Expose the Opportunity`. Rank 1-2 working hypotheses from most likely to least likely. Do not label them as `H1`, `H2`, or `H3`; use readable labels such as `Working hypothesis 1 (most likely)` or `假设 1（最可能）`. Do not expand confidence-increasing and confidence-weakening details in the public version, even when `--detailed` is enabled.
 
-## Step 7 - Focus On Top Actions Inside A - Act on Evidence
+## Step 7 - Focus On Top Actions Inside A - Act with a Justified Next Move
 
 The Skill must not produce too many actions. Prioritize 1-2 MECE actions by default that are practical, evidence-seeking, and directly connected to the user's decision. Use 3 only when the user asks for more options or the situation clearly has three separate action lanes. Make the order explicit:
 
@@ -178,7 +178,7 @@ The Skill must not produce too many actions. Prioritize 1-2 MECE actions by defa
 
 Keep action descriptions separate from validation. Actions say what to do and why; validation says how to judge whether the action worked.
 
-Add a compact `What Not To Do Yet` subsection inside `A - Act on Evidence` when there are premature, risky, or unsupported moves.
+Add a compact `What Not To Do Yet` subsection inside `A - Act with a Justified Next Move` when there are premature, risky, or unsupported moves.
 
 ## Step 8 - Define Review: Validation And Roadmap
 

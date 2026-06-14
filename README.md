@@ -24,17 +24,19 @@ flowchart LR
     A["Messy input"] --> C["C - Clarify the Facts"]
     C --> L["L - Locate the Signal"]
     L --> E["E - Expose the Opportunity"]
-    E --> ACT["A - Act on Evidence"]
+    E --> ACT["A - Act with a Justified Next Move"]
     ACT --> R["R - Review the Evidence"]
 ```
 
 CLEAR is the public-facing frame:
 
-- C — Clarify the facts: separate facts from assumptions and make messy input clear.
-- L — Locate the signal: identify recurring tension, behavior change, or risk that matters.
-- E — Expose the opportunity: reveal the scenario, affected people, pain, or risk behind the signal.
-- A — Act on evidence: define a small, testable next move that can change judgment.
-- R — Review the evidence: decide what result means continue, adjust, or stop.
+- C - Clarify the facts: separate facts from assumptions and make messy input clear.
+- L - Locate the signal: identify recurring tension, behavior change, or risk that matters.
+- E - Expose the opportunity: reveal the scenario, affected people, pain, or risk behind the signal.
+- A - Act with a Justified Next Move: define the justified next move that can change judgment.
+- R - Review the Evidence: decide what the result means: continue, adjust, or stop.
+
+Evidence is not a CLEAR letter-node. Evidence runs through every step and keeps the whole diagnostic evidence-driven.
 
 ## Works With
 
@@ -80,7 +82,11 @@ For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md)
 
 Signal-to-Action Planner is informed by the broader O2V parent methodology framework.
 
-O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the public CLEAR front layer: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+
+In the O2V public site structure, CLEAR / Signal-to-Action can be used across O2V Enterprise, Venture, and Personal configurations. O2V Personal Configuration is the primary public adoption context for this lightweight Skill. Enterprise and Venture uses may adapt the same CLEAR logic to their own configuration-specific context.
+
+This public repository does not include prompt chains, scoring rules, calculation methods, client-specific implementation materials, or internal working materials.
 
 ## What It Does
 
@@ -91,7 +97,7 @@ Its public-facing CLEAR frame is:
 - Clarify the facts by separating facts from assumptions and making messy input clear.
 - Locate the signal by identifying recurring tension, behavior change, or risk that matters.
 - Expose the opportunity by revealing the scenario, affected people, pain, or risk behind the signal.
-- Act on evidence by defining a small, testable next move that can change judgment.
+- Define priority actions and the first testable move that can change judgment.
 - Review the evidence so the user knows whether to continue, adjust, or stop.
 
 It guides the user through a simple reasoning chain:
@@ -113,6 +119,7 @@ It does not guarantee outcomes.
 It does not collect feedback or build a pattern library.
 It does not replace O2V methodology ownership or professional advisory judgment.
 It does not grant ownership or license rights to the broader O2V methodology framework.
+It does not publish operator-only diagnostic material.
 
 ## License And Notice
 
@@ -142,7 +149,7 @@ This repository uses a portable Markdown-first structure:
 - `SKILL.md` contains YAML frontmatter with `name` and `description` for tools that auto-discover skills.
 - The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
 - Supporting files explain conversation flow, output templates, examples, benchmark cases, failure modes, and notice terms.
-- No app code, services, external dependencies, or platform-specific runtime are required. The checker in `scripts/` is optional.
+- No app code, services, external dependencies, or platform-specific runtime are required.
 - If an agent tool caches skills or learns from old runs, refresh/reload the Skill before each run and follow the current `SKILL.md`. If the tool cannot verify that the latest instructions are loaded, paste the current `SKILL.md` into the run.
 - If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
 
@@ -150,7 +157,6 @@ This repository uses a portable Markdown-first structure:
 
 - See [`examples.md`](examples.md) for sample situations and output excerpts.
 - See [`BENCHMARK.md`](BENCHMARK.md) for public test cases and scoring dimensions.
-- Use [`scripts/check_output.py`](scripts/check_output.py) for a lightweight output length and format check.
 - See [`CONTRIBUTING.md`](CONTRIBUTING.md) if you want to contribute examples, compatibility notes, or benchmark cases.
 - See [`ROADMAP.md`](ROADMAP.md) for planned public improvements.
 
@@ -197,7 +203,7 @@ I had several conversations with potential users. Some said the idea is interest
 1. Likelihood: high. Hypothesis: current demand is polite interest, not urgent need. Evidence basis: praise without action.
 2. Likelihood: medium. Hypothesis: the use case is too broad. Evidence basis: no one has chosen a concrete next step.
 
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Priority 1: ask 3-5 people for one concrete next step.
    - First step: ask whether they will book a call, introduce a stakeholder, or test one narrow scenario.
    - Effort / Impact / Confidence: low / high / medium

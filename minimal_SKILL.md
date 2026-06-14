@@ -13,11 +13,11 @@ Turn messy input into action-ready clarity.
 
 Public frame: CLEAR
 
-- C — Clarify the facts: separate facts from assumptions.
-- L — Locate the signal: identify the tension, behavior change, or risk.
-- E — Expose the opportunity: reveal the scenario, people, pain, or risk behind the signal.
-- A — Act on evidence: define a small, testable next move.
-- R — Review the evidence: decide whether to continue, adjust, or stop.
+- C - Clarify the facts: separate facts from assumptions.
+- L - Locate the signal: identify the tension, behavior change, or risk.
+- E - Expose the opportunity: reveal the scenario, people, pain, or risk behind the signal.
+- A - Act with a Justified Next Move: define the justified next move.
+- R - Review the evidence: decide whether to continue, adjust, or stop.
 
 Core chain:
 
@@ -67,7 +67,7 @@ Use 2 bullets when the decision is obvious; do not force 3.
 1. [Localized hypothesis label 1.] [Localized likelihood]: high/medium/low. [Localized hypothesis]: [...]. [Localized evidence basis]: [...]
 2. Optional only if needed: [localized hypothesis label 2.] [Localized likelihood]: high/medium/low. [Localized hypothesis]: [...]. [Localized evidence basis]: [...]
 
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Priority 1: [...]
    - [Localized why / evidence tested]: [...]
    - [Localized expected signal]: [...]
