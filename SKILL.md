@@ -293,64 +293,64 @@ The reasoning chain is the internal discipline, not a requirement to show every 
 - If the user asks for "detail", "reasoning", or "why", answer the specific question briefly instead of expanding the whole report.
 - If the user asks for "quick", "brief", or "just tell me what to do", use the compact output.
 
-## Deep-Dive Module Pool
+## Follow-Up Expansion Areas
 
-A normal quick diagnostic does not generate Deep-Dive Modules in default mode or public `--detailed` mode. Use this module pool to generate a dynamic CTA and to describe optional follow-up expansion.
+A normal quick diagnostic does not generate follow-up expansion content in default mode or public `--detailed` mode. Use these public-facing areas only to generate a dynamic CTA and describe what a later follow-up conversation could expand.
 
-A separate expanded diagnostic run should select 2-3 modules from this pool and prioritize modules mentioned in the CTA. If a mentioned module cannot be meaningfully expanded from the available information, say that its current expandability is limited and switch to the next most relevant module. An expanded diagnostic should include at least 2 substantively expanded modules when enough context is available.
+A separate follow-up run may choose 2-3 areas from this list. If an area cannot be meaningfully expanded from the available information, say that its current expandability is limited and switch to the next most relevant area.
 
-Use only these 6 modules for CTA bullets. Do not invent extra module categories.
+Use only these 6 public-facing areas for CTA bullets. Do not invent extra categories.
 
-1. Communication Scripts
+1. Communication wording
    - Trigger when the public output recommends conversation, communication, expression, reply, negotiation, or messaging but does not give concrete wording.
    - Follow-up expansion may include: 2-3 versions of opening or reply wording; when each version fits; wording to avoid.
    - CTA wording examples: `那条消息具体怎么写（2-3 个版本）`; `给老板/客户/合伙人的沟通话术`; `relationship-safe wording for a difficult conversation`.
 
-2. Branch Responses
+2. Response-path planning
    - Trigger when the public output depends on how another party responds, such as warm, cold, evasive, doubtful, delayed, supportive, or resistant reactions.
    - Follow-up expansion may include: 3 typical response paths; signal interpretation for each path; adjusted next move.
    - CTA wording examples: `对方冷淡/热情/回避时各自怎么接`; `客户、老板或投资人不同回应下的应对策略`; `what to do if they stall, challenge, or engage`.
 
-3. Validation Checklist
+3. Validation checklist
    - Trigger when the public output asks the user to validate, test, observe, confirm, or decide based on evidence but does not give concrete criteria.
    - Follow-up expansion may include: 3-5 observable validation signals; success / weak / danger signals; time window and decision gate.
    - CTA wording examples: `一份验证清单：判断对方真实意图的 3 个信号`; `验证假设是否成立的具体标准`; `a concrete checklist for judging real commitment`.
 
-4. Stakeholder Map
+4. Stakeholder alignment
    - Trigger when the public output involves multiple people, teams, managers, partners, family members, customers, sponsors, or decision influencers but does not separate their positions.
    - Follow-up expansion may include: influence / support matrix; likely motivation and hidden resistance; who needs separate alignment and how.
    - CTA wording examples: `各方真实立场和隐藏阻力`; `老板、团队、合伙人或家庭成员的推进策略`; `who to align first and where resistance may appear`.
 
-5. Bias Audit
+5. Judgment quality check
    - Trigger when the input or public output shows strong emotion, attachment, frustration, sunk cost, certainty, resentment, fear, urgency, or phrases like `必须`, `不甘心`, `我可能`, `I have to`, or `I cannot let this go`.
    - Follow-up expansion may include: likely judgment bias; outside-view test; alternative framing that reduces emotional overcommitment.
    - CTA wording examples: `你的判断是否被情绪或偏见影响`; `外部视角下的替代方案`; `whether the decision is being pulled by sunk cost, fear, or attachment`.
 
-6. Counterfactual Check
+6. Causal assumption check
    - Trigger when the public output depends on a causal explanation, attribution, success / failure reason, or claim like `because X, therefore Y`, but the causal link remains uncertain.
    - Follow-up expansion may include: what would likely happen if X were absent; necessity / sufficiency test; alternative explanations and revised attribution.
    - CTA wording examples: `这个成功/失败真的是因为 X 吗？`; `替代解释和修正归因`; `whether the current explanation is really the cause`.
 
-## Expanded Diagnostic Deep-Dive Structure
+## Follow-Up Expansion Structure
 
-This structure is not part of the default output and not part of public `--detailed` mode. Use it only for a separate expanded diagnostic.
+This structure is not part of the default output and not part of public `--detailed` mode. Use it only for a separate follow-up conversation.
 
 ```markdown
-# CLEAR Signal-to-Action Expanded Diagnostic Report
+# CLEAR Signal-to-Action Follow-Up Expansion
 
 [1-7 CLEAR sections, with more detail where it changes the recommendation]
 
-## Deep-Dive Modules
+## Follow-Up Expansion Areas
 根据情况选择 2-3 项展开：
 
-### Module X: [module name]
-[Specific module content]
+### Area X: [area name]
+[Specific expansion content]
 
-### Module Y: [module name]
-[Specific module content]
+### Area Y: [area name]
+[Specific expansion content]
 
-### Module Z: [module name, if applicable]
-[Specific module content]
+### Area Z: [area name, if applicable]
+[Specific expansion content]
 ```
 
 ## Decision Focus Check
@@ -568,35 +568,35 @@ Before writing the CTA, run this output-gap scan:
 
 1. Review the generated CLEAR 7-section output.
 2. Identify which sections gave direction but did not provide concrete execution detail.
-3. Match the most relevant gaps to 2-3 modules from the Deep-Dive Module Pool.
-4. Generate 1 CTA bullet for each selected module, adapted to the user's situation.
+3. Match the most relevant gaps to 2-3 areas from the Follow-Up Expansion Areas list.
+4. Generate 1 CTA bullet for each selected area, adapted to the user's situation.
 5. Mention no more than 3 bullets.
 
-CTA module selection examples:
+CTA area selection examples:
 
-- If the action plan says to message, ask, align, negotiate, reply, or talk but does not give wording, select `Communication Scripts`.
-- If the roadmap depends on how another person responds, select `Branch Responses`.
-- If validation is directionally clear but lacks specific standards, select `Validation Checklist`.
-- If several people or groups influence the outcome, select `Stakeholder Map`.
-- If the user's input shows strong emotion, attachment, urgency, or self-doubt, select `Bias Audit`.
-- If the reasoning depends on uncertain causality or attribution, select `Counterfactual Check`.
+- If the action plan says to message, ask, align, negotiate, reply, or talk but does not give wording, select `Communication wording`.
+- If the roadmap depends on how another person responds, select `Response-path planning`.
+- If validation is directionally clear but lacks specific standards, select `Validation checklist`.
+- If several people or groups influence the outcome, select `Stakeholder alignment`.
+- If the user's input shows strong emotion, attachment, urgency, or self-doubt, select `Judgment quality check`.
+- If the reasoning depends on uncertain causality or attribution, select `Causal assumption check`.
 
 CTA wording control:
 
 - Use soft wording such as `通常包含`, `可能包括`, `根据你的情况选择 2-3 项展开`, `can include`, or `typically expands`.
 - Do not use hard promises such as `包含`, `一定提供`, `保证有`, `will definitely include`, or `guaranteed`.
 - Position the CTA as optional follow-up help, not as a replacement for the answer.
-- Do not mention internal reasoning mechanics beyond the selected user-facing module descriptions.
-- Do not invent extra module categories outside the 6-module pool.
+- Do not mention internal reasoning mechanics beyond the selected user-facing area descriptions.
+- Do not invent extra area categories outside the 6-area list.
 
 Chinese CTA format:
 
 ```markdown
 ---
 以上为 CLEAR 快速诊断，帮你理清了方向。如果后续需要展开，通常可以选择：
-- [selected module description]
-- [selected module description]
-- [selected module description, optional]
+- [selected area description]
+- [selected area description]
+- [selected area description, optional]
 
 根据你的情况选择 2-3 项展开，可联系微信：lizhi_ch。
 ```
@@ -606,9 +606,9 @@ English CTA format:
 ```markdown
 ---
 This is a CLEAR Signal-to-Action quick diagnostic that clarifies the direction. A follow-up diagnostic can typically expand 2-3 areas such as:
-- [selected module description]
-- [selected module description]
-- [selected module description, optional]
+- [selected area description]
+- [selected area description]
+- [selected area description, optional]
 
 For a follow-up run, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
 ```
