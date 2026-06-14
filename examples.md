@@ -1,4 +1,4 @@
-﻿# Examples
+# Examples
 
 These examples are shortened for readability. They show the quick diagnostic format: concise reasoning, useful action, light risk coverage, and a continuation hook.
 
@@ -30,7 +30,7 @@ Answer: No one committed to a next step.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Ask 3-5 people for one concrete next step.
    - First step: ask whether they will book a call, introduce a buyer, or test one scenario.
    - Expected signal: action, not praise.
@@ -75,7 +75,7 @@ Answer: Contract renewal decision in three months.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Validate renewal probability with decision makers.
    - First step: ask the sponsor what evidence would justify extension.
    - Expected signal: concrete criteria, budget signal, or evasive answer.
@@ -120,7 +120,7 @@ Answer: No.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Stop increasing emotional investment without explicit clarity.
    - First step: reduce private/intense conversations for one week.
    - Expected signal: whether the connection depends on ambiguity.
@@ -165,7 +165,7 @@ Answer: No, only repeated verbal ideas.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Require a written structure before debating.
    - First step: ask for one page showing control, economics, GP/LP roles, and contribution logic.
    - Expected signal: transparency or continued ambiguity.
@@ -210,7 +210,7 @@ Answer: Yes, a recovery update is due Friday.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Separate client recovery from internal blame.
    - First step: create a Friday recovery note with owner, fix, date, and open risk.
    - Expected signal: client sees control returning.
@@ -255,7 +255,7 @@ Answer: No.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Ask investors for the exact traction threshold.
    - First step: send one question: "What metric would make this investable for you?"
    - Expected signal: specific threshold or generic deferral.
@@ -300,7 +300,7 @@ Answer: Only a loose thesis, not written.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Write the investment thesis before changing position.
    - First step: define the 2-3 metrics that would make the drop temporary vs structural.
    - Expected signal: clearer buy/hold/avoid criteria.
@@ -345,7 +345,7 @@ Answer: Yes, but not recently engaged.
 Output excerpt:
 
 ```markdown
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 1. Re-engage the executive sponsor with an adoption recovery plan.
    - First step: send a 3-point plan: current usage, blocker, proposed 2-week recovery.
    - Expected signal: sponsor agrees to review, assigns owner, or avoids commitment.

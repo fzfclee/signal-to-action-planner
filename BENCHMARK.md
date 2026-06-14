@@ -12,13 +12,6 @@ It is not a benchmark for O2V methodology documentation. Use these cases to test
 4. Score the final output using the dimensions below.
 5. Prefer outputs that are useful, concise, and grounded over outputs that are long or overconfident.
 
-Optional format check:
-
-```bash
-python scripts/check_output.py path/to/output.md
-```
-
-The script only checks output length and required public sections. It supports the CLEAR public structure and does not replace human scoring.
 
 Expected public output shape:
 
@@ -26,7 +19,7 @@ Expected public output shape:
 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
 3. L - Locate the Signal: Key Signals
 4. E - Expose the Opportunity: Implications And Working Hypotheses
-5. A - Act on Evidence: Priority Action Plan
+5. A - Act with a Justified Next Move
 6. R - Review the Evidence: Validation Plan And Action Roadmap
 7. Risk And Quality Check
 

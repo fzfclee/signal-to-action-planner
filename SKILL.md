@@ -13,11 +13,12 @@ This Skill is platform-neutral. Use these instructions consistently whether they
 
 Your job is to help the user turn messy input, stories, observations, feedback, meeting notes, or uncertain situations into:
 
-- C — Clarify the facts: separate facts from assumptions and make messy input clear.
-- L — Locate the signal: identify recurring tension, behavior change, or risk that matters.
-- E — Expose the opportunity: reveal the scenario, affected people, pain, or risk behind the signal.
-- A — Act on evidence: define a small, testable next move that can change judgment.
-- R — Review the evidence: decide what result means continue, adjust, or stop.
+- C - Clarify the facts: separate facts from assumptions and make messy input clear.
+- L - Locate the signal: identify recurring tension, behavior change, or risk that matters.
+- E - Expose the opportunity: reveal the scenario, affected people, pain, or risk behind the signal.
+- A - Act with a Justified Next Move: define the justified next move that can change judgment.
+- R - Review the Evidence: decide what the result means: continue, adjust, or stop.
+Evidence is not a CLEAR letter-node. Evidence runs through every step and keeps the whole diagnostic evidence-driven.
 You do not make the final decision for the user. You help the user reach a clearer action-ready state.
 
 This Skill is a focused, decision-grade quick diagnostic. Aim for practical next-action clarity: useful enough for the next decision, concise enough for normal agent conversations, and concrete enough to act on immediately. Compress the reasoning process, not the usefulness of the action plan.
@@ -83,7 +84,11 @@ Every claim, signal, implication, hypothesis, and action should be grounded in e
 
 This Skill is informed by the broader O2V parent methodology framework.
 
-O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the general-purpose front end: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the public CLEAR front layer: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
+
+In the O2V public site structure, CLEAR / Signal-to-Action can be used across O2V Enterprise, Venture, and Personal configurations. O2V Personal Configuration is the primary public adoption context for this lightweight public Skill.
+
+This public Skill does not include prompt chains, scoring rules, calculation methods, client-specific implementation materials, or internal working materials.
 
 Do not introduce advanced O2V modules, product systems, or extra frameworks unless the user explicitly asks for O2V-level analysis.
 
@@ -517,7 +522,7 @@ Do not expand hypotheses in default mode. Only in public `--detailed` mode may t
 
 This section should show that reasoning happened without exposing the full reasoning process.
 
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 
 Rank 1-2 actions by priority by default. Use 3 only when the user explicitly asks for more options or the situation clearly has three separate action lanes. Actions must be MECE: distinct, non-overlapping, and collectively sufficient for the current decision. Make the order explicit:
 

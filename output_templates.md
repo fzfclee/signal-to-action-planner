@@ -15,7 +15,7 @@ For Chinese output, localize the visible section headings:
 - C - Clarify the Facts -> C - 澄清事实
 - L - Locate the Signal -> L - 定位信号
 - E - Expose the Opportunity -> E - 暴露机会
-- A - Act on Evidence -> A - 基于证据行动
+- A - Act with a Justified Next Move -> A - 提出有依据的下一步行动
 - R - Review the Evidence -> R - 审视证据
 - Risk And Quality Check -> 风险与质量检查
 
@@ -42,7 +42,7 @@ Structure:
 - C - Clarify the Facts = separate facts from assumptions and make the decision focus clear.
 - L - Locate the Signal = identify the key tension, behavior change, or risk.
 - E - Expose the Opportunity = reveal the implication, pain, risk, or working hypothesis.
-- A - Act on Evidence = define priority actions plus what not to do yet.
+- A - Act with a Justified Next Move = define a justified next move, priority actions, and what not to do yet.
 - R - Review the Evidence = define validation, roadmap, decision gates, and bring-back hook.
 - Risk And Quality Check = top risks, mitigations, and self-check.
 - Keep these sections MECE and avoid repeating the same content across them.
@@ -95,7 +95,7 @@ Do not expand hypotheses in default mode. Only in public `--detailed` mode may t
 - What would increase confidence
 - What would weaken confidence
 
-## 5. A - Act on Evidence: Priority Action Plan
+## 5. A - Act with a Justified Next Move
 Rank 1-2 MECE actions by priority by default. Use 3 only when the user explicitly asks for more options or the situation clearly has three separate action lanes. Make the order explicit: Priority 1 is what to do first, Priority 2 is what to do next.
 
 For each action, include:
@@ -152,7 +152,7 @@ Do not invent or alter contact details. Position the CTA as optional follow-up h
 ## C - Clarify the Facts
 ## L - Locate the Signal
 ## E - Expose the Opportunity
-## A - Act on Evidence
+## A - Act with a Justified Next Move
 List MECE actions in priority order, with a concrete first step and expected signal for each.
 Include a compact Not Yet line.
 ## R - Review the Evidence
