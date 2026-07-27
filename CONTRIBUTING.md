@@ -29,6 +29,8 @@ Use a small, focused pull request:
 3. Show one before/after example or benchmark case.
 4. Confirm that the public output remains focused and usable.
 5. Confirm that any affected surrounding files stay aligned with the CLEAR 7-section output.
+6. Run `python scripts/validate_repo.py`.
+7. When changing the public entry, keep `README.md` and `README.zh-CN.md` semantically aligned.
 
 ## Public Benchmark Check
 

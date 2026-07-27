@@ -8,7 +8,7 @@ In the O2V public site structure, this Skill represents the public lightweight C
 
 Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the broader O2V methodology framework.
 
-This repository does not publish or license prompt chains, scoring rules, calculation methods, client-specific implementation materials, internal working materials, or operator-only delivery materials.
+This repository contains the compact public Signal-to-Action Planner Skill. The broader O2V Framework and its methodology, publications, and professional applications are maintained as separate works at https://www.o2vframework.com/.
 
 Do not present the O2V methodology framework, related methodology systems, or derivative commercial offerings as your own. Do not remove attribution when redistributing this Skill or a close adaptation.
 

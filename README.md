@@ -1,227 +1,215 @@
+<div align="center">
+
 # Signal-to-Action Planner
 
-[![License](https://img.shields.io/badge/license-Custom%20Limited%20Use-blue)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/fzfclee/signal-to-action-planner?style=social)](https://github.com/fzfclee/signal-to-action-planner/forks)
-[![Last commit](https://img.shields.io/github/last-commit/fzfclee/signal-to-action-planner)](https://github.com/fzfclee/signal-to-action-planner/commits/main)
+**Turn messy signals into a justified next move and a testable validation plan.**
 
-Turn messy signals into prioritized action and validation.
+A portable CLEAR-based Markdown Skill for decisions hidden inside stories, meeting notes, customer feedback, recurring friction, and uncertain situations.
 
-Signal-to-Action Planner is a portable Markdown Skill that helps users turn messy input, stories, observations, and evidence into prioritized actions, validation plans, and practical action roadmaps.
+[![Validation](https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&style=for-the-badge&label=validation)](https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml)
+[![Framework](https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge)](#how-clear-works)
+[![GitHub stars](https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge&logo=github&label=stars)](https://github.com/fzfclee/signal-to-action-planner/stargazers)
+[![License](https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge)](LICENSE)
 
-The Skill is optimized for practical next-action clarity in normal agent conversations: it helps the user choose a grounded next move while keeping reasoning concise and immediately usable.
+[30-second start](#30-second-start) · [How CLEAR works](#how-clear-works) · [Example](#example-output) · [Quality evidence](#quality-evidence) · [中文](README.zh-CN.md) · [O2V CLEAR](https://www.o2vframework.com/en/personal/clear)
 
-Public name: use `Signal-to-Action Planner`. Avoid shorthand abbreviations in public-facing titles, repository naming, first-use descriptions, or default output.
+</div>
 
-It is designed to be usable across AI agent tools that support Markdown-based skills or reusable instructions, including Codex, Claude Code, Hermes, OpenClaw, Tencent WorkBuddy, and similar agent environments.
+---
 
-If this helps, star the repo to make it easier to find later. Fork it if you want to adapt the public Skill for your own agent setup, and watch releases if you want updates to the public workflow.
+## Why This Skill
 
-## How It Works
+Many difficult decisions arrive as an unstructured story rather than a clean problem statement:
+
+- facts, assumptions, feelings, and second-hand claims are mixed together;
+- one visible event is mistaken for the real signal;
+- a plausible explanation becomes “the truth” too early;
+- actions are listed without showing why they matter;
+- validation means “see what happens” instead of a decision gate.
+
+Signal-to-Action Planner helps an AI agent move from narrative to evidence-backed action without turning every question into a long consulting report.
+
+## 30-Second Start
+
+### Codex
+
+```powershell
+git clone https://github.com/fzfclee/signal-to-action-planner.git "$env:USERPROFILE\.codex\skills\signal-to-action-planner"
+```
+
+Start a new task:
+
+```text
+$signal-to-action-planner
+I need to decide what to do about this situation:
+[paste the story, observation, meeting note, customer feedback, or work signal]
+```
+
+By default, the Skill asks at least one useful clarification question. Ask for direct output or no questions when speed matters more than additional evidence.
+
+### Other AI Agents
+
+Copy [`SKILL.md`](SKILL.md) into project instructions or a Markdown skill folder. Use [`minimal_SKILL.md`](minimal_SKILL.md) for smaller models and [`ultra_minimal_SKILL.md`](ultra_minimal_SKILL.md) for very tight context windows.
+
+## How CLEAR Works
 
 ```mermaid
 flowchart LR
-    A["Messy input"] --> C["C - Clarify the Facts"]
-    C --> L["L - Locate the Signal"]
-    L --> E["E - Expose the Opportunity"]
-    E --> ACT["A - Act with a Justified Next Move"]
-    ACT --> R["R - Review the Evidence"]
+    I["Messy input"] --> C["C · Clarify facts"]
+    C --> L["L · Locate signal"]
+    L --> E["E · Expose opportunity"]
+    E --> A["A · Act"]
+    A --> R["R · Review evidence"]
 ```
 
-CLEAR is the public-facing frame:
+| Step | Decision question | Visible output |
+|---|---|---|
+| **C · Clarify the Facts** | What is known, inferred, assumed, or missing? | Facts, assumptions, evidence strength, decision focus |
+| **L · Locate the Signal** | What recurring change, tension, behavior, or risk matters now? | Prioritized signals and confidence |
+| **E · Expose the Opportunity** | What does the signal imply, and what competing explanations remain? | Implications and working hypotheses |
+| **A · Act with a Justified Next Move** | Which action can change the situation or improve the decision? | Priority action, owner, timing, and first step |
+| **R · Review the Evidence** | What result means continue, adjust, or stop? | Validation signal, roadmap, and decision gate |
 
-- C - Clarify the facts: separate facts from assumptions and make messy input clear.
-- L - Locate the signal: identify recurring tension, behavior change, or risk that matters.
-- E - Expose the opportunity: reveal the scenario, affected people, pain, or risk behind the signal.
-- A - Act with a Justified Next Move: define the justified next move that can change judgment.
-- R - Review the Evidence: decide what the result means: continue, adjust, or stop.
+Evidence runs through every step. It is not a final proofreading exercise.
 
-Evidence is not a CLEAR letter-node. Evidence runs through every step and keeps the whole diagnostic evidence-driven.
+## Use It When
 
-## Works With
-
-This public Skill is built for Markdown-first agent environments:
-
-| Agent / Tool | Recommended setup |
+| Situation | What the Planner adds |
 |---|---|
-| Codex | Local skill folder |
-| Claude Projects | Project Instructions |
-| Claude Code | Project or personal skill instructions |
-| Cursor | Project rules or custom instructions |
-| Windsurf | Cascade custom instructions |
-| Hermes / smaller models | `minimal_SKILL.md` first; use `ultra_minimal_SKILL.md` for very small models or tight context windows |
-| OpenClaw / WorkBuddy | Reusable Markdown instruction |
+| A long story hides the real decision | A clear decision focus and fact/assumption boundary |
+| Customer feedback sounds positive but behavior is weak | A distinction between polite interest and commitment signals |
+| A workplace or stakeholder situation is ambiguous | Competing hypotheses and the next evidence-producing conversation |
+| A problem keeps returning | A signal pattern, justified next move, and review gate |
+| Several actions look reasonable | A priority based on expected decision impact, effort, confidence, and risk |
+| You need to act before certainty is possible | A low-regret action and a way to update the judgment |
 
-## 30-Second Quick Start
+For a simple, low-consequence question, answer it directly. Use the Skill when the structure can materially improve the action, validation, risk judgment, or decision threshold.
 
-Fastest path:
+## Output You Receive
 
-1. Copy the full content of `SKILL.md`.
-2. Paste it into your AI tool's project instructions, custom instructions, or skill folder.
-3. Start with:
+The default report has seven visible sections:
 
-```text
-Use Signal-to-Action Planner on this situation:
-[paste your messy situation, story, meeting note, customer feedback, or work signal]
-```
+1. Decision Summary;
+2. C - Facts, Assumptions, and Decision Focus;
+3. L - Key Signals;
+4. E - Implications and Working Hypotheses;
+5. A - Justified Next Move;
+6. R - Validation Plan and Action Roadmap;
+7. Risk and Quality Check.
 
-Platform copy/paste guide:
+Default output is compact enough for normal conversations and smaller models. Add `--detailed` when the user needs a little more evidence and execution detail; it remains a decision brief, not a full consulting workpaper.
 
-| Platform | Quick setup |
-|---|---|
-| Codex | Copy this repo folder to `%USERPROFILE%\.codex\skills\signal-to-action-planner`, then start a new run with `$signal-to-action-planner`. |
-| Claude Projects | Paste `SKILL.md` into Project Instructions. For smaller projects, paste `minimal_SKILL.md` first. |
-| Claude Code | Place the folder where your Claude Code setup loads Markdown skills, or paste `SKILL.md` into the project instruction file. |
-| Cursor | Add `SKILL.md` to project rules or paste it into the agent's custom instructions. |
-| Windsurf | Paste `SKILL.md` into Cascade custom instructions or project rules. |
-| Hermes / smaller models | Start with `minimal_SKILL.md`, then upgrade to full `SKILL.md` if output quality is too thin. |
+## Example Output
 
-For a tiny-model or first-time setup, use [`minimal_SKILL.md`](minimal_SKILL.md). For very small models or tight context windows, use the one-page [`ultra_minimal_SKILL.md`](ultra_minimal_SKILL.md).
-
-## Relationship To O2V
-
-Signal-to-Action Planner is informed by the broader O2V parent methodology framework.
-
-O2V is the larger method for turning signals into value through scenario, persona, pain, product, validation, business case, asset, and value story development. Signal-to-Action Planner is not an O2V methodology reference. It focuses on the public CLEAR front layer: turning messy facts and signals into hypotheses, prioritized actions, validation plans, and an action roadmap.
-
-In the O2V public site structure, CLEAR / Signal-to-Action can be used across O2V Enterprise, Venture, and Personal configurations. O2V Personal Configuration is the primary public adoption context for this lightweight Skill. Enterprise and Venture uses may adapt the same CLEAR logic to their own configuration-specific context.
-
-This public repository does not include prompt chains, scoring rules, calculation methods, client-specific implementation materials, or internal working materials.
-
-## What It Does
-
-This Skill helps users turn messy stories, observations, meeting notes, customer feedback, work signals, or uncertain situations into a prioritized action plan, a practical validation plan, and a short action roadmap.
-
-Its public-facing CLEAR frame is:
-
-- Clarify the facts by separating facts from assumptions and making messy input clear.
-- Locate the signal by identifying recurring tension, behavior change, or risk that matters.
-- Expose the opportunity by revealing the scenario, affected people, pain, or risk behind the signal.
-- Define priority actions and the first testable move that can change judgment.
-- Review the evidence so the user knows whether to continue, adjust, or stop.
-
-It guides the user through a simple reasoning chain:
+**Input**
 
 ```text
-Fact -> Signal -> Implication -> Hypothesis -> Action -> Validation -> Result
+Several potential users said my idea was interesting, but nobody committed to a follow-up.
+I cannot tell whether this is real demand or polite feedback.
 ```
 
-Evidence is applied across the whole process. Every claim, signal, implication, hypothesis, and action should be grounded in evidence or marked as uncertain.
-
-Default outputs are sized for smaller models and constrained agent tools. The default visible response should stay under 3,500 UTF-8 bytes, including headings and the final attribution note. The Skill keeps intermediate reasoning concise and focuses on the branches that change the top action, while preserving the best next step, validation signal, one key risk, effort/impact/confidence labels, a decision gate, and a small "bring back next" hook for continued use. Public `--detailed` mode may expand to 5,000 UTF-8 bytes.
-
-## What It Does Not Do
-
-This Skill does not make decisions for the user.
-It does not provide legal, medical, financial, psychological, or safety advice.
-It does not replace professional judgment.
-It does not guarantee outcomes.
-It does not collect feedback or build a pattern library.
-It does not replace O2V methodology ownership or professional advisory judgment.
-It does not grant ownership or license rights to the broader O2V methodology framework.
-It does not publish operator-only diagnostic material.
-
-## License And Notice
-
-This repository is provided as a public, copyable Markdown Skill for educational, experimental, and personal/professional productivity use.
-
-Use of this repository does not transfer ownership of O2V, Signal-to-Action, AI ValueLoop, Valence, AiNOVA, VenturePilot, or related methodology systems. It does not grant rights to reproduce, package, or commercialize the broader O2V methodology framework.
-
-See `NOTICE.md` for the full notice terms.
-
-## How To Use
-
-1. Use `SKILL.md` as the main instruction file.
-2. In tools that support skill folders, place this repository or its files in the tool's skill directory.
-3. In tools that do not support skill folders, paste the content of `SKILL.md` into the assistant's system, project, or reusable instruction area.
-4. Before each run, reload the latest `SKILL.md` and ignore prior cached behavior or old test memory that conflicts with the current version.
-5. Paste your messy situation / story / observations.
-6. Let the Skill ask a few clarification questions if needed.
-7. Receive a compact CLEAR 7-section Signal-to-Action output.
-8. Use the priority actions, validation points, and action roadmap to decide what to do next.
-
-By default, the Skill asks at least one question before output. It produces the output immediately only when the user explicitly asks for direct output, no questions, or skipped questions.
-
-## Compatibility Notes
-
-This repository uses a portable Markdown-first structure:
-
-- `SKILL.md` contains YAML frontmatter with `name` and `description` for tools that auto-discover skills.
-- The body of `SKILL.md` is plain Markdown instruction text for tools that accept reusable prompts or project instructions.
-- Supporting files explain conversation flow, output templates, examples, benchmark cases, failure modes, and notice terms.
-- No app code, services, external dependencies, or platform-specific runtime are required.
-- If an agent tool caches skills or learns from old runs, refresh/reload the Skill before each run and follow the current `SKILL.md`. If the tool cannot verify that the latest instructions are loaded, paste the current `SKILL.md` into the run.
-- If input is too long for the platform, paste a shorter excerpt or process the situation in chunks.
-
-## Community And Validation
-
-- See [`examples.md`](examples.md) for sample situations and output excerpts.
-- See [`BENCHMARK.md`](BENCHMARK.md) for public test cases and scoring dimensions.
-- See [`CONTRIBUTING.md`](CONTRIBUTING.md) if you want to contribute examples, compatibility notes, or benchmark cases.
-- See [`ROADMAP.md`](ROADMAP.md) for planned public improvements.
-
-## Attribution CTA
-
-Outputs may end with a short attribution line separated by a horizontal rule. It should not be a numbered section. The hook should position the output as a useful Signal-to-Action quick diagnostic, then point to concrete follow-up deliverables such as hypothesis review, action roadmap, communication scripts, and career/commercialization path design.
-
-- Chinese output: use WeChat contact.
-- Other languages: write the CTA naturally in the user's language and use LinkedIn contact.
-- Chinese contact: WeChat `lizhi_ch`.
-- Non-Chinese contact: LinkedIn `https://www.linkedin.com/in/li-zhi/`.
-- Position the CTA as an optional follow-up path, not as a replacement for the answer.
-
-Suggested usage:
-
-- Codex: install or copy the folder into the local Codex skills directory.
-- Claude Code: place the folder under a personal, project, or organization skill location.
-- OpenClaw: use the folder as a local skill with `SKILL.md`.
-- Hermes, Tencent WorkBuddy, and similar tools: paste `SKILL.md` as a reusable instruction, or place the folder wherever the tool expects Markdown skills.
-
-## Example Input
-
-```text
-I had several conversations with potential users. Some said the idea is interesting, but nobody has committed to a follow-up. I am not sure whether this is real demand or just polite feedback. I need to decide what to do next.
-```
-
-## Example Output Preview
+**Condensed result**
 
 ```markdown
 # CLEAR Signal-to-Action Quick Diagnostic Report
 
 ## 1. Decision Summary
 - Core judgment: interest is not yet demand.
-- First move: ask for concrete commitment, not more opinions.
-- Decision gate: whether 2+ people take a next step in 1-2 weeks.
+- First move: ask for a concrete commitment rather than another opinion.
+- Decision gate: whether at least two people take a next step within two weeks.
 
-## 2. C - Clarify the Facts: Facts, Assumptions, And Decision Focus
-- Fact: several users said the idea is interesting. Evidence: strong. Why it matters: interest exists, but commitment is unclear.
+## 2. C - Clarify the Facts
+- Fact: several people described the idea as interesting.
+- Fact: nobody committed to a follow-up.
+- Missing: urgency, budget, decision owner, and willingness to test.
 
-## 3. L - Locate the Signal: Key Signals
-- Signal: no one committed to follow-up. Confidence: high. Why it matters now: action is a stronger demand signal than praise.
+## 3. L - Locate the Signal
+- Strong signal: praise is not converting into behavior.
 
-## 4. E - Expose the Opportunity: Implications And Working Hypotheses
-1. Likelihood: high. Hypothesis: current demand is polite interest, not urgent need. Evidence basis: praise without action.
-2. Likelihood: medium. Hypothesis: the use case is too broad. Evidence basis: no one has chosen a concrete next step.
+## 4. E - Expose the Opportunity
+- Hypothesis 1: the problem is not urgent enough.
+- Hypothesis 2: the use case is too broad or the next step is unclear.
 
 ## 5. A - Act with a Justified Next Move
-1. Priority 1: ask 3-5 people for one concrete next step.
-   - First step: ask whether they will book a call, introduce a stakeholder, or test one narrow scenario.
-   - Effort / Impact / Confidence: low / high / medium
-2. Priority 2: test one narrower use case if commitment stays weak.
-   - First step: rewrite the offer around one painful scenario and ask for a yes/no reaction.
-   - Effort / Impact / Confidence: medium / medium / medium
+- Ask 3–5 people to choose one concrete step: test, stakeholder introduction, or scheduled call.
 
-## 6. R - Review the Evidence: Validation Plan And Action Roadmap
-- Validation: success = at least 2 concrete commitments; weak signal = praise without action.
-- First 24-72 hours: ask for concrete commitments.
-- Next 1-2 weeks: test a narrower use case if commitment is weak.
-- Decision point: if praise still produces no action, reduce priority.
-- Bring back next: the actual replies, objections, or silence pattern.
+## 6. R - Review the Evidence
+- Continue if at least two people commit.
+- Narrow the use case if praise continues without action.
+- Reduce priority if a narrower offer still produces no commitment.
 
 ## 7. Risk And Quality Check
-- Risk: people stay polite but non-committal / mitigation: ask for one concrete next step, not general feedback.
-- Quality check: evidence medium / action strong / risk medium
+- Main risk: treating politeness as demand.
+- Evidence confidence: medium.
+```
+
+See [`examples.md`](examples.md) for more complete cases.
+
+## Works With
+
+| Agent / tool | Recommended setup |
+|---|---|
+| Codex | Local skill folder and `$signal-to-action-planner` |
+| Claude Code | Project or personal Markdown skill |
+| Claude Projects | Project Instructions |
+| Cursor / Windsurf | Project rules or reusable instructions |
+| Hermes / smaller models | `minimal_SKILL.md` or `ultra_minimal_SKILL.md` |
+| OpenClaw / WorkBuddy | Markdown skill folder or reusable instruction |
+
+No app code, hosted service, external API, or runtime dependency is required.
+
+## Quality Evidence
+
+This repository keeps structural validation and behavioral evaluation distinct:
+
+- **Automated repository validation:** required assets, UTF-8, frontmatter, internal links, CLEAR sequence, output contract, and public entry are checked on every push and pull request.
+- **Public benchmark:** [`BENCHMARK.md`](BENCHMARK.md) defines representative cases, pass criteria, failure modes, and scoring dimensions.
+- **Worked examples:** [`examples.md`](examples.md) shows evidence handling, prioritization, validation, and action-roadmap outputs.
+- **Three runtime sizes:** full, minimal, and ultra-minimal instruction sets make portability testable across different context budgets.
+- **Conversation contract:** [`conversation_flow.md`](conversation_flow.md) documents clarification, checkpoints, and when direct output is allowed.
+
+Run the local structural validation:
+
+```powershell
+python scripts/validate_repo.py
+```
+
+## Repository Map
+
+| File | Purpose |
+|---|---|
+| [`SKILL.md`](SKILL.md) | Full public runtime instructions |
+| [`minimal_SKILL.md`](minimal_SKILL.md) | Smaller-model version |
+| [`ultra_minimal_SKILL.md`](ultra_minimal_SKILL.md) | Tight-context version |
+| [`conversation_flow.md`](conversation_flow.md) | Interaction and clarification flow |
+| [`output_templates.md`](output_templates.md) | Standard report structure |
+| [`examples.md`](examples.md) | Worked examples |
+| [`BENCHMARK.md`](BENCHMARK.md) | Evaluation cases and scoring |
+| [`ROADMAP.md`](ROADMAP.md) | Planned public improvements |
+
+## Relationship To O2V
+
+Signal-to-Action Planner is a standalone public implementation of the CLEAR front layer for everyday AI-agent use.
+
+CLEAR is used across the Enterprise, Venture, and Personal configurations of the [O2V Framework](https://www.o2vframework.com/). O2V continues from signal and action into scenario, persona, pain, solution, validation, business case, reusable assets, and value stories. Explore the public CLEAR introduction at [O2V Personal](https://www.o2vframework.com/en/personal/clear).
+
+The repository is distributed under the terms in [`LICENSE`](LICENSE), with attribution and methodology ownership explained in [`NOTICE.md`](NOTICE.md).
+
+## Contributing
+
+Anonymous benchmark cases, compatibility findings, failure examples, and clarity improvements are welcome. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before opening a pull request.
+
+For methodology or advisory enquiries:
+
+- Chinese: WeChat `lizhi_ch`
+- English: [Zhi Li on LinkedIn](https://www.linkedin.com/in/li-zhi/)
 
 ---
-This is a CLEAR Signal-to-Action quick diagnostic created by Zhi Li based on the O2V parent methodology framework. For follow-up hypothesis review, action roadmap, communication scripts, or career/commercialization path design, connect on LinkedIn: https://www.linkedin.com/in/li-zhi/.
-```
+
+<div align="center">
+
+**Do not wait for certainty. Define the next move that can improve the evidence.**
+
+If the Planner helps you turn a messy situation into action, star the repository so other people can find it.
+
+</div>
