@@ -6,10 +6,12 @@
 
 A portable CLEAR-based Markdown Skill for decisions hidden inside stories, meeting notes, customer feedback, recurring friction, and uncertain situations.
 
-[![Validation](https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&style=for-the-badge&label=validation)](https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml)
-[![Framework](https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge)](#how-clear-works)
-[![GitHub stars](https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge&logo=github&label=stars)](https://github.com/fzfclee/signal-to-action-planner/stargazers)
-[![License](https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge)](LICENSE)
+<p>
+  <a href="https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a>
+  <a href="#how-clear-works"><img src="https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge" alt="CLEAR framework"></a>
+  <a href="https://github.com/fzfclee/signal-to-action-planner/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge" alt="GitHub stars"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge" alt="Limited Use license"></a>
+</p>
 
 [30-second start](#30-second-start) · [How CLEAR works](#how-clear-works) · [Example](#example-output) · [Quality evidence](#quality-evidence) · [中文](README.zh-CN.md) · [O2V CLEAR](https://www.o2vframework.com/en/personal/clear)
 
