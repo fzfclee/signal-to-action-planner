@@ -1,16 +1,8 @@
-<div align="center">
-
-# Signal-to-Action Planner
-
-**把混乱的信号，变成有理由的下一步行动和可以验证的决策门槛。**
-
-基于 CLEAR 的可移植 Markdown Skill，适合处理藏在长故事、会议记录、客户反馈、反复摩擦和不确定局面里的真实决策。
-
-<p><a href="https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="#clear-如何运行"><img src="https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge" alt="CLEAR framework"></a> <a href="https://github.com/fzfclee/signal-to-action-planner/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge" alt="Limited Use license"></a></p>
-
-[30 秒开始](#30-秒开始) · [CLEAR 如何运行](#clear-如何运行) · [输出示例](#输出示例) · [质量证据](#质量证据) · [English](README.md) · [O2V CLEAR](https://www.o2vframework.com/zh/personal/clear)
-
-</div>
+<h1 align="center">Signal-to-Action Planner</h1>
+<p align="center"><strong>把混乱的信号，变成有理由的下一步行动和可以验证的决策门槛。</strong></p>
+<p align="center">基于 CLEAR 的可移植 Markdown Skill，适合处理藏在长故事、会议记录、客户反馈、反复摩擦和不确定局面里的真实决策。</p>
+<p align="center"><a href="https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="#clear-如何运行"><img src="https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge" alt="CLEAR framework"></a> <a href="https://github.com/fzfclee/signal-to-action-planner/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge" alt="Limited Use license"></a></p>
+<p align="center"><a href="#30-秒开始">30 秒开始</a> · <a href="#clear-如何运行">CLEAR 如何运行</a> · <a href="#输出示例">输出示例</a> · <a href="#质量证据">质量证据</a> · <a href="README.md">English</a> · <a href="https://www.o2vframework.com/zh/personal/clear">O2V CLEAR</a></p>
 
 ---
 

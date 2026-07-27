@@ -106,7 +106,7 @@ def validate_markdown_links() -> None:
 def validate_public_entry() -> None:
     readme = read_text("README.md")
     required_fragments = [
-        "# Signal-to-Action Planner",
+        '<h1 align="center">Signal-to-Action Planner</h1>',
         "## 30-Second Start",
         "## How CLEAR Works",
         "## Quality Evidence",

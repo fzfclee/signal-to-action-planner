@@ -1,16 +1,8 @@
-<div align="center">
-
-# Signal-to-Action Planner
-
-**Turn messy signals into a justified next move and a testable validation plan.**
-
-A portable CLEAR-based Markdown Skill for decisions hidden inside stories, meeting notes, customer feedback, recurring friction, and uncertain situations.
-
-<p><a href="https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="#how-clear-works"><img src="https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge" alt="CLEAR framework"></a> <a href="https://github.com/fzfclee/signal-to-action-planner/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge" alt="Limited Use license"></a></p>
-
-[30-second start](#30-second-start) · [How CLEAR works](#how-clear-works) · [Example](#example-output) · [Quality evidence](#quality-evidence) · [中文](README.zh-CN.md) · [O2V CLEAR](https://www.o2vframework.com/en/personal/clear)
-
-</div>
+<h1 align="center">Signal-to-Action Planner</h1>
+<p align="center"><strong>Turn messy signals into a justified next move and a testable validation plan.</strong></p>
+<p align="center">A portable CLEAR-based Markdown Skill for decisions hidden inside stories, meeting notes, customer feedback, recurring friction, and uncertain situations.</p>
+<p align="center"><a href="https://github.com/fzfclee/signal-to-action-planner/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/fzfclee/signal-to-action-planner/validate.yml?branch=main&amp;style=for-the-badge&amp;label=validation" alt="Validation"></a> <a href="#how-clear-works"><img src="https://img.shields.io/badge/framework-CLEAR-0f766e?style=for-the-badge" alt="CLEAR framework"></a> <a href="https://github.com/fzfclee/signal-to-action-planner/stargazers"><img src="https://img.shields.io/github/stars/fzfclee/signal-to-action-planner?style=for-the-badge" alt="GitHub stars"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Limited%20Use-2563eb?style=for-the-badge" alt="Limited Use license"></a></p>
+<p align="center"><a href="#30-second-start">30-second start</a> · <a href="#how-clear-works">How CLEAR works</a> · <a href="#example-output">Example</a> · <a href="#quality-evidence">Quality evidence</a> · <a href="README.zh-CN.md">中文</a> · <a href="https://www.o2vframework.com/en/personal/clear">O2V CLEAR</a></p>
 
 ---
 
